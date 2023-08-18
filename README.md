@@ -1,4 +1,5 @@
-# Crypto-Sign-Synth: Hardware Synthesis of Dilithium AES Digital Signature Scheme
+# Crypto-Sign-Synth: 
+### Hardware Synthesis of Dilithium AES Digital Signature Scheme
 
 ### Project Overview
 The primary objective of this project is to synthesize the Dilithium AES digital signature scheme into hardware while addressing various phases of optimization to achieve better efficiency in terms of both area and latency.
