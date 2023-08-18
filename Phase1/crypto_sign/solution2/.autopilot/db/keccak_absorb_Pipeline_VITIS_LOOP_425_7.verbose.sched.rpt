@@ -1,0 +1,141 @@
+
+
+================================================================
+== Vitis HLS Report for 'keccak_absorb_Pipeline_VITIS_LOOP_425_7'
+================================================================
+* Date:           Fri Mar 10 17:22:11 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  50.00 ns|  3.866 ns|    13.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_425_7  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.86>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i_53 = alloca i32 1"   --->   Operation 4 'alloca' 'i_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%m_0_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %m_0_read"   --->   Operation 5 'read' 'm_0_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%m_1_read_1 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %m_1_read"   --->   Operation 6 'read' 'm_1_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%xor_ln31_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %xor_ln31"   --->   Operation 7 'read' 'xor_ln31_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln384_3_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %sext_ln384_3"   --->   Operation 8 'read' 'sext_ln384_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln384_3_cast = sext i9 %sext_ln384_3_read"   --->   Operation 9 'sext' 'sext_ln384_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.32ns)   --->   "%store_ln0 = store i32 0, i32 %i_53"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.32>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc93"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i = load i32 %i_53" [dilithium2/fips202.c:426]   --->   Operation 12 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 13 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln425_1 = zext i32 %i" [dilithium2/fips202.c:425]   --->   Operation 14 'zext' 'zext_ln425_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (2.11ns)   --->   "%icmp_ln425 = icmp_ugt  i33 %sext_ln384_3_cast, i33 %zext_ln425_1" [dilithium2/fips202.c:425]   --->   Operation 15 'icmp' 'icmp_ln425' <Predicate = true> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (2.18ns)   --->   "%i_56 = add i32 %i, i32 1" [dilithium2/fips202.c:425]   --->   Operation 16 'add' 'i_56' <Predicate = true> <Delay = 2.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln425 = br i1 %icmp_ln425, void %for.inc.i62.preheader.exitStub, void %for.inc93.split" [dilithium2/fips202.c:425]   --->   Operation 17 'br' 'br_ln425' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln425 = zext i32 %i" [dilithium2/fips202.c:425]   --->   Operation 18 'zext' 'zext_ln425' <Predicate = (icmp_ln425)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln386 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [dilithium2/fips202.c:386]   --->   Operation 19 'specloopname' 'specloopname_ln386' <Predicate = (icmp_ln425)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node select_ln426)   --->   "%trunc_ln426 = trunc i32 %i" [dilithium2/fips202.c:426]   --->   Operation 20 'trunc' 'trunc_ln426' <Predicate = (icmp_ln425)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node select_ln426)   --->   "%xor_ln426 = xor i1 %xor_ln31_read, i1 %trunc_ln426" [dilithium2/fips202.c:426]   --->   Operation 21 'xor' 'xor_ln426' <Predicate = (icmp_ln425)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (1.07ns) (out node of the LUT)   --->   "%select_ln426 = select i1 %xor_ln426, i8 %m_1_read_1, i8 %m_0_read_1" [dilithium2/fips202.c:426]   --->   Operation 22 'select' 'select_ln426' <Predicate = (icmp_ln425)> <Delay = 1.07> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%t_addr = getelementptr i8 %t, i64 0, i64 %zext_ln425" [dilithium2/fips202.c:426]   --->   Operation 23 'getelementptr' 't_addr' <Predicate = (icmp_ln425)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.75ns)   --->   "%store_ln426 = store i8 %select_ln426, i3 %t_addr" [dilithium2/fips202.c:426]   --->   Operation 24 'store' 'store_ln426' <Predicate = (icmp_ln425)> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 8> <RAM>
+ST_1 : Operation 25 [1/1] (1.32ns)   --->   "%store_ln425 = store i32 %i_56, i32 %i_53" [dilithium2/fips202.c:425]   --->   Operation 25 'store' 'store_ln425' <Predicate = (icmp_ln425)> <Delay = 1.32>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln425 = br void %for.inc93" [dilithium2/fips202.c:425]   --->   Operation 26 'br' 'br_ln425' <Predicate = (icmp_ln425)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (!icmp_ln425)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 50ns, clock uncertainty: 13.5ns.
+
+ <State 1>: 3.87ns
+The critical path consists of the following:
+	'alloca' operation ('i') [6]  (0 ns)
+	'load' operation ('i', dilithium2/fips202.c:426) on local variable 'i' [15]  (0 ns)
+	'add' operation ('i', dilithium2/fips202.c:425) [19]  (2.18 ns)
+	'store' operation ('store_ln425', dilithium2/fips202.c:425) of variable 'i', dilithium2/fips202.c:425 on local variable 'i' [29]  (1.32 ns)
+	blocking operation 0.362 ns on control path)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

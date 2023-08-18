@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 13 23:12:12 2023
+# Process ID: 3496
+# Current directory: C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog/xsim.dir/pqcrystals_dilithium2_ref/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog/webtalk.log
+# Journal file: C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog/xsim.dir/pqcrystals_dilithium2_ref/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog/xsim.dir/pqcrystals_dilithium2_ref/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Apr 13 23:12:18 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.770 ; gain = 23.434
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 13 23:12:18 2023...

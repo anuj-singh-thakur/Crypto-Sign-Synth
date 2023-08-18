@@ -1,0 +1,7 @@
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:03:07 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/664011678447987660408
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.35 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.35 seconds; peak allocated memory: 98.957 MB.

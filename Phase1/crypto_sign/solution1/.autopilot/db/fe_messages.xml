@@ -1,0 +1,290 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/shikha/Final_Assignment/crypto_sign/solution1/csynth.tcl:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="pqcrystals_dilithium2_ref" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=pqcrystals_dilithium2_ref" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="dilithium2/rng.c:202:22" msg_body="unused parameter 'security_strength'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:750:3" msg_body="Duplicating function 'shake256_squeeze' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="shake256_squeeze"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:749:3" msg_body="Duplicating function 'shake256_finalize' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="shake256_finalize"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:748:3" msg_body="Duplicating function 'shake256_absorb' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="shake256_absorb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:747:3" msg_body="Duplicating function 'shake256_init' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="shake256_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:573:3" msg_body="Duplicating function 'keccak_init.15' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="keccak_init.15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:648:3" msg_body="Duplicating function 'keccak_init.15' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="keccak_init.15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:647:0" msg_body="Inlining function 'keccak_init.15.237' into 'shake256_init'">
+        <args Callee="keccak_init.15.237" Caller="shake256_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:385:0" msg_body="Inlining function 'load64' into 'keccak_absorb'">
+        <args Callee="load64" Caller="keccak_absorb"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:674:0" msg_body="Inlining function 'keccak_finalize' into 'shake256_finalize'">
+        <args Callee="keccak_finalize" Caller="shake256_finalize"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:503:0" msg_body="Inlining function 'store64' into 'keccak_squeeze'">
+        <args Callee="store64" Caller="keccak_squeeze"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:647:0" msg_body="Inlining function 'keccak_init.15' into 'shake256_init.236'">
+        <args Callee="keccak_init.15" Caller="shake256_init.236"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:674:0" msg_body="Inlining function 'keccak_finalize' into 'shake256_finalize.234'">
+        <args Callee="keccak_finalize" Caller="shake256_finalize.234"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:744:0" msg_body="Inlining function 'shake256_init.236' into 'shake256'">
+        <args Callee="shake256_init.236" Caller="shake256"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:744:0" msg_body="Inlining function 'shake256_absorb.235' into 'shake256'">
+        <args Callee="shake256_absorb.235" Caller="shake256"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:744:0" msg_body="Inlining function 'shake256_finalize.234' into 'shake256'">
+        <args Callee="shake256_finalize.234" Caller="shake256"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:744:0" msg_body="Inlining function 'shake256_squeeze.233' into 'shake256'">
+        <args Callee="shake256_squeeze.233" Caller="shake256"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:572:0" msg_body="Inlining function 'keccak_init.15.237' into 'shake128_init'">
+        <args Callee="keccak_init.15.237" Caller="shake128_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:599:0" msg_body="Inlining function 'keccak_finalize' into 'shake128_finalize'">
+        <args Callee="keccak_finalize" Caller="shake128_finalize"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/symmetric-shake.c:9:0" msg_body="Inlining function 'shake128_init' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init'">
+        <args Callee="shake128_init" Caller="pqcrystals_dilithium2_ref_dilithium_shake128_stream_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/symmetric-shake.c:9:0" msg_body="Inlining function 'shake128_absorb' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init'">
+        <args Callee="shake128_absorb" Caller="pqcrystals_dilithium2_ref_dilithium_shake128_stream_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/symmetric-shake.c:9:0" msg_body="Inlining function 'shake128_finalize' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init'">
+        <args Callee="shake128_finalize" Caller="pqcrystals_dilithium2_ref_dilithium_shake128_stream_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:471:0" msg_body="Inlining function 'store64' into 'keccak_squeezeblocks'">
+        <args Callee="store64" Caller="keccak_squeezeblocks"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:618:0" msg_body="Inlining function 'keccak_squeezeblocks' into 'shake128_squeezeblocks'">
+        <args Callee="keccak_squeezeblocks" Caller="shake128_squeezeblocks"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:366:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform'">
+        <args Callee="pqcrystals_dilithium2_ref_dilithium_shake128_stream_init" Caller="pqcrystals_dilithium2_ref_poly_uniform"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:366:0" msg_body="Inlining function 'shake128_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform'">
+        <args Callee="shake128_squeezeblocks" Caller="pqcrystals_dilithium2_ref_poly_uniform"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:366:0" msg_body="Inlining function 'rej_uniform' into 'pqcrystals_dilithium2_ref_poly_uniform'">
+        <args Callee="rej_uniform" Caller="pqcrystals_dilithium2_ref_poly_uniform"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/ntt.c:49:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_ntt'">
+        <args Callee="pqcrystals_dilithium2_ref_montgomery_reduce" Caller="pqcrystals_dilithium2_ref_ntt"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:140:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_ntt' into 'pqcrystals_dilithium2_ref_poly_ntt.52'">
+        <args Callee="pqcrystals_dilithium2_ref_ntt" Caller="pqcrystals_dilithium2_ref_poly_ntt.52"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:97:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.52' into 'pqcrystals_dilithium2_ref_polyvecl_ntt'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_ntt.52" Caller="pqcrystals_dilithium2_ref_polyvecl_ntt"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:279:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.52' into 'pqcrystals_dilithium2_ref_polyveck_ntt'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_ntt.52" Caller="pqcrystals_dilithium2_ref_polyveck_ntt"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/symmetric-shake.c:23:0" msg_body="Inlining function 'shake256_init' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init'">
+        <args Callee="shake256_init" Caller="pqcrystals_dilithium2_ref_dilithium_shake256_stream_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/symmetric-shake.c:23:0" msg_body="Inlining function 'shake256_absorb' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init'">
+        <args Callee="shake256_absorb" Caller="pqcrystals_dilithium2_ref_dilithium_shake256_stream_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/symmetric-shake.c:23:0" msg_body="Inlining function 'shake256_finalize' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init'">
+        <args Callee="shake256_finalize" Caller="pqcrystals_dilithium2_ref_dilithium_shake256_stream_init"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/fips202.c:693:0" msg_body="Inlining function 'keccak_squeezeblocks' into 'shake256_squeezeblocks'">
+        <args Callee="keccak_squeezeblocks" Caller="shake256_squeezeblocks"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:492:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1'">
+        <args Callee="pqcrystals_dilithium2_ref_dilithium_shake256_stream_init" Caller="pqcrystals_dilithium2_ref_poly_uniform_gamma1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:492:0" msg_body="Inlining function 'shake256_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1'">
+        <args Callee="shake256_squeezeblocks" Caller="pqcrystals_dilithium2_ref_poly_uniform_gamma1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:492:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyz_unpack' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1'">
+        <args Callee="pqcrystals_dilithium2_ref_polyz_unpack" Caller="pqcrystals_dilithium2_ref_poly_uniform_gamma1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:176:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36'">
+        <args Callee="pqcrystals_dilithium2_ref_montgomery_reduce" Caller="pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:132:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36" Caller="pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:132:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_add" Caller="pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:25:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' into 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery" Caller="pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:28:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_reduce32' into 'pqcrystals_dilithium2_ref_poly_reduce.85'">
+        <args Callee="pqcrystals_dilithium2_ref_reduce32" Caller="pqcrystals_dilithium2_ref_poly_reduce.85"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:184:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_reduce.85' into 'pqcrystals_dilithium2_ref_polyveck_reduce'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_reduce.85" Caller="pqcrystals_dilithium2_ref_polyveck_reduce"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/ntt.c:77:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_invntt_tomont'">
+        <args Callee="pqcrystals_dilithium2_ref_montgomery_reduce" Caller="pqcrystals_dilithium2_ref_invntt_tomont"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:157:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_invntt_tomont' into 'pqcrystals_dilithium2_ref_poly_invntt_tomont.76'">
+        <args Callee="pqcrystals_dilithium2_ref_invntt_tomont" Caller="pqcrystals_dilithium2_ref_poly_invntt_tomont.76"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:295:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont.76' into 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_invntt_tomont.76" Caller="pqcrystals_dilithium2_ref_polyveck_invntt_tomont"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:46:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_caddq' into 'pqcrystals_dilithium2_ref_poly_caddq.120'">
+        <args Callee="pqcrystals_dilithium2_ref_caddq" Caller="pqcrystals_dilithium2_ref_poly_caddq.120"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:199:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_caddq.120' into 'pqcrystals_dilithium2_ref_polyveck_caddq'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_caddq.120" Caller="pqcrystals_dilithium2_ref_polyveck_caddq"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:221:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_decompose' into 'pqcrystals_dilithium2_ref_poly_decompose'">
+        <args Callee="pqcrystals_dilithium2_ref_decompose" Caller="pqcrystals_dilithium2_ref_poly_decompose"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:368:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_decompose' into 'pqcrystals_dilithium2_ref_polyveck_decompose'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_decompose" Caller="pqcrystals_dilithium2_ref_polyveck_decompose"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:415:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyw1_pack' into 'pqcrystals_dilithium2_ref_polyveck_pack_w1'">
+        <args Callee="pqcrystals_dilithium2_ref_polyw1_pack" Caller="pqcrystals_dilithium2_ref_polyveck_pack_w1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:511:0" msg_body="Inlining function 'shake256_init' into 'pqcrystals_dilithium2_ref_poly_challenge'">
+        <args Callee="shake256_init" Caller="pqcrystals_dilithium2_ref_poly_challenge"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:511:0" msg_body="Inlining function 'shake256_absorb' into 'pqcrystals_dilithium2_ref_poly_challenge'">
+        <args Callee="shake256_absorb" Caller="pqcrystals_dilithium2_ref_poly_challenge"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:511:0" msg_body="Inlining function 'shake256_finalize' into 'pqcrystals_dilithium2_ref_poly_challenge'">
+        <args Callee="shake256_finalize" Caller="pqcrystals_dilithium2_ref_poly_challenge"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:511:0" msg_body="Inlining function 'shake256_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_challenge'">
+        <args Callee="shake256_squeezeblocks" Caller="pqcrystals_dilithium2_ref_poly_challenge"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:111:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36" Caller="pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:104:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont.76' into 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_invntt_tomont.76" Caller="pqcrystals_dilithium2_ref_polyvecl_invntt_tomont"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:82:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyvecl_add'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_add" Caller="pqcrystals_dilithium2_ref_polyvecl_add"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:50:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_reduce.85' into 'pqcrystals_dilithium2_ref_polyvecl_reduce'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_reduce.85" Caller="pqcrystals_dilithium2_ref_polyvecl_reduce"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:155:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm.91' into 'pqcrystals_dilithium2_ref_polyvecl_chknorm'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_chknorm.91" Caller="pqcrystals_dilithium2_ref_polyvecl_chknorm"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:302:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36' into 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36" Caller="pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:249:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_sub' into 'pqcrystals_dilithium2_ref_polyveck_sub'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_sub" Caller="pqcrystals_dilithium2_ref_polyveck_sub"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:322:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm.91' into 'pqcrystals_dilithium2_ref_polyveck_chknorm'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_chknorm.91" Caller="pqcrystals_dilithium2_ref_polyveck_chknorm"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:231:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyveck_add'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_add" Caller="pqcrystals_dilithium2_ref_polyveck_add"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/poly.c:244:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_make_hint' into 'pqcrystals_dilithium2_ref_poly_make_hint'">
+        <args Callee="pqcrystals_dilithium2_ref_make_hint" Caller="pqcrystals_dilithium2_ref_poly_make_hint"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/polyvec.c:389:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_make_hint' into 'pqcrystals_dilithium2_ref_polyveck_make_hint'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_make_hint" Caller="pqcrystals_dilithium2_ref_polyveck_make_hint"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/packing.c:160:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyz_pack' into 'pqcrystals_dilithium2_ref_pack_sig'">
+        <args Callee="pqcrystals_dilithium2_ref_polyz_pack" Caller="pqcrystals_dilithium2_ref_pack_sig"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_upack_sk' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_upack_sk" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'shake256_init' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="shake256_init" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'shake256_absorb' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="shake256_absorb" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'shake256_finalize' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="shake256_finalize" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'shake256_squeeze' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="shake256_squeeze" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'shake256' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="shake256" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_expand' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvec_matrix_expand" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_ntt' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_ntt" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_ntt' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_ntt" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_reduce' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_reduce" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_caddq' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_caddq" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_decompose' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_decompose" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_pack_w1' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_pack_w1" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.52' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_poly_ntt.52" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_invntt_tomont" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_add' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_add" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_reduce' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_reduce" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyvecl_chknorm' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyvecl_chknorm" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_sub' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_sub" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_chknorm' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_chknorm" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_add' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_add" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dilithium2/sign.c:85:0" msg_body="Inlining function 'pqcrystals_dilithium2_ref_polyveck_make_hint' into 'pqcrystals_dilithium2_ref_signature'">
+        <args Callee="pqcrystals_dilithium2_ref_polyveck_make_hint" Caller="pqcrystals_dilithium2_ref_signature"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:31:20" msg_body="The program may have out of bound array access"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="dilithium2/fips202.c:48:10" msg_body="The program may have out of bound array access"/>
+</xilinx:hls_fe_msgs>
+

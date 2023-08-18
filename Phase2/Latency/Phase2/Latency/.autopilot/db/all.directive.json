@@ -1,0 +1,659 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "keccak_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "keccak_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "keccak_absorb",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "keccak_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "keccak_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "keccak_squeezeblocks",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "store64",
+          "label": "store64_label0",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "load64",
+          "label": "load64_label1",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "shake128_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake128_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "shake128_squeezeblocks",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rej_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_uniform_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_uniform_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyveck_uniform_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake256_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake256_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "shake256_absorb",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "shake256_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake256_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "shake256_squeezeblocks",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_reduce32",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_caddq",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_freeze",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_ntt",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "rej_uniform",
+          "label": "rej_uniform_label0",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_uniform",
+          "label": "pqcrystals_dilithium2_ref_poly_uniform_label1",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_challenge",
+          "label": "pqcrystals_dilithium2_ref_poly_challenge_label2",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "39"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_challenge",
+          "label": "pqcrystals_dilithium2_ref_poly_challenge_label3",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "avg",
+                "value": "39"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_invntt_tomont",
+          "label": "pqcrystals_dilithium2_ref_invntt_tomont_label4",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_invntt_tomont",
+          "label": "pqcrystals_dilithium2_ref_invntt_tomont_label5",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_invntt_tomont",
+          "label": "pqcrystals_dilithium2_ref_invntt_tomont_label6",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_ntt",
+          "label": "pqcrystals_dilithium2_ref_ntt_label7",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_ntt",
+          "label": "pqcrystals_dilithium2_ref_ntt_label8",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_ntt",
+          "label": "pqcrystals_dilithium2_ref_ntt_label9",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "128"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref",
+          "label": "pqcrystals_dilithium2_ref_label10",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "33"
+              },
+              {
+                "name": "max",
+                "value": "3300"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_reduce32",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "reduce32",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rej_eta",
+          "label": "rej_eta_label1",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_reduce",
+          "label": "pqcrystals_dilithium2_ref_poly_reduce_label2",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_caddq",
+          "label": "pqcrystals_dilithium2_ref_poly_caddq_label3",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_freeze",
+          "label": "pqcrystals_dilithium2_ref_poly_freeze_label4",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_add",
+          "label": "pqcrystals_dilithium2_ref_poly_add_label5",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_sub",
+          "label": "pqcrystals_dilithium2_ref_poly_sub_label6",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_pointwise_montgomery",
+          "label": "pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_power2round",
+          "label": "pqcrystals_dilithium2_ref_poly_power2round_label8",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_uniform_eta",
+          "label": "pqcrystals_dilithium2_ref_poly_uniform_eta_label9",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "32"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyeta_pack",
+          "label": "pqcrystals_dilithium2_ref_polyeta_pack_label10",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "32"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyt1_pack",
+          "label": "pqcrystals_dilithium2_ref_polyt1_pack_label11",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "64"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyt0_pack",
+          "label": "pqcrystals_dilithium2_ref_polyt0_pack_label12",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "32"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_uniform",
+          "label": "pqcrystals_dilithium2_ref_poly_uniform_label13",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "7"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_reduce",
+          "label": "pqcrystals_dilithium2_ref_polyvecl_reduce_label14",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_uniform_eta",
+          "label": "pqcrystals_dilithium2_ref_polyvecl_uniform_eta_label15",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_invntt_tomont",
+          "label": "pqcrystals_dilithium2_ref_invntt_tomont_label16",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [{
+                "name": "max",
+                "value": "256"
+              }]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_ntt",
+          "label": "pqcrystals_dilithium2_ref_ntt_label8",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_invntt_tomont",
+          "label": "pqcrystals_dilithium2_ref_invntt_tomont_label5",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_invntt_tomont",
+          "label": "pqcrystals_dilithium2_ref_invntt_tomont_label16",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery",
+          "label": "pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery",
+          "label": "pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_pointwise_montgomery",
+          "label": "pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_add",
+          "label": "pqcrystals_dilithium2_ref_poly_add_label5",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_freeze",
+          "label": "pqcrystals_dilithium2_ref_poly_freeze_label4",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_caddq",
+          "label": "pqcrystals_dilithium2_ref_poly_caddq_label3",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_reduce",
+          "label": "pqcrystals_dilithium2_ref_poly_reduce_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_power2round",
+          "label": "pqcrystals_dilithium2_ref_poly_power2round_label8",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "KeccakF1600_StatePermute",
+          "label": "KeccakF1600_StatePermute_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_power2round",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        }
+      ]
+    }]}

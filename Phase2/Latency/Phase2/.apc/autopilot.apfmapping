@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="aes.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\aes.c"/>
+    <originFiles name="aes.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\aes.h"/>
+    <originFiles name="aes256ctr.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\aes256ctr.c"/>
+    <originFiles name="aes256ctr.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\aes256ctr.h"/>
+    <originFiles name="api.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\api.h"/>
+    <originFiles name="config.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\config.h"/>
+    <originFiles name="fips202.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\fips202.c"/>
+    <originFiles name="fips202.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\fips202.h"/>
+    <originFiles name="ntt.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\ntt.c"/>
+    <originFiles name="ntt.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\ntt.h"/>
+    <originFiles name="packing.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\packing.c"/>
+    <originFiles name="packing.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\packing.h"/>
+    <originFiles name="params.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\params.h"/>
+    <originFiles name="poly.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\poly.c"/>
+    <originFiles name="poly.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\poly.h"/>
+    <originFiles name="polyvec.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\polyvec.c"/>
+    <originFiles name="polyvec.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\polyvec.h"/>
+    <originFiles name="randombytes.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\randombytes.h"/>
+    <originFiles name="reduce.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\reduce.c"/>
+    <originFiles name="reduce.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\reduce.h"/>
+    <originFiles name="rng.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\rng.c"/>
+    <originFiles name="rng.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\rng.h"/>
+    <originFiles name="rounding.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\rounding.c"/>
+    <originFiles name="rounding.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\rounding.h"/>
+    <originFiles name="sign.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\sign.c"/>
+    <originFiles name="sign.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\sign.h"/>
+    <originFiles name="symmetric-aes.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\symmetric-aes.c"/>
+    <originFiles name="symmetric-shake.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\symmetric-shake.c"/>
+    <originFiles name="symmetric.h" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\symmetric.h"/>
+  </source>
+  <testbench>
+    <originFiles name="PQCgenKAT_sign.c" path="C:\Users\Hp\Desktop\IITG\MTech_Course_2_Sem\C_BASED_VLSI\Final_Project_Phase2_Submit\Latency\dilithium2\PQCgenKAT_sign.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

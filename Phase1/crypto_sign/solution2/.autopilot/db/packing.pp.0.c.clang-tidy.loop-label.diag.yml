@@ -1,0 +1,247 @@
+---
+MainSourceFile:  /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_1:  '
+    FileOffset:      21
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          19476
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_2:  '
+    FileOffset:      25
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          19535
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_44_1:  '
+    FileOffset:      44
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          19813
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_44_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_2:  '
+    FileOffset:      48
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          19872
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_75_1:  '
+    FileOffset:      75
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          20310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_75_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_79_2:  '
+    FileOffset:      79
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          20369
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_79_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_3:  '
+    FileOffset:      83
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          20428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_4:  '
+    FileOffset:      87
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          20486
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_5:  '
+    FileOffset:      91
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          20594
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_6:  '
+    FileOffset:      95
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          20702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_1:  '
+    FileOffset:      122
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_2:  '
+    FileOffset:      126
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21181
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_130_3:  '
+    FileOffset:      130
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21240
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_130_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_4:  '
+    FileOffset:      134
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_5:  '
+    FileOffset:      138
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21406
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_6:  '
+    FileOffset:      142
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21514
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_163_1:  '
+    FileOffset:      163
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_163_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_167_2:  '
+    FileOffset:      167
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          21901
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_167_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_3:  '
+    FileOffset:      172
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_176_4:  '
+    FileOffset:      176
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22067
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_176_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_177_5:  '
+    FileOffset:      177
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22096
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_177_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_1:  '
+    FileOffset:      205
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_2:  '
+    FileOffset:      209
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22494
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_215_3:  '
+    FileOffset:      215
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22615
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_215_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_216_4:  '
+    FileOffset:      216
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22644
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_216_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_5:  '
+    FileOffset:      222
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22766
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_232_6:  '
+    FileOffset:      232
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/packing.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/packing.pp.0.c
+        Offset:          22922
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_232_6: '
+...

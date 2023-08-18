@@ -1,0 +1,1590 @@
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: dilithium2/fips202.c, Line: 750, Column: 3 }
+Function:        shake256
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            shake256_squeeze
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: dilithium2/fips202.c, Line: 749, Column: 3 }
+Function:        shake256
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            shake256_finalize
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: dilithium2/fips202.c, Line: 748, Column: 3 }
+Function:        shake256
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            shake256_absorb
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: dilithium2/fips202.c, Line: 747, Column: 3 }
+Function:        shake256
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            shake256_init
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: dilithium2/fips202.c, Line: 573, Column: 3 }
+Function:        shake128_init
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            keccak_init.15
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: dilithium2/fips202.c, Line: 648, Column: 3 }
+Function:        shake256_init
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            keccak_init.15
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+Function:        shake256_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_init.15.237
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 360, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256_init
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 385, Column: 0 }
+Function:        keccak_absorb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          load64
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 26, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          keccak_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 385, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+Function:        shake256_finalize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 445, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 503, Column: 0 }
+Function:        keccak_squeeze
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          store64
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          keccak_squeeze
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 503, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+Function:        shake256_init.236
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_init.15
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 360, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256_init.236
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+Function:        shake256_finalize.234
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 445, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256_finalize.234
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+Function:        shake256
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_init.236
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+Function:        shake256
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_absorb.235
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 662, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+Function:        shake256
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_finalize.234
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+Function:        shake256
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_squeeze.233
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 709, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 572, Column: 0 }
+Function:        shake128_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_init.15.237
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 360, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake128_init
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 572, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 599, Column: 0 }
+Function:        shake128_finalize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 445, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake128_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 599, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake128_init
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 572, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake128_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 587, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake128_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 599, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 471, Column: 0 }
+Function:        keccak_squeezeblocks
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          store64
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          keccak_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 471, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 618, Column: 0 }
+Function:        shake128_squeezeblocks
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 471, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake128_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 618, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_dilithium_shake128_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 9, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake128_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 618, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          rej_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 331, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/ntt.c, Line: 49, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_ntt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_montgomery_reduce
+    DebugLoc:        { File: dilithium2/reduce.c, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_ntt
+    DebugLoc:        { File: dilithium2/ntt.c, Line: 49, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 140, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_ntt.52
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_ntt
+    DebugLoc:        { File: dilithium2/ntt.c, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_ntt.52
+    DebugLoc:        { File: dilithium2/poly.c, Line: 140, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 97, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_ntt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_ntt.52
+    DebugLoc:        { File: dilithium2/poly.c, Line: 140, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_ntt
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 97, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 279, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_ntt
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_ntt.52
+    DebugLoc:        { File: dilithium2/poly.c, Line: 140, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_ntt
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 279, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_init
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 662, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/fips202.c, Line: 693, Column: 0 }
+Function:        shake256_squeezeblocks
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          keccak_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 471, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          shake256_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 693, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 492, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform_gamma1
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_dilithium_shake256_stream_init
+    DebugLoc:        { File: dilithium2/symmetric-shake.c, Line: 23, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_uniform_gamma1
+    DebugLoc:        { File: dilithium2/poly.c, Line: 492, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 492, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform_gamma1
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 693, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_uniform_gamma1
+    DebugLoc:        { File: dilithium2/poly.c, Line: 492, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 492, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform_gamma1
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyz_unpack
+    DebugLoc:        { File: dilithium2/poly.c, Line: 849, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_uniform_gamma1
+    DebugLoc:        { File: dilithium2/poly.c, Line: 492, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 176, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_montgomery_reduce
+    DebugLoc:        { File: dilithium2/reduce.c, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36
+    DebugLoc:        { File: dilithium2/poly.c, Line: 176, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 132, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36
+    DebugLoc:        { File: dilithium2/poly.c, Line: 176, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 132, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 132, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_add
+    DebugLoc:        { File: dilithium2/poly.c, Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 132, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 25, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 132, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 25, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 28, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_reduce.85
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_reduce32
+    DebugLoc:        { File: dilithium2/reduce.c, Line: 33, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_reduce.85
+    DebugLoc:        { File: dilithium2/poly.c, Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 184, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_reduce
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_reduce.85
+    DebugLoc:        { File: dilithium2/poly.c, Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_reduce
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/ntt.c, Line: 77, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_invntt_tomont
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_montgomery_reduce
+    DebugLoc:        { File: dilithium2/reduce.c, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_invntt_tomont
+    DebugLoc:        { File: dilithium2/ntt.c, Line: 77, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 157, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_invntt_tomont.76
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_invntt_tomont
+    DebugLoc:        { File: dilithium2/ntt.c, Line: 77, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_invntt_tomont.76
+    DebugLoc:        { File: dilithium2/poly.c, Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 295, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_invntt_tomont
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_invntt_tomont.76
+    DebugLoc:        { File: dilithium2/poly.c, Line: 157, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_invntt_tomont
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 295, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 46, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_caddq.120
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_caddq
+    DebugLoc:        { File: dilithium2/reduce.c, Line: 50, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_caddq.120
+    DebugLoc:        { File: dilithium2/poly.c, Line: 46, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 199, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_caddq
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_caddq.120
+    DebugLoc:        { File: dilithium2/poly.c, Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_caddq
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 199, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 221, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_decompose
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_decompose
+    DebugLoc:        { File: dilithium2/rounding.c, Line: 39, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_decompose
+    DebugLoc:        { File: dilithium2/poly.c, Line: 221, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 368, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_decompose
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_decompose
+    DebugLoc:        { File: dilithium2/poly.c, Line: 221, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_decompose
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 368, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 415, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_pack_w1
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyw1_pack
+    DebugLoc:        { File: dilithium2/poly.c, Line: 910, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_pack_w1
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 415, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_init
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_challenge
+    DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 662, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_challenge
+    DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_challenge
+    DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_squeezeblocks
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 693, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_challenge
+    DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 111, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36
+    DebugLoc:        { File: dilithium2/poly.c, Line: 176, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 111, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 104, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_invntt_tomont
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_invntt_tomont.76
+    DebugLoc:        { File: dilithium2/poly.c, Line: 157, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_invntt_tomont
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 82, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_add
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_add
+    DebugLoc:        { File: dilithium2/poly.c, Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_add
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 82, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 50, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_reduce
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_reduce.85
+    DebugLoc:        { File: dilithium2/poly.c, Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_reduce
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 50, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 155, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyvecl_chknorm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_chknorm.91
+    DebugLoc:        { File: dilithium2/poly.c, Line: 287, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyvecl_chknorm
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 155, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 302, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36
+    DebugLoc:        { File: dilithium2/poly.c, Line: 176, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 302, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 249, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_sub
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_sub
+    DebugLoc:        { File: dilithium2/poly.c, Line: 104, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_sub
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 249, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 322, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_chknorm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_chknorm.91
+    DebugLoc:        { File: dilithium2/poly.c, Line: 287, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_chknorm
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 231, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_add
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_add
+    DebugLoc:        { File: dilithium2/poly.c, Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_add
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 231, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/poly.c, Line: 244, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_poly_make_hint
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_make_hint
+    DebugLoc:        { File: dilithium2/rounding.c, Line: 68, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_poly_make_hint
+    DebugLoc:        { File: dilithium2/poly.c, Line: 244, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/polyvec.c, Line: 389, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_polyveck_make_hint
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_make_hint
+    DebugLoc:        { File: dilithium2/poly.c, Line: 244, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_polyveck_make_hint
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 389, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/packing.c, Line: 160, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_pack_sig
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyz_pack
+    DebugLoc:        { File: dilithium2/poly.c, Line: 798, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_pack_sig
+    DebugLoc:        { File: dilithium2/packing.c, Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_upack_sk
+    DebugLoc:        { File: dilithium2/packing.c, Line: 119, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_init
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 647, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 662, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_finalize
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 674, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256_squeeze
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 709, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          shake256
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 744, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvec_matrix_expand
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 17, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_ntt
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 97, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_ntt
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 279, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 43, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 25, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_reduce
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 184, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_caddq
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 199, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_decompose
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 368, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_pack_w1
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 415, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_poly_ntt.52
+    DebugLoc:        { File: dilithium2/poly.c, Line: 140, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 111, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_invntt_tomont
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 104, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_add
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 82, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_reduce
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 50, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyvecl_chknorm
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 155, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 302, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_sub
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 249, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_chknorm
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_add
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 231, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pqcrystals_dilithium2_ref_polyveck_make_hint
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 389, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 31, Column: 20 }
+Function:        keccak_absorb
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 31, Column: 20 }
+Function:        keccak_absorb
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 31, Column: 20 }
+Function:        keccak_absorb
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        keccak_squeeze
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        keccak_squeeze
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform_gamma1
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/fips202.c, Line: 391, Column: 23 }
+Function:        keccak_absorb
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_391_1
+  - String:          ' '
+  - LoopLoc:         'dilithium2/fips202.c:391:23'
+  - String:          ' '
+  - Function:        keccak_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 385, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/fips202.c, Line: 408, Column: 21 }
+Function:        keccak_absorb
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_408_3
+  - String:          ' '
+  - LoopLoc:         'dilithium2/fips202.c:408:21'
+  - String:          ' '
+  - Function:        keccak_absorb
+    DebugLoc:        { File: dilithium2/fips202.c, Line: 385, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/poly.c, Line: 337, Column: 21 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_337_1
+  - String:          ' '
+  - LoopLoc:         'dilithium2/poly.c:337:21'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_poly_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/poly.c, Line: 337, Column: 21 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_337_1
+  - String:          ' '
+  - LoopLoc:         'dilithium2/poly.c:337:21'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_poly_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/poly.c, Line: 377, Column: 21 }
+Function:        pqcrystals_dilithium2_ref_poly_uniform
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_377_1
+  - String:          ' '
+  - LoopLoc:         'dilithium2/poly.c:377:21'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_poly_uniform
+    DebugLoc:        { File: dilithium2/poly.c, Line: 366, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 55, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:55:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 55, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:55:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 55, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:55:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 55, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:55:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 55, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_55_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:55:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 84, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_84_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:84:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/sign.c, Line: 119, Column: 3 }
+Function:        pqcrystals_dilithium2_ref_signature
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'dilithium2/sign.c:119:3'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_signature
+    DebugLoc:        { File: dilithium2/sign.c, Line: 85, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/poly.c, Line: 530, Column: 23 }
+Function:        pqcrystals_dilithium2_ref_poly_challenge
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_530_4
+  - String:          ' '
+  - LoopLoc:         'dilithium2/poly.c:530:23'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_poly_challenge
+    DebugLoc:        { File: dilithium2/poly.c, Line: 511, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dilithium2/ntt.c, Line: 84, Column: 22 }
+Function:        pqcrystals_dilithium2_ref_polyveck_invntt_tomont
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_84_2
+  - String:          ' '
+  - LoopLoc:         'dilithium2/ntt.c:84:22'
+  - String:          ' '
+  - Function:        pqcrystals_dilithium2_ref_polyveck_invntt_tomont
+    DebugLoc:        { File: dilithium2/polyvec.c, Line: 295, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: dilithium2/fips202.c, Line: 48, Column: 10 }
+Function:        keccak_squeeze
+Args:            
+  - String:          The program may have out of bound array access
+...

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 13 22:59:13 2023
+# Process ID: 10924
+# Current directory: C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/pqcrystals_dilithium2_ref/xsim_script.tcl}
+# Log file: C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog/xsim.log
+# Journal file: C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/pqcrystals_dilithium2_ref/xsim_script.tcl
+# xsim {pqcrystals_dilithium2_ref} -autoloadwcfg -tclbatch {pqcrystals_dilithium2_ref.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source pqcrystals_dilithium2_ref.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [n/a] @ "125000"
+// RTL Simulation : 1 / 2 [n/a] @ "5666385000"
+// RTL Simulation : 2 / 2 [n/a] @ "9431045000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 9431085 ns : File "C:/Users/Hp/Desktop/IITG/MTech_Course_2_Sem/C_BASED_VLSI/AssignmentPhase_2_Latency/Phase2/Latency/sim/verilog/pqcrystals_dilithium2_ref.autotb.v" Line 502
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:12:47 . Memory (MB): peak = 235.703 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Apr 13 23:12:19 2023...

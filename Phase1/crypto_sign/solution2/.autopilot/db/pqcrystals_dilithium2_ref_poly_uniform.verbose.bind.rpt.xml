@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'pqcrystals_dilithium2_ref_poly_uniform'" level="0">
+<item name = "Date">Fri Mar 10 17:22:14 2023
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">crypto_sign</item>
+<item name = "Solution">solution2 (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">50.00 ns, 8.136 ns, 13.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_416_5_fu_190">pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_416_5, 18, 18, 0.900 us, 0.900 us, 18, 18, no</column>
+<column name="grp_keccak_absorb_fu_197">keccak_absorb, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_KeccakF1600_StatePermute_fu_210">KeccakF1600_StatePermute, 50, 50, 2.500 us, 2.500 us, 50, 50, no</column>
+<column name="grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_1_fu_217">pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_2_fu_226">pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_2, 86, 86, 4.300 us, 4.300 us, 86, 86, no</column>
+<column name="grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_379_2_fu_233">pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_379_2, 2, 4, 0.100 us, 0.200 us, 2, 4, no</column>
+<column name="grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_221_fu_240">pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_221, 86, 86, 4.300 us, 4.300 us, 86, 86, no</column>
+<column name="grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_122_fu_247">pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_122, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_362_1">25, 25, 1, -, -, 25, no</column>
+<column name="- VITIS_LOOP_474_1">700, 700, 140, -, -, 5, no</column>
+<column name="- VITIS_LOOP_377_1">?, ?, ?, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

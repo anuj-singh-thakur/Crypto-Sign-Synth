@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vivado HLS Report for 'pqcrystals_dilithium_9'
+================================================================
+* Date:           Wed Apr 12 23:58:44 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Phase2
+* Solution:       Area
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.724 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     2057|     2057| 20.570 us | 20.570 us |  2057|  2057|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |     2056|     2056|       514|          -|          -|     4|    no    |
+        | + Loop 1.1  |      512|      512|         2|          -|          -|   256|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 2 
+4 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 5 [1/1] (1.35ns)   --->   "br label %pqcrystals_dilithium2_ref_poly_caddq.exit" [dilithium2/polyvec.c:202]   --->   Operation 5 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 1.35>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%i_0 = phi i3 [ 0, %0 ], [ %i, %pqcrystals_dilithium2_ref_poly_caddq.exit.loopexit ]"   --->   Operation 6 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (1.00ns)   --->   "%icmp_ln202 = icmp eq i3 %i_0, -4" [dilithium2/polyvec.c:202]   --->   Operation 7 'icmp' 'icmp_ln202' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 8 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (1.34ns)   --->   "%i = add i3 %i_0, 1" [dilithium2/polyvec.c:202]   --->   Operation 9 'add' 'i' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "br i1 %icmp_ln202, label %4, label %1" [dilithium2/polyvec.c:202]   --->   Operation 10 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%tmp = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i_0, i8 0)" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 11 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln46 = zext i11 %tmp to i12" [dilithium2/poly.c:46->dilithium2/polyvec.c:203]   --->   Operation 12 'zext' 'zext_ln46' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (1.35ns)   --->   "br label %2" [dilithium2/poly.c:50->dilithium2/polyvec.c:203]   --->   Operation 13 'br' <Predicate = (!icmp_ln202)> <Delay = 1.35>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "ret void" [dilithium2/polyvec.c:204]   --->   Operation 14 'ret' <Predicate = (icmp_ln202)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.53>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%i_0_i = phi i9 [ 0, %1 ], [ %i_2, %3 ]"   --->   Operation 15 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (1.34ns)   --->   "%icmp_ln50 = icmp eq i9 %i_0_i, -256" [dilithium2/poly.c:50->dilithium2/polyvec.c:203]   --->   Operation 16 'icmp' 'icmp_ln50' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%empty_27 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 17 'speclooptripcount' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (1.73ns)   --->   "%i_2 = add i9 %i_0_i, 1" [dilithium2/poly.c:50->dilithium2/polyvec.c:203]   --->   Operation 18 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %icmp_ln50, label %pqcrystals_dilithium2_ref_poly_caddq.exit.loopexit, label %3" [dilithium2/poly.c:50->dilithium2/polyvec.c:203]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln51 = zext i9 %i_0_i to i12" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 20 'zext' 'zext_ln51' <Predicate = (!icmp_ln50)> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (1.76ns)   --->   "%add_ln51 = add i12 %zext_ln46, %zext_ln51" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 21 'add' 'add_ln51' <Predicate = (!icmp_ln50)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln51_1 = zext i12 %add_ln51 to i64" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 22 'zext' 'zext_ln51_1' <Predicate = (!icmp_ln50)> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr = getelementptr [1024 x i32]* %v_vec_coeffs, i64 0, i64 %zext_ln51_1" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 23 'getelementptr' 'v_vec_coeffs_addr' <Predicate = (!icmp_ln50)> <Delay = 0.00>
+ST_3 : Operation 24 [2/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 24 'load' 'v_vec_coeffs_load' <Predicate = (!icmp_ln50)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "br label %pqcrystals_dilithium2_ref_poly_caddq.exit"   --->   Operation 25 'br' <Predicate = (icmp_ln50)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 7.72>
+ST_4 : Operation 26 [1/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 26 'load' 'v_vec_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node add_ln51_1)   --->   "%tmp_1 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %v_vec_coeffs_load, i32 31)" [dilithium2/reduce.c:51->dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 27 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node add_ln51_1)   --->   "%select_ln51 = select i1 %tmp_1, i32 8380417, i32 0" [dilithium2/reduce.c:51->dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 28 'select' 'select_ln51' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 29 [1/1] (2.18ns) (out node of the LUT)   --->   "%add_ln51_1 = add nsw i32 %select_ln51, %v_vec_coeffs_load" [dilithium2/reduce.c:51->dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 29 'add' 'add_ln51_1' <Predicate = true> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 30 [1/1] (2.77ns)   --->   "store i32 %add_ln51_1, i32* %v_vec_coeffs_addr, align 4" [dilithium2/poly.c:51->dilithium2/polyvec.c:203]   --->   Operation 30 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "br label %2" [dilithium2/poly.c:50->dilithium2/polyvec.c:203]   --->   Operation 31 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', dilithium2/polyvec.c:202) [4]  (1.35 ns)
+
+ <State 2>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', dilithium2/poly.c:50->dilithium2/polyvec.c:203) [14]  (1.35 ns)
+
+ <State 3>: 4.54ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dilithium2/poly.c:50->dilithium2/polyvec.c:203) [14]  (0 ns)
+	'add' operation ('add_ln51', dilithium2/poly.c:51->dilithium2/polyvec.c:203) [21]  (1.76 ns)
+	'getelementptr' operation ('v_vec_coeffs_addr', dilithium2/poly.c:51->dilithium2/polyvec.c:203) [23]  (0 ns)
+	'load' operation ('a', dilithium2/poly.c:51->dilithium2/polyvec.c:203) on array 'v_vec_coeffs' [24]  (2.77 ns)
+
+ <State 4>: 7.72ns
+The critical path consists of the following:
+	'load' operation ('a', dilithium2/poly.c:51->dilithium2/polyvec.c:203) on array 'v_vec_coeffs' [24]  (2.77 ns)
+	'add' operation ('a', dilithium2/reduce.c:51->dilithium2/poly.c:51->dilithium2/polyvec.c:203) [27]  (2.18 ns)
+	'store' operation ('store_ln51', dilithium2/poly.c:51->dilithium2/polyvec.c:203) of variable 'a', dilithium2/reduce.c:51->dilithium2/poly.c:51->dilithium2/polyvec.c:203 on array 'v_vec_coeffs' [28]  (2.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

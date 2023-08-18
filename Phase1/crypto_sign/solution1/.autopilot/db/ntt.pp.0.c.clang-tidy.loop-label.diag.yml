@@ -1,0 +1,67 @@
+---
+MainSourceFile:  /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_54_1:  '
+    FileOffset:      54
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16137
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_54_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_2:  '
+    FileOffset:      55
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_3:  '
+    FileOffset:      57
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16256
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_1:  '
+    FileOffset:      83
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_2:  '
+    FileOffset:      84
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16677
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_3:  '
+    FileOffset:      86
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16756
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_4:  '
+    FileOffset:      95
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/ntt.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c
+        Offset:          16996
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_4: '
+...

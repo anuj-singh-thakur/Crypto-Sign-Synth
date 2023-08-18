@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Mar 10 17:38:27 2023
+# Process ID: 73335
+# Current directory: /home/shikha/Final_Assignment/crypto_sign/solution2/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/pqcrystals_dilithium2_ref/xsim_script.tcl}
+# Log file: /home/shikha/Final_Assignment/crypto_sign/solution2/sim/verilog/xsim.log
+# Journal file: /home/shikha/Final_Assignment/crypto_sign/solution2/sim/verilog/xsim.jou
+# Running On: shikha-HP-ProDesk-600-G6-Microtower-PC, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16544 MB
+#-----------------------------------------------------------
+source xsim.dir/pqcrystals_dilithium2_ref/xsim_script.tcl
+# xsim {pqcrystals_dilithium2_ref} -autoloadwcfg -tclbatch {pqcrystals_dilithium2_ref.tcl}
+Time resolution is 1 ps
+source pqcrystals_dilithium2_ref.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [n/a] @ "225000"
+// RTL Simulation : 1 / 2 [n/a] @ "17583425000"
+// RTL Simulation : 2 / 2 [n/a] @ "29399975000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 29400275 ns : File "/home/shikha/Final_Assignment/crypto_sign/solution2/sim/verilog/pqcrystals_dilithium2_ref.autotb.v" Line 502
+run: Time (s): cpu = 00:00:00.04 ; elapsed = 00:03:03 . Memory (MB): peak = 1255.273 ; gain = 0.000 ; free physical = 1356 ; free virtual = 9102
+## quit
+INFO: xsimkernel Simulation Memory Usage: 131708 KB (Peak: 184952 KB), Simulation CPU Usage: 183390 ms
+INFO: [Common 17-206] Exiting xsim at Fri Mar 10 17:41:34 2023...

@@ -1,0 +1,166 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pqcrystals_dilithium_11'" level="0">
+<item name = "Date">Thu Apr 13 00:00:04 2023
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Phase2</item>
+<item name = "Solution">Area</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.890 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">161, 161, 1.610 us, 1.610 us, 161, 161, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">160, 160, 5, -, -, 32, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 291, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 170, -</column>
+<column name="Register">-, -, 63, -, -</column>
+<specialColumn name="Available">730, 740, 269200, 134600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln599_fu_251_p2">+, 0, 0, 20, 13, 13</column>
+<column name="add_ln601_1_fu_340_p2">+, 0, 0, 20, 13, 13</column>
+<column name="add_ln601_fu_331_p2">+, 0, 0, 15, 1, 8</column>
+<column name="add_ln604_1_fu_359_p2">+, 0, 0, 20, 13, 13</column>
+<column name="add_ln604_fu_350_p2">+, 0, 0, 15, 2, 8</column>
+<column name="i_fu_219_p2">+, 0, 0, 15, 6, 1</column>
+<column name="sub_ln599_fu_241_p2">-, 0, 0, 15, 8, 8</column>
+<column name="sub_ln608_fu_369_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln609_fu_380_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln610_fu_496_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln611_fu_507_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln612_fu_565_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln613_fu_576_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln614_fu_627_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln615_fu_638_p2">-, 0, 0, 13, 2, 4</column>
+<column name="icmp_ln598_fu_213_p2">icmp, 0, 0, 11, 6, 7</column>
+<column name="or_ln600_fu_303_p2">or, 0, 0, 8, 8, 1</column>
+<column name="or_ln601_fu_406_p2">or, 0, 0, 8, 8, 2</column>
+<column name="or_ln602_fu_437_p2">or, 0, 0, 8, 8, 2</column>
+<column name="or_ln603_fu_521_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln604_fu_548_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln605_fu_590_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln606_fu_610_p2">or, 0, 0, 8, 8, 3</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_address0">15, 3, 12, 36</column>
+<column name="ap_NS_fsm">38, 7, 1, 7</column>
+<column name="i_0_reg_194">9, 2, 6, 12</column>
+<column name="r_coeffs_address0">27, 5, 10, 50</column>
+<column name="r_coeffs_address1">27, 5, 10, 50</column>
+<column name="r_coeffs_d0">27, 5, 32, 160</column>
+<column name="r_coeffs_d1">27, 5, 32, 160</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="i_0_reg_194">6, 0, 6, 0</column>
+<column name="i_reg_671">6, 0, 6, 0</column>
+<column name="shl_ln_reg_693">5, 0, 8, 3</column>
+<column name="sub_ln599_reg_682">8, 0, 8, 0</column>
+<column name="tmp_28_reg_703">2, 0, 2, 0</column>
+<column name="tmp_34_reg_738">3, 0, 3, 0</column>
+<column name="tmp_reg_723">1, 0, 1, 0</column>
+<column name="trunc_ln18_reg_718">3, 0, 3, 0</column>
+<column name="trunc_ln19_reg_733">3, 0, 3, 0</column>
+<column name="trunc_ln599_1_reg_676">5, 0, 5, 0</column>
+<column name="trunc_ln599_reg_661">13, 0, 13, 0</column>
+<column name="trunc_ln604_reg_728">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, pqcrystals_dilithium.11, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, pqcrystals_dilithium.11, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, pqcrystals_dilithium.11, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, pqcrystals_dilithium.11, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, pqcrystals_dilithium.11, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, pqcrystals_dilithium.11, return value</column>
+<column name="r_coeffs_address0">out, 10, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_ce0">out, 1, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_we0">out, 1, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_d0">out, 32, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_address1">out, 10, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_ce1">out, 1, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_we1">out, 1, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_d1">out, 32, ap_memory, r_coeffs, array</column>
+<column name="r_coeffs_offset">in, 3, ap_none, r_coeffs_offset, scalar</column>
+<column name="a_address0">out, 12, ap_memory, a, array</column>
+<column name="a_ce0">out, 1, ap_memory, a, array</column>
+<column name="a_q0">in, 8, ap_memory, a, array</column>
+<column name="a_address1">out, 12, ap_memory, a, array</column>
+<column name="a_ce1">out, 1, ap_memory, a, array</column>
+<column name="a_q1">in, 8, ap_memory, a, array</column>
+<column name="a_offset">in, 33, ap_none, a_offset, scalar</column>
+</table>
+</item>
+</section>
+</profile>

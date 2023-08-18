@@ -1,0 +1,263 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "keccak_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "keccak_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "keccak_absorb",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "keccak_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "keccak_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "keccak_squeezeblocks",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "store64",
+          "label": "store64_label0",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "load64",
+          "label": "load64_label1",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "shake128_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake128_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "shake128_squeezeblocks",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rej_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_poly_uniform_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_uniform_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyveck_uniform_eta",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake256_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake256_absorb",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "shake256_absorb",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "shake256_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "shake256_squeezeblocks",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "shake256_squeezeblocks",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "1"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_reduce32",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_caddq",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_freeze",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvecl_ntt",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "KeccakF1600_StatePermute",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "KeccakF1600_StatePermute",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "2"
+              },
+              {
+                "name": "function",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

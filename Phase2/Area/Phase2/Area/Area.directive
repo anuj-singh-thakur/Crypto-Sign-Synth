@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+  <sourceFile>
+    <directive functionName="keccak_absorb" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="keccak_absorb" label="" functionLabel="">
+      <pragma name="ALLOCATION">
+        <option name="instances" value="keccak_absorb" positionalBoolean="4"/>
+        <option name="limit" value="1"/>
+        <option name="function" value="" positionalBoolean="type"/>
+      </pragma>
+    </directive>
+    <directive functionName="keccak_squeezeblocks" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="keccak_squeezeblocks" label="" functionLabel="">
+      <pragma name="ALLOCATION">
+        <option name="instances" value="keccak_squeezeblocks" positionalBoolean="4"/>
+        <option name="limit" value="1"/>
+        <option name="function" value="" positionalBoolean="type"/>
+      </pragma>
+    </directive>
+    <directive functionName="store64" label="store64_label0" functionLabel="">
+      <pragma name="UNROLL">
+        <option name="factor" value="8"/>
+      </pragma>
+    </directive>
+    <directive functionName="load64" label="load64_label1" functionLabel="">
+      <pragma name="UNROLL">
+        <option name="factor" value="8"/>
+      </pragma>
+    </directive>
+    <directive functionName="shake128_squeezeblocks" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="shake128_squeezeblocks" label="" functionLabel="">
+      <pragma name="ALLOCATION">
+        <option name="instances" value="shake128_squeezeblocks" positionalBoolean="4"/>
+        <option name="limit" value="1"/>
+        <option name="function" value="" positionalBoolean="type"/>
+      </pragma>
+    </directive>
+    <directive functionName="rej_eta" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_poly_uniform_eta" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_polyvecl_uniform_eta" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_polyveck_uniform_eta" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="shake256_absorb" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="shake256_absorb" label="" functionLabel="">
+      <pragma name="ALLOCATION">
+        <option name="instances" value="shake256_absorb" positionalBoolean="4"/>
+        <option name="limit" value="1"/>
+        <option name="function" value="" positionalBoolean="type"/>
+      </pragma>
+    </directive>
+    <directive functionName="shake256_squeezeblocks" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="shake256_squeezeblocks" label="" functionLabel="">
+      <pragma name="ALLOCATION">
+        <option name="instances" value="shake256_squeezeblocks" positionalBoolean="4"/>
+        <option name="limit" value="1"/>
+        <option name="function" value="" positionalBoolean="type"/>
+      </pragma>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_reduce32" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_caddq" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_freeze" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+    <directive functionName="pqcrystals_dilithium2_ref_polyvecl_ntt" label="" functionLabel="">
+      <pragma name="INLINE"/>
+    </directive>
+  </sourceFile>
+</AutoPilot:ProjectResources>

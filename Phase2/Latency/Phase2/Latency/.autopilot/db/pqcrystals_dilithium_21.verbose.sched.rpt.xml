@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pqcrystals_dilithium_21'" level="0">
+<item name = "Date">Thu Apr 13 22:42:38 2023
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Phase2</item>
+<item name = "Solution">Latency</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.724 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">279, 4200727, 2.790 us, 42.007 ms, 279, 4200727, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- pqcrystals_dilithium2_ref_invntt_tomont_label4">16, 4200464, 2 ~ 525058, -, -, 8, no</column>
+<column name=" + pqcrystals_dilithium2_ref_invntt_tomont_label5">0, 525056, 3 ~ 2051, -, -, 0 ~ 256, no</column>
+<column name="  ++ pqcrystals_dilithium2_ref_invntt_tomont_label6">0, 2048, 8, -, -, 0 ~ 256, no</column>
+<column name="- pqcrystals_dilithium2_ref_invntt_tomont_label16">260, 260, 6, 1, 1, 256, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

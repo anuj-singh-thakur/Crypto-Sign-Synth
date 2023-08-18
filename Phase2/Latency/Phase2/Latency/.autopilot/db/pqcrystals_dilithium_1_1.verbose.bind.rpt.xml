@@ -1,0 +1,104 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pqcrystals_dilithium_1_1'" level="0">
+<item name = "Date">Thu Apr 13 22:43:35 2023
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Phase2</item>
+<item name = "Solution">Latency</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 9.122 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_pqcrystals_dilithium_9_fu_1750">pqcrystals_dilithium_9, 7225, 7225, 72.250 us, 72.250 us, 7225, 7225, none</column>
+<column name="grp_pqcrystals_dilithium_13_fu_1757">pqcrystals_dilithium_13, 813, 240685, 8.130 us, 2.407 ms, 813, 240685, none</column>
+<column name="grp_pqcrystals_dilithium_12_fu_1770">pqcrystals_dilithium_12, 1103, 1103, 11.030 us, 11.030 us, 1103, 1103, none</column>
+<column name="grp_pqcrystals_dilithium_15_fu_1781">pqcrystals_dilithium_15, 684, 5598, 6.840 us, 55.980 us, 684, 5598, none</column>
+<column name="grp_shake256_fu_1790">shake256, 150, 150, 1.500 us, 1.500 us, 150, 150, none</column>
+<column name="grp_KeccakF1600_StatePer_1_fu_1797">KeccakF1600_StatePer_1, 39, 39, 0.390 us, 0.390 us, 39, 39, none</column>
+<column name="grp_pqcrystals_dilithium_2_fu_1804">pqcrystals_dilithium_2, 2570, 2570, 25.700 us, 25.700 us, 2570, 2570, none</column>
+<column name="grp_pqcrystals_dilithium_6_fu_1818">pqcrystals_dilithium_6, 1125, 16802917, 11.250 us, 0.168 sec, 1125, 16802917, none</column>
+<column name="grp_pqcrystals_dilithium_21_fu_1825">pqcrystals_dilithium_21, 279, 4200727, 2.790 us, 42.007 ms, 279, 4200727, none</column>
+<column name="grp_pqcrystals_dilithium_18_fu_1834">pqcrystals_dilithium_18, 17, 2103313, 0.170 us, 21.033 ms, 17, 2103313, none</column>
+<column name="grp_pqcrystals_dilithium_19_fu_1841">pqcrystals_dilithium_19, 17, 2103313, 0.170 us, 21.033 ms, 17, 2103313, none</column>
+<column name="grp_pqcrystals_dilithium_17_fu_1853">pqcrystals_dilithium_17, 4715, 4715, 47.150 us, 47.150 us, 4715, 4715, none</column>
+<column name="grp_pqcrystals_dilithium_4_fu_1861">pqcrystals_dilithium_4, 1030, 1030, 10.300 us, 10.300 us, 1030, 1030, none</column>
+<column name="grp_load64_3_fu_1868">load64_3, 4, 4, 40.000 ns, 40.000 ns, 4, 4, none</column>
+<column name="grp_pqcrystals_dilithium_5_fu_1875">pqcrystals_dilithium_5, 777, 777, 7.770 us, 7.770 us, 777, 777, none</column>
+<column name="grp_pqcrystals_dilithium_3_fu_1882">pqcrystals_dilithium_3, 1027, 1027, 10.270 us, 10.270 us, 1027, 1027, none</column>
+<column name="grp_pqcrystals_dilithium_7_fu_1887">pqcrystals_dilithium_7, 5, 2064, 50.000 ns, 20.640 us, 5, 2064, none</column>
+<column name="grp_pqcrystals_dilithium_8_fu_1895">pqcrystals_dilithium_8, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">25, 25, 1, -, -, 25, no</column>
+<column name="- Loop 2">30, 30, 5, -, -, 6, no</column>
+<column name="- memset_t">7, 7, 1, -, -, 8, no</column>
+<column name="- Loop 4">66, 66, 6, -, -, 11, no</column>
+<column name="- Loop 5">?, ?, 161, -, -, ?, no</column>
+<column name=" + Loop 5.1">119, 119, 7, -, -, 17, no</column>
+<column name="- Loop 6">0, 112, 7, -, -, 0 ~ 16, no</column>
+<column name="- Loop 7">8, 8, 1, -, -, 8, no</column>
+<column name="- Loop 8">?, ?, 2, -, -, ?, no</column>
+<column name="- Loop 9">30, 30, 5, -, -, 6, no</column>
+<column name="- Loop 10">13048, 3851000, 3262 ~ 962750, -, -, 4, no</column>
+<column name=" + Loop 10.1">3260, 962748, 815 ~ 240687, -, -, 4, no</column>
+<column name="- Loop 11">76, 8413260, 19 ~ 2103315, -, -, 4, no</column>
+<column name="- Loop 12">76, 8413260, 19 ~ 2103315, -, -, 4, no</column>
+<column name="- Loop 13">76, 8413260, 19 ~ 2103315, -, -, 4, no</column>
+<column name="- Loop 14">57, 57, 28815 ~ 77776106, -, -, 0, no</column>
+<column name=" + Loop 14.1">4420, 4420, 1105, -, -, 4, no</column>
+<column name=" + Loop 14.2">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 14.3">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 14.4">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 14.5">511, 511, 2, -, -, 256, no</column>
+<column name=" + Loop 14.6">76, 8413260, 19 ~ 2103315, -, -, 4, no</column>
+<column name=" + Loop 14.7">5128, 5128, 1282, -, -, 4, no</column>
+<column name="  ++ Loop 14.7.1">1280, 1280, 5, -, -, 256, no</column>
+<column name=" + Loop 14.8">25, 25, 1, -, -, 25, no</column>
+<column name=" + Loop 14.9">30, 30, 5, -, -, 6, no</column>
+<column name=" + Loop 14.10">66, 66, 6, -, -, 11, no</column>
+<column name=" + Loop 14.11">805, 805, 161, -, -, 5, no</column>
+<column name="  ++ Loop 14.11.1">119, 119, 7, -, -, 17, no</column>
+<column name=" + Loop 14.12">20, 20, 5, -, -, 4, no</column>
+<column name=" + L_pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7">1028, 1028, 6, 1, 1, 1024, yes</column>
+<column name=" + Loop 14.14">1124, 16802916, 281 ~ 4200729, -, -, 4, no</column>
+<column name=" + L_pqcrystals_dilithium2_ref_poly_add_label5">1024, 1024, 2, 1, 1, 1024, yes</column>
+<column name=" + pqcrystals_dilithium2_ref_polyvecl_reduce_label14_pqcrystals_dilithium2_ref_poly_reduce_label2">1025, 1025, 3, 1, 1, 1024, yes</column>
+<column name=" + Loop 14.17">4, 2062, 4 ~ 515, -, -, 1 ~ 4, no</column>
+<column name="  ++ Loop 14.17.1">2, 513, 2, -, -, 1 ~ 256, no</column>
+<column name=" + Loop 14.18">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ pqcrystals_dilithium2_ref_poly_sub_label6">512, 512, 2, -, -, 256, no</column>
+<column name=" + L_pqcrystals_dilithium2_ref_poly_add_label5">1024, 1024, 2, 1, 1, 1024, yes</column>
+<column name=" + Loop 14.20">2056, 2056, 514, -, -, 4, no</column>
+<column name="  ++ Loop 14.20.1">512, 512, 2, -, -, 256, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

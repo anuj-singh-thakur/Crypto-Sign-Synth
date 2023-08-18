@@ -1,0 +1,2611 @@
+{
+  "Top": "pqcrystals_dilithium2_ref",
+  "RtlTop": "pqcrystals_dilithium2_ref",
+  "RtlPrefix": "",
+  "SourceLanguage": "c",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "0",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "artix7",
+    "Device": "xc7a200t",
+    "Package": "-fbg676",
+    "Speed": "-2"
+  },
+  "HlsSolution": {
+    "Config": [
+      "config_sdx -optimization_level=none",
+      "config_sdx -target=none",
+      "config_export -vivado_optimization_level=2"
+    ],
+    "DirectiveTcl": [
+      "set_directive_inline keccak_absorb ",
+      "set_directive_allocation keccak_absorb keccak_absorb -limit 1 -type function",
+      "set_directive_inline keccak_squeezeblocks ",
+      "set_directive_allocation keccak_squeezeblocks keccak_squeezeblocks -limit 1 -type function",
+      "set_directive_unroll store64\/store64_label0 -factor 8",
+      "set_directive_unroll load64\/load64_label1 -factor 8",
+      "set_directive_inline shake128_squeezeblocks ",
+      "set_directive_allocation shake128_squeezeblocks shake128_squeezeblocks -limit 1 -type function",
+      "set_directive_inline rej_eta ",
+      "set_directive_inline pqcrystals_dilithium2_ref_poly_uniform_eta ",
+      "set_directive_inline pqcrystals_dilithium2_ref_polyvecl_uniform_eta ",
+      "set_directive_inline pqcrystals_dilithium2_ref_polyveck_uniform_eta ",
+      "set_directive_inline shake256_absorb ",
+      "set_directive_allocation shake256_absorb shake256_absorb -limit 1 -type function",
+      "set_directive_inline shake256_squeezeblocks ",
+      "set_directive_allocation shake256_squeezeblocks shake256_squeezeblocks -limit 1 -type function",
+      "set_directive_inline pqcrystals_dilithium2_ref_reduce32 ",
+      "set_directive_inline pqcrystals_dilithium2_ref_caddq ",
+      "set_directive_inline pqcrystals_dilithium2_ref_freeze ",
+      "set_directive_inline pqcrystals_dilithium2_ref_polyvecl_ntt ",
+      "set_directive_loop_tripcount rej_uniform\/rej_uniform_label0 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_uniform\/pqcrystals_dilithium2_ref_poly_uniform_label1 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_challenge\/pqcrystals_dilithium2_ref_poly_challenge_label2 -max 39",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_challenge\/pqcrystals_dilithium2_ref_poly_challenge_label3 -avg 39",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label4 -max 8",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label5 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label6 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label7 -max 8",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label8 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label9 -max 128",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref\/pqcrystals_dilithium2_ref_label10 -min 33 -max 3300",
+      "set_directive_allocation pqcrystals_dilithium2_ref_reduce32 reduce32 -limit 1 -type function",
+      "set_directive_loop_tripcount rej_eta\/rej_eta_label1 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_reduce\/pqcrystals_dilithium2_ref_poly_reduce_label2 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_caddq\/pqcrystals_dilithium2_ref_poly_caddq_label3 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_freeze\/pqcrystals_dilithium2_ref_poly_freeze_label4 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_add\/pqcrystals_dilithium2_ref_poly_add_label5 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_sub\/pqcrystals_dilithium2_ref_poly_sub_label6 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_pointwise_montgomery\/pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_power2round\/pqcrystals_dilithium2_ref_poly_power2round_label8 -max 256",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_uniform_eta\/pqcrystals_dilithium2_ref_poly_uniform_eta_label9 -max 32",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_polyeta_pack\/pqcrystals_dilithium2_ref_polyeta_pack_label10 -max 32",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_polyt1_pack\/pqcrystals_dilithium2_ref_polyt1_pack_label11 -max 64",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_polyt0_pack\/pqcrystals_dilithium2_ref_polyt0_pack_label12 -max 32",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_poly_uniform\/pqcrystals_dilithium2_ref_poly_uniform_label13 -max 7",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_polyvecl_reduce\/pqcrystals_dilithium2_ref_polyvecl_reduce_label14 -max 4",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_polyvecl_uniform_eta\/pqcrystals_dilithium2_ref_polyvecl_uniform_eta_label15 -max 4",
+      "set_directive_loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label16 -max 256",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label8 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label5 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label16 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery\/pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery_label0 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery\/pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery_label1 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_poly_pointwise_montgomery\/pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_poly_add\/pqcrystals_dilithium2_ref_poly_add_label5 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_poly_freeze\/pqcrystals_dilithium2_ref_poly_freeze_label4 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_poly_caddq\/pqcrystals_dilithium2_ref_poly_caddq_label3 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_poly_reduce\/pqcrystals_dilithium2_ref_poly_reduce_label2 ",
+      "set_directive_pipeline pqcrystals_dilithium2_ref_poly_power2round\/pqcrystals_dilithium2_ref_poly_power2round_label8 ",
+      "set_directive_pipeline KeccakF1600_StatePermute\/KeccakF1600_StatePermute_label2 ",
+      "set_directive_inline pqcrystals_dilithium2_ref_power2round "
+    ],
+    "DirectiveInfo": [
+      "inline keccak_absorb {} {}",
+      "allocation keccak_absorb {{instances positionBooleanTextRequiredkeccak_absorb} {limit 1} {function positionBoolean0type}} {}",
+      "inline keccak_squeezeblocks {} {}",
+      "allocation keccak_squeezeblocks {{instances positionBooleanTextRequiredkeccak_squeezeblocks} {limit 1} {function positionBoolean0type}} {}",
+      "unroll store64\/store64_label0 {{factor 8}} {}",
+      "unroll load64\/load64_label1 {{factor 8}} {}",
+      "inline shake128_squeezeblocks {} {}",
+      "allocation shake128_squeezeblocks {{instances positionBooleanTextRequiredshake128_squeezeblocks} {limit 1} {function positionBoolean0type}} {}",
+      "inline rej_eta {} {}",
+      "inline pqcrystals_dilithium2_ref_poly_uniform_eta {} {}",
+      "inline pqcrystals_dilithium2_ref_polyvecl_uniform_eta {} {}",
+      "inline pqcrystals_dilithium2_ref_polyveck_uniform_eta {} {}",
+      "inline shake256_absorb {} {}",
+      "allocation shake256_absorb {{instances positionBooleanTextRequiredshake256_absorb} {limit 1} {function positionBoolean0type}} {}",
+      "inline shake256_squeezeblocks {} {}",
+      "allocation shake256_squeezeblocks {{instances positionBooleanTextRequiredshake256_squeezeblocks} {limit 1} {function positionBoolean0type}} {}",
+      "inline pqcrystals_dilithium2_ref_reduce32 {} {}",
+      "inline pqcrystals_dilithium2_ref_caddq {} {}",
+      "inline pqcrystals_dilithium2_ref_freeze {} {}",
+      "inline pqcrystals_dilithium2_ref_polyvecl_ntt {} {}",
+      "loop_tripcount rej_uniform\/rej_uniform_label0 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_uniform\/pqcrystals_dilithium2_ref_poly_uniform_label1 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_challenge\/pqcrystals_dilithium2_ref_poly_challenge_label2 {{tripcount positionBooleanCmd} {max 39}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_challenge\/pqcrystals_dilithium2_ref_poly_challenge_label3 {{tripcount positionBooleanCmd} {avg 39}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label4 {{tripcount positionBooleanCmd} {max 8}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label5 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label6 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label7 {{tripcount positionBooleanCmd} {max 8}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label8 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label9 {{tripcount positionBooleanCmd} {max 128}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref\/pqcrystals_dilithium2_ref_label10 {{tripcount positionBooleanCmd} {min 33} {max 3300}} {}",
+      "allocation pqcrystals_dilithium2_ref_reduce32 {{instances positionBooleanTextRequiredreduce32} {limit 1} {function positionBoolean0type}} {}",
+      "loop_tripcount rej_eta\/rej_eta_label1 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_reduce\/pqcrystals_dilithium2_ref_poly_reduce_label2 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_caddq\/pqcrystals_dilithium2_ref_poly_caddq_label3 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_freeze\/pqcrystals_dilithium2_ref_poly_freeze_label4 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_add\/pqcrystals_dilithium2_ref_poly_add_label5 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_sub\/pqcrystals_dilithium2_ref_poly_sub_label6 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_pointwise_montgomery\/pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_power2round\/pqcrystals_dilithium2_ref_poly_power2round_label8 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_uniform_eta\/pqcrystals_dilithium2_ref_poly_uniform_eta_label9 {{tripcount positionBooleanCmd} {max 32}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_polyeta_pack\/pqcrystals_dilithium2_ref_polyeta_pack_label10 {{tripcount positionBooleanCmd} {max 32}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_polyt1_pack\/pqcrystals_dilithium2_ref_polyt1_pack_label11 {{tripcount positionBooleanCmd} {max 64}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_polyt0_pack\/pqcrystals_dilithium2_ref_polyt0_pack_label12 {{tripcount positionBooleanCmd} {max 32}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_poly_uniform\/pqcrystals_dilithium2_ref_poly_uniform_label13 {{tripcount positionBooleanCmd} {max 7}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_polyvecl_reduce\/pqcrystals_dilithium2_ref_polyvecl_reduce_label14 {{tripcount positionBooleanCmd} {max 4}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_polyvecl_uniform_eta\/pqcrystals_dilithium2_ref_polyvecl_uniform_eta_label15 {{tripcount positionBooleanCmd} {max 4}} {}",
+      "loop_tripcount pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label16 {{tripcount positionBooleanCmd} {max 256}} {}",
+      "pipeline pqcrystals_dilithium2_ref_ntt\/pqcrystals_dilithium2_ref_ntt_label8 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label5 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_invntt_tomont\/pqcrystals_dilithium2_ref_invntt_tomont_label16 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery\/pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery_label0 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery\/pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery_label1 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_poly_pointwise_montgomery\/pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_poly_add\/pqcrystals_dilithium2_ref_poly_add_label5 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_poly_freeze\/pqcrystals_dilithium2_ref_poly_freeze_label4 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_poly_caddq\/pqcrystals_dilithium2_ref_poly_caddq_label3 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_poly_reduce\/pqcrystals_dilithium2_ref_poly_reduce_label2 {} {}",
+      "pipeline pqcrystals_dilithium2_ref_poly_power2round\/pqcrystals_dilithium2_ref_poly_power2round_label8 {} {}",
+      "pipeline KeccakF1600_StatePermute\/KeccakF1600_StatePermute_label2 {} {}",
+      "inline pqcrystals_dilithium2_ref_power2round {} {}"
+    ]
+  },
+  "Args": {
+    "sm": {
+      "index": "0",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "unsigned",
+        "dataWidth": "8",
+        "arraySizes": ["5720"],
+        "multiInterfaceRef": [
+          "sm_address0",
+          "sm_address1",
+          "sm_d0",
+          "sm_d1",
+          "sm_q0",
+          "sm_q1"
+        ]
+      }
+    },
+    "smlen": {
+      "index": "1",
+      "type": {
+        "kinds": ["pointer"],
+        "dataType": "long",
+        "dataWidth": "64",
+        "interfaceRef": "smlen"
+      }
+    },
+    "m": {
+      "index": "2",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "unsigned",
+        "dataWidth": "8",
+        "arraySizes": ["3300"],
+        "multiInterfaceRef": [
+          "m_address0",
+          "m_q0"
+        ]
+      }
+    },
+    "mlen": {
+      "index": "3",
+      "type": {
+        "dataType": "long",
+        "dataWidth": "64",
+        "interfaceRef": "mlen"
+      }
+    },
+    "sk": {
+      "index": "4",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "unsigned",
+        "dataWidth": "8",
+        "arraySizes": ["2544"],
+        "multiInterfaceRef": [
+          "sk_address0",
+          "sk_address1",
+          "sk_q0",
+          "sk_q1"
+        ]
+      }
+    }
+  },
+  "Return": {
+    "dataType": "int",
+    "dataWidth": "32",
+    "interfaceRef": "ap_return"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "undef",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "pqcrystals_dilithium2_ref",
+    "Version": "1.0",
+    "DisplayName": "Pqcrystals_dilithium2_ref",
+    "Revision": "",
+    "Description": "An IP generated by Vivado HLS",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": [
+      "..\/..\/dilithium2\/aes.c",
+      "..\/..\/dilithium2\/aes256ctr.c",
+      "..\/..\/dilithium2\/fips202.c",
+      "..\/..\/dilithium2\/ntt.c",
+      "..\/..\/dilithium2\/packing.c",
+      "..\/..\/dilithium2\/poly.c",
+      "..\/..\/dilithium2\/polyvec.c",
+      "..\/..\/dilithium2\/reduce.c",
+      "..\/..\/dilithium2\/rng.c",
+      "..\/..\/dilithium2\/rounding.c",
+      "..\/..\/dilithium2\/sign.c",
+      "..\/..\/dilithium2\/symmetric-aes.c",
+      "..\/..\/dilithium2\/symmetric-shake.c"
+    ],
+    "Vhdl": [
+      "impl\/vhdl\/KeccakF1600_Statebkb.vhd",
+      "impl\/vhdl\/KeccakF1600_StatePer.vhd",
+      "impl\/vhdl\/KeccakF1600_StatePer_1.vhd",
+      "impl\/vhdl\/load64_3.vhd",
+      "impl\/vhdl\/pqcrystals_dilithBew.vhd",
+      "impl\/vhdl\/pqcrystals_dilithdEe.vhd",
+      "impl\/vhdl\/pqcrystals_dilithDeQ.vhd",
+      "impl\/vhdl\/pqcrystals_dilithEe0.vhd",
+      "impl\/vhdl\/pqcrystals_dilithfYi.vhd",
+      "impl\/vhdl\/pqcrystals_dilithg8j.vhd",
+      "impl\/vhdl\/pqcrystals_dilithibs.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_1_1.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_2.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_3.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_4.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_5.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_6.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_7.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_8.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_9.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_10.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_11.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_12.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_13.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_14.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_15.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_16.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_17.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_18.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_19.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_20.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_21.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_22.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium_23.vhd",
+      "impl\/vhdl\/pqcrystals_dilithkbM.vhd",
+      "impl\/vhdl\/pqcrystals_dilithlbW.vhd",
+      "impl\/vhdl\/pqcrystals_dilithncg.vhd",
+      "impl\/vhdl\/pqcrystals_dilithqcK.vhd",
+      "impl\/vhdl\/pqcrystals_dilithrcU.vhd",
+      "impl\/vhdl\/pqcrystals_dilithsc4.vhd",
+      "impl\/vhdl\/pqcrystals_dilithtde.vhd",
+      "impl\/vhdl\/pqcrystals_dilithudo.vhd",
+      "impl\/vhdl\/pqcrystals_dilithvdy.vhd",
+      "impl\/vhdl\/rej_uniform.vhd",
+      "impl\/vhdl\/shake128_absorb.vhd",
+      "impl\/vhdl\/shake128_absorb_t.vhd",
+      "impl\/vhdl\/shake256.vhd",
+      "impl\/vhdl\/shake256_state_0_s.vhd",
+      "impl\/vhdl\/pqcrystals_dilithium2_ref.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/KeccakF1600_Statebkb.v",
+      "impl\/verilog\/KeccakF1600_Statebkb_rom.dat",
+      "impl\/verilog\/KeccakF1600_StatePer.v",
+      "impl\/verilog\/KeccakF1600_StatePer_1.v",
+      "impl\/verilog\/load64_3.v",
+      "impl\/verilog\/pqcrystals_dilithBew.v",
+      "impl\/verilog\/pqcrystals_dilithdEe.v",
+      "impl\/verilog\/pqcrystals_dilithDeQ.v",
+      "impl\/verilog\/pqcrystals_dilithEe0.v",
+      "impl\/verilog\/pqcrystals_dilithfYi.v",
+      "impl\/verilog\/pqcrystals_dilithg8j.v",
+      "impl\/verilog\/pqcrystals_dilithg8j_rom.dat",
+      "impl\/verilog\/pqcrystals_dilithibs.v",
+      "impl\/verilog\/pqcrystals_dilithium_1_1.v",
+      "impl\/verilog\/pqcrystals_dilithium_2.v",
+      "impl\/verilog\/pqcrystals_dilithium_3.v",
+      "impl\/verilog\/pqcrystals_dilithium_4.v",
+      "impl\/verilog\/pqcrystals_dilithium_5.v",
+      "impl\/verilog\/pqcrystals_dilithium_6.v",
+      "impl\/verilog\/pqcrystals_dilithium_7.v",
+      "impl\/verilog\/pqcrystals_dilithium_8.v",
+      "impl\/verilog\/pqcrystals_dilithium_9.v",
+      "impl\/verilog\/pqcrystals_dilithium_10.v",
+      "impl\/verilog\/pqcrystals_dilithium_11.v",
+      "impl\/verilog\/pqcrystals_dilithium_12.v",
+      "impl\/verilog\/pqcrystals_dilithium_13.v",
+      "impl\/verilog\/pqcrystals_dilithium_14.v",
+      "impl\/verilog\/pqcrystals_dilithium_15.v",
+      "impl\/verilog\/pqcrystals_dilithium_16.v",
+      "impl\/verilog\/pqcrystals_dilithium_17.v",
+      "impl\/verilog\/pqcrystals_dilithium_18.v",
+      "impl\/verilog\/pqcrystals_dilithium_19.v",
+      "impl\/verilog\/pqcrystals_dilithium_20.v",
+      "impl\/verilog\/pqcrystals_dilithium_21.v",
+      "impl\/verilog\/pqcrystals_dilithium_22.v",
+      "impl\/verilog\/pqcrystals_dilithium_23.v",
+      "impl\/verilog\/pqcrystals_dilithkbM.v",
+      "impl\/verilog\/pqcrystals_dilithlbW.v",
+      "impl\/verilog\/pqcrystals_dilithncg.v",
+      "impl\/verilog\/pqcrystals_dilithqcK.v",
+      "impl\/verilog\/pqcrystals_dilithrcU.v",
+      "impl\/verilog\/pqcrystals_dilithsc4.v",
+      "impl\/verilog\/pqcrystals_dilithtde.v",
+      "impl\/verilog\/pqcrystals_dilithudo.v",
+      "impl\/verilog\/pqcrystals_dilithvdy.v",
+      "impl\/verilog\/rej_uniform.v",
+      "impl\/verilog\/shake128_absorb.v",
+      "impl\/verilog\/shake128_absorb_t.v",
+      "impl\/verilog\/shake256.v",
+      "impl\/verilog\/shake256_state_0_s.v",
+      "impl\/verilog\/pqcrystals_dilithium2_ref.v"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "DesignXml": "C:\/Users\/Hp\/Desktop\/IITG\/MTech_Course_2_Sem\/C_BASED_VLSI\/AssignmentPhase_2_Latency\/Phase2\/Latency\/.autopilot\/db\/pqcrystals_dilithium2_ref.design.xml",
+    "DebugDir": "C:\/Users\/Hp\/Desktop\/IITG\/MTech_Course_2_Sem\/C_BASED_VLSI\/AssignmentPhase_2_Latency\/Phase2\/Latency\/.debug",
+    "ProtoInst": ["C:\/Users\/Hp\/Desktop\/IITG\/MTech_Course_2_Sem\/C_BASED_VLSI\/AssignmentPhase_2_Latency\/Phase2\/Latency\/.debug\/pqcrystals_dilithium2_ref.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "reset": "ap_rst"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "idle": {"Type": "bool"},
+        "ready": {"Type": "bool"}
+      }
+    },
+    "ap_return": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "ap_return",
+      "bundle_role": "default"
+    },
+    "ap_rst": {
+      "type": "reset",
+      "polarity": "ACTIVE_HIGH",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst",
+      "bundle_role": "default"
+    },
+    "m_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "12",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "12"
+        }},
+      "bundle_name": "m",
+      "bundle_role": "address0"
+    },
+    "m_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "m",
+      "bundle_role": "q0"
+    },
+    "mlen": {
+      "type": "data",
+      "dir": "in",
+      "width": "64",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "64"
+        }},
+      "bundle_name": "mlen",
+      "bundle_role": "default"
+    },
+    "sk_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "12",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "12"
+        }},
+      "bundle_name": "sk",
+      "bundle_role": "address0"
+    },
+    "sk_address1": {
+      "type": "data",
+      "dir": "out",
+      "width": "12",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "12"
+        }},
+      "bundle_name": "sk",
+      "bundle_role": "address1"
+    },
+    "sk_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "sk",
+      "bundle_role": "q0"
+    },
+    "sk_q1": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "sk",
+      "bundle_role": "q1"
+    },
+    "sm_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "13",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "13"
+        }},
+      "bundle_name": "sm",
+      "bundle_role": "address0"
+    },
+    "sm_address1": {
+      "type": "data",
+      "dir": "out",
+      "width": "13",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "13"
+        }},
+      "bundle_name": "sm",
+      "bundle_role": "address1"
+    },
+    "sm_d0": {
+      "type": "data",
+      "dir": "out",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "sm",
+      "bundle_role": "d0"
+    },
+    "sm_d1": {
+      "type": "data",
+      "dir": "out",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "sm",
+      "bundle_role": "d1"
+    },
+    "sm_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "sm",
+      "bundle_role": "q0"
+    },
+    "sm_q1": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "sm",
+      "bundle_role": "q1"
+    },
+    "smlen": {
+      "type": "data",
+      "dir": "out",
+      "width": "64",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "64"
+        }},
+      "bundle_name": "smlen",
+      "bundle_role": "default"
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_return": {
+      "dir": "out",
+      "width": "32"
+    },
+    "sm_address0": {
+      "dir": "out",
+      "width": "13"
+    },
+    "sm_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sm_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sm_d0": {
+      "dir": "out",
+      "width": "8"
+    },
+    "sm_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "sm_address1": {
+      "dir": "out",
+      "width": "13"
+    },
+    "sm_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sm_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sm_d1": {
+      "dir": "out",
+      "width": "8"
+    },
+    "sm_q1": {
+      "dir": "in",
+      "width": "8"
+    },
+    "smlen": {
+      "dir": "out",
+      "width": "64"
+    },
+    "smlen_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_address0": {
+      "dir": "out",
+      "width": "12"
+    },
+    "m_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "mlen": {
+      "dir": "in",
+      "width": "64"
+    },
+    "sk_address0": {
+      "dir": "out",
+      "width": "12"
+    },
+    "sk_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sk_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "sk_address1": {
+      "dir": "out",
+      "width": "12"
+    },
+    "sk_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "sk_q1": {
+      "dir": "in",
+      "width": "8"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "pqcrystals_dilithium2_ref",
+      "Instances": [{
+          "ModuleName": "pqcrystals_dilithium_1_1",
+          "InstanceName": "grp_pqcrystals_dilithium_1_1_fu_107",
+          "Instances": [
+            {
+              "ModuleName": "pqcrystals_dilithium_9",
+              "InstanceName": "grp_pqcrystals_dilithium_9_fu_1750",
+              "Instances": [
+                {
+                  "ModuleName": "pqcrystals_dilithium_14",
+                  "InstanceName": "grp_pqcrystals_dilithium_14_fu_152",
+                  "Instances": [
+                    {
+                      "ModuleName": "pqcrystals_dilithium_20",
+                      "InstanceName": "grp_pqcrystals_dilithium_20_fu_7999"
+                    },
+                    {
+                      "ModuleName": "pqcrystals_dilithium_20",
+                      "InstanceName": "grp_pqcrystals_dilithium_20_fu_8005"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "pqcrystals_dilithium_16",
+                  "InstanceName": "grp_pqcrystals_dilithium_16_fu_165"
+                }
+              ]
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_13",
+              "InstanceName": "grp_pqcrystals_dilithium_13_fu_1757",
+              "Instances": [
+                {
+                  "ModuleName": "KeccakF1600_StatePer_1",
+                  "InstanceName": "grp_KeccakF1600_StatePer_1_fu_574"
+                },
+                {
+                  "ModuleName": "rej_uniform",
+                  "InstanceName": "grp_rej_uniform_fu_581"
+                },
+                {
+                  "ModuleName": "shake128_absorb",
+                  "InstanceName": "grp_shake128_absorb_fu_597"
+                }
+              ]
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_12",
+              "InstanceName": "grp_pqcrystals_dilithium_12_fu_1770",
+              "Instances": [
+                {
+                  "ModuleName": "KeccakF1600_StatePer_1",
+                  "InstanceName": "grp_KeccakF1600_StatePer_1_fu_399"
+                },
+                {
+                  "ModuleName": "pqcrystals_dilithium_22",
+                  "InstanceName": "grp_pqcrystals_dilithium_22_fu_406"
+                }
+              ]
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_15",
+              "InstanceName": "grp_pqcrystals_dilithium_15_fu_1781",
+              "Instances": [{
+                  "ModuleName": "KeccakF1600_StatePer_1",
+                  "InstanceName": "grp_KeccakF1600_StatePer_1_fu_589"
+                }]
+            },
+            {
+              "ModuleName": "shake256",
+              "InstanceName": "grp_shake256_fu_1790",
+              "Instances": [{
+                  "ModuleName": "KeccakF1600_StatePer",
+                  "InstanceName": "grp_KeccakF1600_StatePer_fu_331"
+                }]
+            },
+            {
+              "ModuleName": "KeccakF1600_StatePer_1",
+              "InstanceName": "grp_KeccakF1600_StatePer_1_fu_1797"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_2",
+              "InstanceName": "grp_pqcrystals_dilithium_2_fu_1804",
+              "Instances": [
+                {
+                  "ModuleName": "pqcrystals_dilithium_10",
+                  "InstanceName": "grp_pqcrystals_dilithium_10_fu_205"
+                },
+                {
+                  "ModuleName": "pqcrystals_dilithium_11",
+                  "InstanceName": "grp_pqcrystals_dilithium_11_fu_216"
+                }
+              ]
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_6",
+              "InstanceName": "grp_pqcrystals_dilithium_6_fu_1818",
+              "Instances": [{
+                  "ModuleName": "pqcrystals_dilithium_21",
+                  "InstanceName": "grp_pqcrystals_dilithium_21_fu_28"
+                }]
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_21",
+              "InstanceName": "grp_pqcrystals_dilithium_21_fu_1825"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_18",
+              "InstanceName": "grp_pqcrystals_dilithium_18_fu_1834"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_19",
+              "InstanceName": "grp_pqcrystals_dilithium_19_fu_1841"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_17",
+              "InstanceName": "grp_pqcrystals_dilithium_17_fu_1853",
+              "Instances": [{
+                  "ModuleName": "pqcrystals_dilithium_23",
+                  "InstanceName": "grp_pqcrystals_dilithium_23_fu_160"
+                }]
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_4",
+              "InstanceName": "grp_pqcrystals_dilithium_4_fu_1861"
+            },
+            {
+              "ModuleName": "load64_3",
+              "InstanceName": "grp_load64_3_fu_1868"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_5",
+              "InstanceName": "grp_pqcrystals_dilithium_5_fu_1875"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_3",
+              "InstanceName": "grp_pqcrystals_dilithium_3_fu_1882"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_7",
+              "InstanceName": "grp_pqcrystals_dilithium_7_fu_1887"
+            },
+            {
+              "ModuleName": "pqcrystals_dilithium_8",
+              "InstanceName": "grp_pqcrystals_dilithium_8_fu_1895"
+            }
+          ]
+        }]
+    },
+    "Info": {
+      "pqcrystals_dilithium_11": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_10": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "load64_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "KeccakF1600_StatePer_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "KeccakF1600_StatePer": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "shake256": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "shake128_absorb": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "rej_uniform": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_13": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_19": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_22": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_12": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_20": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_14": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_16": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_9": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_21": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_6": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_8": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_5": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_15": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_18": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_4": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_7": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_23": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_17": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium_1_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "pqcrystals_dilithium2_ref": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "pqcrystals_dilithium_11": {
+        "Latency": {
+          "LatencyBest": "161",
+          "LatencyAvg": "161",
+          "LatencyWorst": "161",
+          "PipelineII": "161",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.890"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "32",
+            "Latency": "160",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          }],
+        "Area": {
+          "FF": "63",
+          "LUT": "461",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_10": {
+        "Latency": {
+          "LatencyBest": "257",
+          "LatencyAvg": "257",
+          "LatencyWorst": "257",
+          "PipelineII": "257",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.354"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "32",
+            "Latency": "256",
+            "PipelineII": "",
+            "PipelineDepth": "8"
+          }],
+        "Area": {
+          "FF": "88",
+          "LUT": "1008",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_2": {
+        "Latency": {
+          "LatencyBest": "2570",
+          "LatencyAvg": "2570",
+          "LatencyWorst": "2570",
+          "PipelineII": "2570",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.354"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "32",
+            "Latency": "64",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "32",
+            "Latency": "64",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "48",
+            "Latency": "96",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "4",
+            "Latency": "652",
+            "PipelineII": "",
+            "PipelineDepth": "163"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "4",
+            "Latency": "652",
+            "PipelineII": "",
+            "PipelineDepth": "163"
+          },
+          {
+            "Name": "Loop 6",
+            "TripCount": "4",
+            "Latency": "1036",
+            "PipelineII": "",
+            "PipelineDepth": "259"
+          }
+        ],
+        "Area": {
+          "FF": "316",
+          "LUT": "2127",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "load64_3": {
+        "Latency": {
+          "LatencyBest": "4",
+          "LatencyAvg": "4",
+          "LatencyWorst": "4",
+          "PipelineII": "4",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "4.582"
+        },
+        "Area": {
+          "FF": "131",
+          "LUT": "243",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "KeccakF1600_StatePer_1": {
+        "Latency": {
+          "LatencyBest": "39",
+          "LatencyAvg": "39",
+          "LatencyWorst": "39",
+          "PipelineII": "39",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.812"
+        },
+        "Loops": [{
+            "Name": "KeccakF1600_StatePermute_label2",
+            "TripCount": "12",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "FF": "3108",
+          "LUT": "16902",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "KeccakF1600_StatePer": {
+        "Latency": {
+          "LatencyBest": "39",
+          "LatencyAvg": "39",
+          "LatencyWorst": "39",
+          "PipelineII": "39",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.812"
+        },
+        "Loops": [{
+            "Name": "KeccakF1600_StatePermute_label2",
+            "TripCount": "12",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "FF": "3108",
+          "LUT": "16902",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "shake256": {
+        "Latency": {
+          "LatencyBest": "150",
+          "LatencyAvg": "150",
+          "LatencyWorst": "150",
+          "PipelineII": "150",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.812"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "25",
+            "Latency": "25",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "10",
+            "Latency": "50",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "6",
+            "Latency": "30",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "6",
+          "FF": "3250",
+          "LUT": "17848",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "shake128_absorb": {
+        "Latency": {
+          "LatencyBest": "24",
+          "LatencyAvg": "24",
+          "LatencyWorst": "24",
+          "PipelineII": "24",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.352"
+        },
+        "Loops": [
+          {
+            "Name": "memset_t",
+            "TripCount": "8",
+            "Latency": "7",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "2",
+            "Latency": "2",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "FF": "83",
+          "LUT": "306",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "rej_uniform": {
+        "Latency": {
+          "LatencyBest": "1",
+          "LatencyAvg": "385",
+          "LatencyWorst": "769",
+          "PipelineIIMin": "1",
+          "PipelineIIMax": "769",
+          "PipelineII": "1 ~ 769",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.286"
+        },
+        "Loops": [{
+            "Name": "rej_uniform_label0",
+            "TripCount": "",
+            "LatencyMin": "0",
+            "LatencyMax": "768",
+            "Latency": "0 ~ 768",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "174",
+          "LUT": "306",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_13": {
+        "Latency": {
+          "LatencyBest": "813",
+          "LatencyAvg": "",
+          "LatencyWorst": "240685",
+          "PipelineIIMin": "813",
+          "PipelineIIMax": "240685",
+          "PipelineII": "813 ~ 240685",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.812"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "25",
+            "Latency": "25",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "4",
+            "Latency": "20",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "5",
+            "Latency": "735",
+            "PipelineII": "",
+            "PipelineDepth": "147",
+            "Loops": [{
+                "Name": "Loop 3.1",
+                "TripCount": "21",
+                "Latency": "105",
+                "PipelineII": "",
+                "PipelineDepth": "5"
+              }]
+          },
+          {
+            "Name": "pqcrystals_dilithium2_ref_poly_uniform_label1",
+            "TripCount": "",
+            "LatencyMin": "0",
+            "LatencyMax": "239104",
+            "Latency": "0 ~ 239104",
+            "PipelineII": "",
+            "PipelineDepthMin": "162",
+            "PipelineDepthMax": "934",
+            "PipelineDepth": "162 ~ 934",
+            "Loops": [
+              {
+                "Name": "pqcrystals_dilithium2_ref_poly_uniform_label13",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "4",
+                "Latency": "0 ~ 4",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "pqcrystals_dilithium2_ref_poly_uniform_label1.2",
+                "TripCount": "21",
+                "Latency": "105",
+                "PipelineII": "",
+                "PipelineDepth": "5"
+              }
+            ]
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "7",
+          "FF": "3813",
+          "LUT": "19056",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "pqcrystals_dilithium_19": {
+        "Latency": {
+          "LatencyBest": "17",
+          "LatencyAvg": "527377",
+          "LatencyWorst": "2103313",
+          "PipelineIIMin": "17",
+          "PipelineIIMax": "2103313",
+          "PipelineII": "17 ~ 2103313",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.731"
+        },
+        "Loops": [{
+            "Name": "pqcrystals_dilithium2_ref_ntt_label7",
+            "TripCount": "8",
+            "LatencyMin": "16",
+            "LatencyMax": "2103312",
+            "Latency": "16 ~ 2103312",
+            "PipelineII": "",
+            "PipelineDepthMin": "2",
+            "PipelineDepthMax": "262914",
+            "PipelineDepth": "2 ~ 262914",
+            "Loops": [{
+                "Name": "pqcrystals_dilithium2_ref_ntt_label8",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "262912",
+                "Latency": "0 ~ 262912",
+                "PipelineII": "",
+                "PipelineDepthMin": "3",
+                "PipelineDepthMax": "1027",
+                "PipelineDepth": "3 ~ 1027",
+                "Loops": [{
+                    "Name": "pqcrystals_dilithium2_ref_ntt_label9",
+                    "TripCount": "",
+                    "LatencyMin": "0",
+                    "LatencyMax": "1024",
+                    "Latency": "0 ~ 1024",
+                    "PipelineII": "",
+                    "PipelineDepth": "8"
+                  }]
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "1",
+          "DSP48E": "8",
+          "FF": "593",
+          "LUT": "635",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_22": {
+        "Latency": {
+          "LatencyBest": "81",
+          "LatencyAvg": "81",
+          "LatencyWorst": "81",
+          "PipelineII": "81",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.352"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "25",
+            "Latency": "25",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "6",
+            "Latency": "30",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "memset_t",
+            "TripCount": "8",
+            "Latency": "7",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "2",
+            "Latency": "2",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "FF": "152",
+          "LUT": "804",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "pqcrystals_dilithium_12": {
+        "Latency": {
+          "LatencyBest": "1103",
+          "LatencyAvg": "1103",
+          "LatencyWorst": "1103",
+          "PipelineII": "1103",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.448"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "5",
+            "Latency": "635",
+            "PipelineII": "",
+            "PipelineDepth": "127",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "17",
+                "Latency": "85",
+                "PipelineII": "",
+                "PipelineDepth": "5"
+              }]
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "64",
+            "Latency": "384",
+            "PipelineII": "",
+            "PipelineDepth": "6"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "7",
+          "FF": "3402",
+          "LUT": "18632",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "pqcrystals_dilithium_20": {
+        "Latency": {
+          "LatencyBest": "2",
+          "LatencyAvg": "2",
+          "LatencyWorst": "2",
+          "PipelineII": "1",
+          "PipelineDepth": "3",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.880"
+        },
+        "Area": {
+          "DSP48E": "6",
+          "FF": "296",
+          "LUT": "114",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_14": {
+        "Latency": {
+          "LatencyBest": "133",
+          "LatencyAvg": "133",
+          "LatencyWorst": "133",
+          "PipelineII": "128",
+          "PipelineDepth": "134",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.064"
+        },
+        "Area": {
+          "DSP48E": "524",
+          "FF": "14921",
+          "LUT": "17245",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_16": {
+        "Latency": {
+          "LatencyBest": "255",
+          "LatencyAvg": "255",
+          "LatencyWorst": "255",
+          "PipelineII": "256",
+          "PipelineDepth": "256",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "4.952"
+        },
+        "Area": {
+          "FF": "8899",
+          "LUT": "8654",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_9": {
+        "Latency": {
+          "LatencyBest": "7225",
+          "LatencyAvg": "7225",
+          "LatencyWorst": "7225",
+          "PipelineII": "7225",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.064"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "4",
+            "Latency": "7224",
+            "PipelineII": "",
+            "PipelineDepth": "1806",
+            "Loops": [
+              {
+                "Name": "pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7",
+                "TripCount": "256",
+                "Latency": "260",
+                "PipelineII": "1",
+                "PipelineDepth": "6"
+              },
+              {
+                "Name": "pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery_label1",
+                "TripCount": "3",
+                "Latency": "1542",
+                "PipelineII": "",
+                "PipelineDepth": "514"
+              }
+            ]
+          }],
+        "Area": {
+          "BRAM_18K": "4",
+          "DSP48E": "532",
+          "FF": "24738",
+          "LUT": "28656",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_3": {
+        "Latency": {
+          "LatencyBest": "1027",
+          "LatencyAvg": "1027",
+          "LatencyWorst": "1027",
+          "PipelineII": "1027",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.122"
+        },
+        "Loops": [{
+            "Name": "L_pqcrystals_dilithium2_ref_poly_reduce_label2",
+            "TripCount": "1024",
+            "Latency": "1025",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "DSP48E": "1",
+          "FF": "95",
+          "LUT": "221",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_21": {
+        "Latency": {
+          "LatencyBest": "279",
+          "LatencyAvg": "1051927",
+          "LatencyWorst": "4200727",
+          "PipelineIIMin": "279",
+          "PipelineIIMax": "4200727",
+          "PipelineII": "279 ~ 4200727",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.724"
+        },
+        "Loops": [
+          {
+            "Name": "pqcrystals_dilithium2_ref_invntt_tomont_label4",
+            "TripCount": "8",
+            "LatencyMin": "16",
+            "LatencyMax": "4200464",
+            "Latency": "16 ~ 4200464",
+            "PipelineII": "",
+            "PipelineDepthMin": "2",
+            "PipelineDepthMax": "525058",
+            "PipelineDepth": "2 ~ 525058",
+            "Loops": [{
+                "Name": "pqcrystals_dilithium2_ref_invntt_tomont_label5",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "525056",
+                "Latency": "0 ~ 525056",
+                "PipelineII": "",
+                "PipelineDepthMin": "3",
+                "PipelineDepthMax": "2051",
+                "PipelineDepth": "3 ~ 2051",
+                "Loops": [{
+                    "Name": "pqcrystals_dilithium2_ref_invntt_tomont_label6",
+                    "TripCount": "",
+                    "LatencyMin": "0",
+                    "LatencyMax": "2048",
+                    "Latency": "0 ~ 2048",
+                    "PipelineII": "",
+                    "PipelineDepth": "8"
+                  }]
+              }]
+          },
+          {
+            "Name": "pqcrystals_dilithium2_ref_invntt_tomont_label16",
+            "TripCount": "256",
+            "Latency": "260",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "3",
+          "DSP48E": "16",
+          "FF": "826",
+          "LUT": "903",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_6": {
+        "Latency": {
+          "LatencyBest": "1125",
+          "LatencyAvg": "4207717",
+          "LatencyWorst": "16802917",
+          "PipelineIIMin": "1125",
+          "PipelineIIMax": "16802917",
+          "PipelineII": "1125 ~ 16802917",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.724"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "4",
+            "LatencyMin": "1124",
+            "LatencyMax": "16802916",
+            "Latency": "1124 ~ 16802916",
+            "PipelineII": "",
+            "PipelineDepthMin": "281",
+            "PipelineDepthMax": "4200729",
+            "PipelineDepth": "281 ~ 4200729"
+          }],
+        "Area": {
+          "BRAM_18K": "3",
+          "DSP48E": "16",
+          "FF": "836",
+          "LUT": "954",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_8": {
+        "Latency": {
+          "LatencyBest": "1026",
+          "LatencyAvg": "1026",
+          "LatencyWorst": "1026",
+          "PipelineII": "1026",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.724"
+        },
+        "Loops": [{
+            "Name": "L_pqcrystals_dilithium2_ref_poly_caddq_label3",
+            "TripCount": "1024",
+            "Latency": "1024",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "FF": "42",
+          "LUT": "241",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_5": {
+        "Latency": {
+          "LatencyBest": "777",
+          "LatencyAvg": "777",
+          "LatencyWorst": "777",
+          "PipelineII": "777",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.344"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "4",
+            "Latency": "776",
+            "PipelineII": "",
+            "PipelineDepth": "194",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "64",
+                "Latency": "192",
+                "PipelineII": "",
+                "PipelineDepth": "3"
+              }]
+          }],
+        "Area": {
+          "FF": "61",
+          "LUT": "329",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_15": {
+        "Latency": {
+          "LatencyBest": "684",
+          "LatencyAvg": "100953",
+          "LatencyWorst": "5598",
+          "PipelineIIMin": "684",
+          "PipelineIIMax": "5598",
+          "PipelineII": "684 ~ 5598",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.812"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "25",
+            "Latency": "25",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "4",
+            "Latency": "20",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "17",
+            "Latency": "85",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "8",
+            "Latency": "16",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "256",
+            "Latency": "256",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "pqcrystals_dilithium2_ref_poly_challenge_label2",
+            "TripCount": "39",
+            "LatencyMin": "234",
+            "LatencyMax": "5148",
+            "Latency": "234 ~ 5148",
+            "PipelineII": "",
+            "PipelineDepthMin": "6",
+            "PipelineDepthMax": "132",
+            "PipelineDepth": "6 ~ 132",
+            "Loops": [{
+                "Name": "pqcrystals_dilithium2_ref_poly_challenge_label3",
+                "TripCount": "0",
+                "LatencyMin": "2",
+                "LatencyMax": "128",
+                "Latency": "2 ~ 128",
+                "PipelineII": "",
+                "PipelineDepthMin": "3",
+                "PipelineDepthMax": "129",
+                "PipelineDepth": "3 ~ 129",
+                "Loops": [{
+                    "Name": "pqcrystals_dilithium2_ref_poly_challenge_label3.1",
+                    "TripCount": "17",
+                    "Latency": "85",
+                    "PipelineII": "",
+                    "PipelineDepth": "5"
+                  }]
+              }]
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "7",
+          "FF": "3692",
+          "LUT": "18455",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "pqcrystals_dilithium_18": {
+        "Latency": {
+          "LatencyBest": "17",
+          "LatencyAvg": "527377",
+          "LatencyWorst": "2103313",
+          "PipelineIIMin": "17",
+          "PipelineIIMax": "2103313",
+          "PipelineII": "17 ~ 2103313",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.731"
+        },
+        "Loops": [{
+            "Name": "pqcrystals_dilithium2_ref_ntt_label7",
+            "TripCount": "8",
+            "LatencyMin": "16",
+            "LatencyMax": "2103312",
+            "Latency": "16 ~ 2103312",
+            "PipelineII": "",
+            "PipelineDepthMin": "2",
+            "PipelineDepthMax": "262914",
+            "PipelineDepth": "2 ~ 262914",
+            "Loops": [{
+                "Name": "pqcrystals_dilithium2_ref_ntt_label8",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "262912",
+                "Latency": "0 ~ 262912",
+                "PipelineII": "",
+                "PipelineDepthMin": "3",
+                "PipelineDepthMax": "1027",
+                "PipelineDepth": "3 ~ 1027",
+                "Loops": [{
+                    "Name": "pqcrystals_dilithium2_ref_ntt_label9",
+                    "TripCount": "",
+                    "LatencyMin": "0",
+                    "LatencyMax": "1024",
+                    "Latency": "0 ~ 1024",
+                    "PipelineII": "",
+                    "PipelineDepth": "8"
+                  }]
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "1",
+          "DSP48E": "8",
+          "FF": "594",
+          "LUT": "627",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_4": {
+        "Latency": {
+          "LatencyBest": "1030",
+          "LatencyAvg": "1030",
+          "LatencyWorst": "1030",
+          "PipelineII": "1030",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.946"
+        },
+        "Loops": [{
+            "Name": "L_pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7",
+            "TripCount": "1024",
+            "Latency": "1028",
+            "PipelineII": "1",
+            "PipelineDepth": "6"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "10",
+          "FF": "424",
+          "LUT": "381",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_7": {
+        "Latency": {
+          "LatencyBest": "5",
+          "LatencyAvg": "521",
+          "LatencyWorst": "2064",
+          "PipelineIIMin": "5",
+          "PipelineIIMax": "2064",
+          "PipelineII": "5 ~ 2064",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.063"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "",
+            "LatencyMin": "4",
+            "LatencyMax": "2062",
+            "Latency": "4 ~ 2062",
+            "PipelineII": "",
+            "PipelineDepthMin": "4",
+            "PipelineDepthMax": "515",
+            "PipelineDepth": "4 ~ 515",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "",
+                "LatencyMin": "2",
+                "LatencyMax": "513",
+                "Latency": "2 ~ 513",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              }]
+          }],
+        "Area": {
+          "FF": "52",
+          "LUT": "223",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_23": {
+        "Latency": {
+          "LatencyBest": "641",
+          "LatencyAvg": "641",
+          "LatencyWorst": "641",
+          "PipelineII": "641",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.524"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "64",
+            "Latency": "640",
+            "PipelineII": "",
+            "PipelineDepth": "10"
+          }],
+        "Area": {
+          "FF": "141",
+          "LUT": "620",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_17": {
+        "Latency": {
+          "LatencyBest": "4715",
+          "LatencyAvg": "4715",
+          "LatencyWorst": "4715",
+          "PipelineII": "4715",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.524"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "4",
+            "Latency": "2572",
+            "PipelineII": "",
+            "PipelineDepth": "643"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "84",
+            "Latency": "84",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "4",
+            "Latency": "2056",
+            "PipelineII": "",
+            "PipelineDepth": "514",
+            "Loops": [{
+                "Name": "Loop 3.1",
+                "TripCount": "256",
+                "Latency": "512",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              }]
+          }
+        ],
+        "Area": {
+          "FF": "225",
+          "LUT": "1021",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium_1_1": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.122"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "25",
+            "Latency": "25",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "6",
+            "Latency": "30",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "memset_t",
+            "TripCount": "8",
+            "Latency": "7",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "11",
+            "Latency": "66",
+            "PipelineII": "",
+            "PipelineDepth": "6"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "161",
+            "Loops": [{
+                "Name": "Loop 5.1",
+                "TripCount": "17",
+                "Latency": "119",
+                "PipelineII": "",
+                "PipelineDepth": "7"
+              }]
+          },
+          {
+            "Name": "Loop 6",
+            "TripCount": "",
+            "LatencyMin": "0",
+            "LatencyMax": "112",
+            "Latency": "0 ~ 112",
+            "PipelineII": "",
+            "PipelineDepth": "7"
+          },
+          {
+            "Name": "Loop 7",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 8",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 9",
+            "TripCount": "6",
+            "Latency": "30",
+            "PipelineII": "",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "Loop 10",
+            "TripCount": "4",
+            "LatencyMin": "13048",
+            "LatencyMax": "3851000",
+            "Latency": "13048 ~ 3851000",
+            "PipelineII": "",
+            "PipelineDepthMin": "3262",
+            "PipelineDepthMax": "962750",
+            "PipelineDepth": "3262 ~ 962750",
+            "Loops": [{
+                "Name": "Loop 10.1",
+                "TripCount": "4",
+                "LatencyMin": "3260",
+                "LatencyMax": "962748",
+                "Latency": "3260 ~ 962748",
+                "PipelineII": "",
+                "PipelineDepthMin": "815",
+                "PipelineDepthMax": "240687",
+                "PipelineDepth": "815 ~ 240687"
+              }]
+          },
+          {
+            "Name": "Loop 11",
+            "TripCount": "4",
+            "LatencyMin": "76",
+            "LatencyMax": "8413260",
+            "Latency": "76 ~ 8413260",
+            "PipelineII": "",
+            "PipelineDepthMin": "19",
+            "PipelineDepthMax": "2103315",
+            "PipelineDepth": "19 ~ 2103315"
+          },
+          {
+            "Name": "Loop 12",
+            "TripCount": "4",
+            "LatencyMin": "76",
+            "LatencyMax": "8413260",
+            "Latency": "76 ~ 8413260",
+            "PipelineII": "",
+            "PipelineDepthMin": "19",
+            "PipelineDepthMax": "2103315",
+            "PipelineDepth": "19 ~ 2103315"
+          },
+          {
+            "Name": "Loop 13",
+            "TripCount": "4",
+            "LatencyMin": "76",
+            "LatencyMax": "8413260",
+            "Latency": "76 ~ 8413260",
+            "PipelineII": "",
+            "PipelineDepthMin": "19",
+            "PipelineDepthMax": "2103315",
+            "PipelineDepth": "19 ~ 2103315"
+          },
+          {
+            "Name": "Loop 14",
+            "TripCount": "0",
+            "Latency": "57",
+            "PipelineII": "",
+            "PipelineDepthMin": "28815",
+            "PipelineDepthMax": "77776106",
+            "PipelineDepth": "28815 ~ 77776106",
+            "Loops": [
+              {
+                "Name": "Loop 14.1",
+                "TripCount": "4",
+                "Latency": "4420",
+                "PipelineII": "",
+                "PipelineDepth": "1105"
+              },
+              {
+                "Name": "Loop 14.2",
+                "TripCount": "256",
+                "Latency": "511",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "Loop 14.3",
+                "TripCount": "256",
+                "Latency": "511",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "Loop 14.4",
+                "TripCount": "256",
+                "Latency": "511",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "Loop 14.5",
+                "TripCount": "256",
+                "Latency": "511",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "Loop 14.6",
+                "TripCount": "4",
+                "LatencyMin": "76",
+                "LatencyMax": "8413260",
+                "Latency": "76 ~ 8413260",
+                "PipelineII": "",
+                "PipelineDepthMin": "19",
+                "PipelineDepthMax": "2103315",
+                "PipelineDepth": "19 ~ 2103315"
+              },
+              {
+                "Name": "Loop 14.7",
+                "TripCount": "4",
+                "Latency": "5128",
+                "PipelineII": "",
+                "PipelineDepth": "1282",
+                "Loops": [{
+                    "Name": "Loop 14.7.1",
+                    "TripCount": "256",
+                    "Latency": "1280",
+                    "PipelineII": "",
+                    "PipelineDepth": "5"
+                  }]
+              },
+              {
+                "Name": "Loop 14.8",
+                "TripCount": "25",
+                "Latency": "25",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              },
+              {
+                "Name": "Loop 14.9",
+                "TripCount": "6",
+                "Latency": "30",
+                "PipelineII": "",
+                "PipelineDepth": "5"
+              },
+              {
+                "Name": "Loop 14.10",
+                "TripCount": "11",
+                "Latency": "66",
+                "PipelineII": "",
+                "PipelineDepth": "6"
+              },
+              {
+                "Name": "Loop 14.11",
+                "TripCount": "5",
+                "Latency": "805",
+                "PipelineII": "",
+                "PipelineDepth": "161",
+                "Loops": [{
+                    "Name": "Loop 14.11.1",
+                    "TripCount": "17",
+                    "Latency": "119",
+                    "PipelineII": "",
+                    "PipelineDepth": "7"
+                  }]
+              },
+              {
+                "Name": "Loop 14.12",
+                "TripCount": "4",
+                "Latency": "20",
+                "PipelineII": "",
+                "PipelineDepth": "5"
+              },
+              {
+                "Name": "L_pqcrystals_dilithium2_ref_poly_pointwise_montgomery_label7",
+                "TripCount": "1024",
+                "Latency": "1028",
+                "PipelineII": "1",
+                "PipelineDepth": "6"
+              },
+              {
+                "Name": "Loop 14.14",
+                "TripCount": "4",
+                "LatencyMin": "1124",
+                "LatencyMax": "16802916",
+                "Latency": "1124 ~ 16802916",
+                "PipelineII": "",
+                "PipelineDepthMin": "281",
+                "PipelineDepthMax": "4200729",
+                "PipelineDepth": "281 ~ 4200729"
+              },
+              {
+                "Name": "L_pqcrystals_dilithium2_ref_poly_add_label5",
+                "TripCount": "1024",
+                "Latency": "1024",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "pqcrystals_dilithium2_ref_polyvecl_reduce_label14_pqcrystals_dilithium2_ref_poly_reduce_label2",
+                "TripCount": "1024",
+                "Latency": "1025",
+                "PipelineII": "1",
+                "PipelineDepth": "3"
+              },
+              {
+                "Name": "Loop 14.17",
+                "TripCount": "",
+                "LatencyMin": "4",
+                "LatencyMax": "2062",
+                "Latency": "4 ~ 2062",
+                "PipelineII": "",
+                "PipelineDepthMin": "4",
+                "PipelineDepthMax": "515",
+                "PipelineDepth": "4 ~ 515",
+                "Loops": [{
+                    "Name": "Loop 14.17.1",
+                    "TripCount": "",
+                    "LatencyMin": "2",
+                    "LatencyMax": "513",
+                    "Latency": "2 ~ 513",
+                    "PipelineII": "",
+                    "PipelineDepth": "2"
+                  }]
+              },
+              {
+                "Name": "Loop 14.18",
+                "TripCount": "4",
+                "Latency": "2056",
+                "PipelineII": "",
+                "PipelineDepth": "514",
+                "Loops": [{
+                    "Name": "pqcrystals_dilithium2_ref_poly_sub_label6",
+                    "TripCount": "256",
+                    "Latency": "512",
+                    "PipelineII": "",
+                    "PipelineDepth": "2"
+                  }]
+              },
+              {
+                "Name": "L_pqcrystals_dilithium2_ref_poly_add_label5",
+                "TripCount": "1024",
+                "Latency": "1024",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "Loop 14.20",
+                "TripCount": "4",
+                "Latency": "2056",
+                "PipelineII": "",
+                "PipelineDepth": "514",
+                "Loops": [{
+                    "Name": "Loop 14.20.1",
+                    "TripCount": "256",
+                    "Latency": "512",
+                    "PipelineII": "",
+                    "PipelineDepth": "2"
+                  }]
+              }
+            ]
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "74",
+          "DSP48E": "604",
+          "FF": "48630",
+          "LUT": "135230",
+          "URAM": "0"
+        }
+      },
+      "pqcrystals_dilithium2_ref": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.122"
+        },
+        "Loops": [{
+            "Name": "pqcrystals_dilithium2_ref_label10",
+            "TripCount": "",
+            "LatencyMin": "66",
+            "LatencyMax": "6600",
+            "Latency": "66 ~ 6600",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "BRAM_18K": "74",
+          "DSP48E": "604",
+          "FF": "48804",
+          "LUT": "135597",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "pqcrystals_dilithium2_ref",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2023-04-13 22:49:11 +0530",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2019.2"
+  }
+}

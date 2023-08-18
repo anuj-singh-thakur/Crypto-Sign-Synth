@@ -1,0 +1,265 @@
+---
+MainSourceFile:  /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          18259
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_2:  '
+    FileOffset:      21
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          18286
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_1:  '
+    FileOffset:      28
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          18538
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          18785
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_46_1:  '
+    FileOffset:      46
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          19017
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_46_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_1:  '
+    FileOffset:      53
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          19208
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          19399
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_85_1:  '
+    FileOffset:      85
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          19625
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_85_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_1:  '
+    FileOffset:      100
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          19834
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_1:  '
+    FileOffset:      107
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          20002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_1:  '
+    FileOffset:      114
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          20226
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_1:  '
+    FileOffset:      137
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          20669
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_1:  '
+    FileOffset:      158
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          20968
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_1:  '
+    FileOffset:      172
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          21221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_1:  '
+    FileOffset:      187
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          21433
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_202_1:  '
+    FileOffset:      202
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          21624
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_202_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_217_1:  '
+    FileOffset:      217
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          21815
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_217_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_234_1:  '
+    FileOffset:      234
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          22042
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_234_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_252_1:  '
+    FileOffset:      252
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          22290
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_252_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_267_1:  '
+    FileOffset:      267
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          22503
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_267_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_282_1:  '
+    FileOffset:      282
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          22692
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_282_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_298_1:  '
+    FileOffset:      298
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          22888
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_298_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_305_1:  '
+    FileOffset:      305
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          23112
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_305_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          23354
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_349_1:  '
+    FileOffset:      349
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          23625
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_349_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_371_1:  '
+    FileOffset:      371
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          23885
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_371_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_392_1:  '
+    FileOffset:      392
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          24228
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_392_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          24507
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_418_1:  '
+    FileOffset:      418
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/polyvec.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/polyvec.pp.0.c
+        Offset:          24723
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_418_1: '
+...

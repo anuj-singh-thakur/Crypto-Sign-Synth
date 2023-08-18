@@ -1,0 +1,144 @@
+   Build using "/home/shikha/Vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_pqcrystals_dilithium2_ref.cpp
+   Compiling (apcc) aes256ctr.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:35 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/723361678450055596380
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.71 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.7 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:38 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/723931678450058230335
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.63 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.62 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) fips202.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:40 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/724501678450060764358
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 2.2 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 2.2 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) ntt.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:43 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/725071678450063894206
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.37 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.36 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) packing.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:46 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/725641678450066165947
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.49 seconds. Total CPU system time: 0.06 seconds. Total elapsed time: 1.46 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) poly.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:48 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/726211678450068566600
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.83 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.82 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) polyvec.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:51 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/727081678450071322193
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.47 seconds. Total CPU system time: 0.08 seconds. Total elapsed time: 1.47 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) PQCgenKAT_sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:53 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/727651678450073704618
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.44 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.43 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) reduce.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:56 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/728221678450076072285
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.32 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.33 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) rng.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:37:58 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/728791678450078369517
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.56 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.53 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) rounding.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:38:00 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/729381678450080927136
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.43 seconds. Total CPU system time: 0.06 seconds. Total elapsed time: 1.46 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:38:03 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/730061678450083307953
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.47 seconds. Total CPU system time: 0.11 seconds. Total elapsed time: 1.59 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) symmetric-aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:38:05 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/730641678450085840955
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.38 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.37 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) symmetric-shake.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:38:08 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/731221678450088169353
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.4 seconds. Total CPU system time: 0.05 seconds. Total elapsed time: 1.37 seconds; peak allocated memory: 98.957 MB.
+   Compiling apatb_pqcrystals_dilithium2_ref_ir.ll
+   Generating cosim.tv.exe

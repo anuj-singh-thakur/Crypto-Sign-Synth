@@ -1,0 +1,144 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'shake128_absorb'" level="0">
+<item name = "Date">Thu Apr 13 22:44:40 2023
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Phase2</item>
+<item name = "Solution">Latency</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.352 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">24, 24, 0.240 us, 0.240 us, 24, 24, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- memset_t">7, 7, 1, -, -, 8, no</column>
+<column name="- Loop 2">8, 8, 1, -, -, 8, no</column>
+<column name="- Loop 3">2, 2, 1, -, -, 2, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 136, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">0, -, 16, 1, 0</column>
+<column name="Multiplexer">-, -, -, 169, -</column>
+<column name="Register">-, -, 67, -, -</column>
+<specialColumn name="Available">730, 740, 269200, 134600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="t_U">shake128_absorb_t, 0, 16, 1, 0, 8, 8, 1, 64</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln387_fu_218_p2">+, 0, 0, 12, 3, 1</column>
+<column name="i_1_fu_263_p2">+, 0, 0, 10, 2, 1</column>
+<column name="i_fu_241_p2">+, 0, 0, 13, 4, 1</column>
+<column name="icmp_ln387_fu_229_p2">icmp, 0, 0, 9, 3, 2</column>
+<column name="icmp_ln423_fu_235_p2">icmp, 0, 0, 11, 4, 5</column>
+<column name="icmp_ln425_fu_257_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="select_ln426_fu_273_p3">select, 0, 0, 8, 1, 8</column>
+<column name="state_s_d0">xor, 0, 0, 64, 64, 64</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">44, 9, 1, 9</column>
+<column name="i_4_i_reg_192">9, 2, 4, 8</column>
+<column name="i_5_i_reg_203">9, 2, 2, 4</column>
+<column name="phi_ln387_reg_181">9, 2, 3, 6</column>
+<column name="state_s_address0">15, 3, 5, 15</column>
+<column name="t_address0">41, 8, 3, 24</column>
+<column name="t_address1">27, 5, 3, 15</column>
+<column name="t_d0">15, 3, 8, 24</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="i_4_i_reg_192">4, 0, 4, 0</column>
+<column name="i_5_i_reg_203">2, 0, 2, 0</column>
+<column name="in_1_read_cast_reg_306">2, 0, 8, 6</column>
+<column name="phi_ln387_reg_181">3, 0, 3, 0</column>
+<column name="t_load_1_reg_350">8, 0, 8, 0</column>
+<column name="t_load_2_reg_365">8, 0, 8, 0</column>
+<column name="t_load_3_reg_370">8, 0, 8, 0</column>
+<column name="t_load_4_reg_385">8, 0, 8, 0</column>
+<column name="t_load_5_reg_390">8, 0, 8, 0</column>
+<column name="t_load_reg_345">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, shake128_absorb, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, shake128_absorb, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, shake128_absorb, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, shake128_absorb, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, shake128_absorb, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, shake128_absorb, return value</column>
+<column name="state_s_address0">out, 5, ap_memory, state_s, array</column>
+<column name="state_s_ce0">out, 1, ap_memory, state_s, array</column>
+<column name="state_s_we0">out, 1, ap_memory, state_s, array</column>
+<column name="state_s_d0">out, 64, ap_memory, state_s, array</column>
+<column name="state_s_q0">in, 64, ap_memory, state_s, array</column>
+<column name="in_0_read">in, 8, ap_none, in_0_read, scalar</column>
+<column name="in_1_read">in, 2, ap_none, in_1_read, scalar</column>
+</table>
+</item>
+</section>
+</profile>

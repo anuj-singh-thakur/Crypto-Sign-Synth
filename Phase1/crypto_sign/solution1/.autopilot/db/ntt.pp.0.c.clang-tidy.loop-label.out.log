@@ -1,0 +1,35 @@
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:455:3: warning: Added loop label VITIS_LOOP_54_1:   [xilinx-label-all-loops]
+  for(len = 128; len > 0; len >>= 1) {
+  ^~~
+  VITIS_LOOP_54_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:455:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:456:5: warning: Added loop label VITIS_LOOP_55_2:   [xilinx-label-all-loops]
+    for(start = 0; start < 256; start = j + len) {
+    ^~~
+    VITIS_LOOP_55_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:456:5: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:458:7: warning: Added loop label VITIS_LOOP_57_3:   [xilinx-label-all-loops]
+      for(j = start; j < start + len; ++j) {
+      ^~~
+      VITIS_LOOP_57_3: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:458:7: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:473:3: warning: Added loop label VITIS_LOOP_83_1:   [xilinx-label-all-loops]
+  for(len = 1; len < 256; len <<= 1) {
+  ^~~
+  VITIS_LOOP_83_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:473:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:474:5: warning: Added loop label VITIS_LOOP_84_2:   [xilinx-label-all-loops]
+    for(start = 0; start < 256; start = j + len) {
+    ^~~
+    VITIS_LOOP_84_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:474:5: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:476:7: warning: Added loop label VITIS_LOOP_86_3:   [xilinx-label-all-loops]
+      for(j = start; j < start + len; ++j) {
+      ^~~
+      VITIS_LOOP_86_3: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:476:7: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:485:3: warning: Added loop label VITIS_LOOP_95_4:   [xilinx-label-all-loops]
+  for(j = 0; j < 256; ++j) {
+  ^~~
+  VITIS_LOOP_95_4: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/ntt.pp.0.c:485:3: note: FIX-IT applied suggested code changes

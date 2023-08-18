@@ -1,0 +1,7 @@
+Running: xsim.dir/pqcrystals_dilithium2_ref/xsimk.exe -simmode gui -wdb pqcrystals_dilithium2_ref.wdb -simrunnum 0 -socket 1327
+Design successfully loaded
+Design Loading Memory Usage: 12100 KB (Peak: 12100 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 20452 KB (Peak: 20452 KB)
+Simulation CPU Usage: 750546 ms

@@ -1,0 +1,133 @@
+
+
+================================================================
+== Vitis HLS Report for 'pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2'
+================================================================
+* Date:           Fri Mar 10 17:35:17 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  50.00 ns|  4.112 ns|    13.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |      258|      258|  12.900 us|  12.900 us|  258|  258|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_527_2  |      256|      256|         1|          1|          1|   256|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.11>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (1.32ns)   --->   "%store_ln0 = store i9 0, i9 %i"   --->   Operation 5 'store' 'store_ln0' <Predicate = true> <Delay = 1.32>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc6"   --->   Operation 6 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i_43 = load i9 %i" [dilithium2/poly.c:527]   --->   Operation 7 'load' 'i_43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 8 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.34ns)   --->   "%icmp_ln527 = icmp_eq  i9 %i_43, i9 256" [dilithium2/poly.c:527]   --->   Operation 9 'icmp' 'icmp_ln527' <Predicate = true> <Delay = 1.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 256, i64 256, i64 256"   --->   Operation 10 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.73ns)   --->   "%add_ln527 = add i9 %i_43, i9 1" [dilithium2/poly.c:527]   --->   Operation 11 'add' 'add_ln527' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln527 = br i1 %icmp_ln527, void %for.inc6.split, void %VITIS_LOOP_530_4.preheader.exitStub" [dilithium2/poly.c:527]   --->   Operation 12 'br' 'br_ln527' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i_71_cast = zext i9 %i_43" [dilithium2/poly.c:527]   --->   Operation 13 'zext' 'i_71_cast' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specloopname_ln512 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [dilithium2/poly.c:512]   --->   Operation 14 'specloopname' 'specloopname_ln512' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i32 %c, i64 0, i64 %i_71_cast" [dilithium2/poly.c:528]   --->   Operation 15 'getelementptr' 'c_addr' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (2.77ns)   --->   "%store_ln528 = store i32 0, i8 %c_addr" [dilithium2/poly.c:528]   --->   Operation 16 'store' 'store_ln528' <Predicate = (!icmp_ln527)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_1 : Operation 17 [1/1] (1.32ns)   --->   "%store_ln527 = store i9 %add_ln527, i9 %i" [dilithium2/poly.c:527]   --->   Operation 17 'store' 'store_ln527' <Predicate = (!icmp_ln527)> <Delay = 1.32>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln527 = br void %for.inc6" [dilithium2/poly.c:527]   --->   Operation 18 'br' 'br_ln527' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 19 'ret' 'ret_ln0' <Predicate = (icmp_ln527)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 50ns, clock uncertainty: 13.5ns.
+
+ <State 1>: 4.11ns
+The critical path consists of the following:
+	'alloca' operation ('i') [2]  (0 ns)
+	'load' operation ('i', dilithium2/poly.c:527) on local variable 'i' [6]  (0 ns)
+	'add' operation ('add_ln527', dilithium2/poly.c:527) [10]  (1.73 ns)
+	'store' operation ('store_ln527', dilithium2/poly.c:527) of variable 'add_ln527', dilithium2/poly.c:527 on local variable 'i' [17]  (1.32 ns)
+	blocking operation 1.05 ns on control path)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vivado HLS Report for 'load64_3'
+================================================================
+* Date:           Thu Apr 13 22:37:23 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Phase2
+* Solution:       Latency
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 4.582 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4| 40.000 ns | 40.000 ns |    4|    4|   none  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.58>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%x_offset_read = call i64 @_ssdm_op_Read.ap_auto.i64(i64 %x_offset)" [dilithium2/fips202.c:26]   --->   Operation 6 'read' 'x_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x_addr = getelementptr [5720 x i8]* %x, i64 0, i64 %x_offset_read" [dilithium2/fips202.c:31]   --->   Operation 7 'getelementptr' 'x_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (2.77ns)   --->   "%x_load = load i8* %x_addr, align 1" [dilithium2/fips202.c:31]   --->   Operation 8 'load' 'x_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln31 = trunc i64 %x_offset_read to i14" [dilithium2/fips202.c:31]   --->   Operation 9 'trunc' 'trunc_ln31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.80ns)   --->   "%add_ln31 = add i14 1, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 10 'add' 'add_ln31' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i14 %add_ln31 to i64" [dilithium2/fips202.c:31]   --->   Operation 11 'zext' 'zext_ln31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%x_addr_1 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31" [dilithium2/fips202.c:31]   --->   Operation 12 'getelementptr' 'x_addr_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [2/2] (2.77ns)   --->   "%x_load_1 = load i8* %x_addr_1, align 1" [dilithium2/fips202.c:31]   --->   Operation 13 'load' 'x_load_1' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+
+State 2 <SV = 1> <Delay = 4.58>
+ST_2 : Operation 14 [1/2] (2.77ns)   --->   "%x_load = load i8* %x_addr, align 1" [dilithium2/fips202.c:31]   --->   Operation 14 'load' 'x_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_2 : Operation 15 [1/2] (2.77ns)   --->   "%x_load_1 = load i8* %x_addr_1, align 1" [dilithium2/fips202.c:31]   --->   Operation 15 'load' 'x_load_1' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_2 : Operation 16 [1/1] (1.80ns)   --->   "%add_ln31_1 = add i14 2, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 16 'add' 'add_ln31_1' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln31_25 = zext i14 %add_ln31_1 to i64" [dilithium2/fips202.c:31]   --->   Operation 17 'zext' 'zext_ln31_25' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%x_addr_2 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_25" [dilithium2/fips202.c:31]   --->   Operation 18 'getelementptr' 'x_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (2.77ns)   --->   "%x_load_2 = load i8* %x_addr_2, align 1" [dilithium2/fips202.c:31]   --->   Operation 19 'load' 'x_load_2' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_2 : Operation 20 [1/1] (1.80ns)   --->   "%add_ln31_2 = add i14 3, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 20 'add' 'add_ln31_2' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln31_26 = zext i14 %add_ln31_2 to i64" [dilithium2/fips202.c:31]   --->   Operation 21 'zext' 'zext_ln31_26' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%x_addr_3 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_26" [dilithium2/fips202.c:31]   --->   Operation 22 'getelementptr' 'x_addr_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [2/2] (2.77ns)   --->   "%x_load_3 = load i8* %x_addr_3, align 1" [dilithium2/fips202.c:31]   --->   Operation 23 'load' 'x_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+
+State 3 <SV = 2> <Delay = 4.58>
+ST_3 : Operation 24 [1/2] (2.77ns)   --->   "%x_load_2 = load i8* %x_addr_2, align 1" [dilithium2/fips202.c:31]   --->   Operation 24 'load' 'x_load_2' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_3 : Operation 25 [1/2] (2.77ns)   --->   "%x_load_3 = load i8* %x_addr_3, align 1" [dilithium2/fips202.c:31]   --->   Operation 25 'load' 'x_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_3 : Operation 26 [1/1] (1.80ns)   --->   "%add_ln31_3 = add i14 4, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 26 'add' 'add_ln31_3' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln31_27 = zext i14 %add_ln31_3 to i64" [dilithium2/fips202.c:31]   --->   Operation 27 'zext' 'zext_ln31_27' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%x_addr_4 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_27" [dilithium2/fips202.c:31]   --->   Operation 28 'getelementptr' 'x_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [2/2] (2.77ns)   --->   "%x_load_4 = load i8* %x_addr_4, align 1" [dilithium2/fips202.c:31]   --->   Operation 29 'load' 'x_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_3 : Operation 30 [1/1] (1.80ns)   --->   "%add_ln31_4 = add i14 5, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 30 'add' 'add_ln31_4' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln31_28 = zext i14 %add_ln31_4 to i64" [dilithium2/fips202.c:31]   --->   Operation 31 'zext' 'zext_ln31_28' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%x_addr_5 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_28" [dilithium2/fips202.c:31]   --->   Operation 32 'getelementptr' 'x_addr_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [2/2] (2.77ns)   --->   "%x_load_5 = load i8* %x_addr_5, align 1" [dilithium2/fips202.c:31]   --->   Operation 33 'load' 'x_load_5' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+
+State 4 <SV = 3> <Delay = 4.58>
+ST_4 : Operation 34 [1/2] (2.77ns)   --->   "%x_load_4 = load i8* %x_addr_4, align 1" [dilithium2/fips202.c:31]   --->   Operation 34 'load' 'x_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_4 : Operation 35 [1/2] (2.77ns)   --->   "%x_load_5 = load i8* %x_addr_5, align 1" [dilithium2/fips202.c:31]   --->   Operation 35 'load' 'x_load_5' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_4 : Operation 36 [1/1] (1.80ns)   --->   "%add_ln31_5 = add i14 6, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 36 'add' 'add_ln31_5' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln31_29 = zext i14 %add_ln31_5 to i64" [dilithium2/fips202.c:31]   --->   Operation 37 'zext' 'zext_ln31_29' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%x_addr_6 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_29" [dilithium2/fips202.c:31]   --->   Operation 38 'getelementptr' 'x_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [2/2] (2.77ns)   --->   "%x_load_6 = load i8* %x_addr_6, align 1" [dilithium2/fips202.c:31]   --->   Operation 39 'load' 'x_load_6' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_4 : Operation 40 [1/1] (1.80ns)   --->   "%add_ln31_6 = add i14 7, %trunc_ln31" [dilithium2/fips202.c:31]   --->   Operation 40 'add' 'add_ln31_6' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln31_30 = zext i14 %add_ln31_6 to i64" [dilithium2/fips202.c:31]   --->   Operation 41 'zext' 'zext_ln31_30' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%x_addr_7 = getelementptr [5720 x i8]* %x, i64 0, i64 %zext_ln31_30" [dilithium2/fips202.c:31]   --->   Operation 42 'getelementptr' 'x_addr_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [2/2] (2.77ns)   --->   "%x_load_7 = load i8* %x_addr_7, align 1" [dilithium2/fips202.c:31]   --->   Operation 43 'load' 'x_load_7' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+
+State 5 <SV = 4> <Delay = 2.77>
+ST_5 : Operation 44 [1/2] (2.77ns)   --->   "%x_load_6 = load i8* %x_addr_6, align 1" [dilithium2/fips202.c:31]   --->   Operation 44 'load' 'x_load_6' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_5 : Operation 45 [1/2] (2.77ns)   --->   "%x_load_7 = load i8* %x_addr_7, align 1" [dilithium2/fips202.c:31]   --->   Operation 45 'load' 'x_load_7' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%r_7 = call i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8(i8 %x_load_7, i8 %x_load_6, i8 %x_load_5, i8 %x_load_4, i8 %x_load_3, i8 %x_load_2, i8 %x_load_1, i8 %x_load)" [dilithium2/fips202.c:31]   --->   Operation 46 'bitconcatenate' 'r_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "ret i64 %r_7" [dilithium2/fips202.c:33]   --->   Operation 47 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.58ns
+The critical path consists of the following:
+	wire read on port 'x_offset' (dilithium2/fips202.c:26) [3]  (0 ns)
+	'add' operation ('add_ln31', dilithium2/fips202.c:31) [7]  (1.81 ns)
+	'getelementptr' operation ('x_addr_1', dilithium2/fips202.c:31) [9]  (0 ns)
+	'load' operation ('x_load_1', dilithium2/fips202.c:31) on array 'x' [10]  (2.77 ns)
+
+ <State 2>: 4.58ns
+The critical path consists of the following:
+	'add' operation ('add_ln31_1', dilithium2/fips202.c:31) [11]  (1.81 ns)
+	'getelementptr' operation ('x_addr_2', dilithium2/fips202.c:31) [13]  (0 ns)
+	'load' operation ('x_load_2', dilithium2/fips202.c:31) on array 'x' [14]  (2.77 ns)
+
+ <State 3>: 4.58ns
+The critical path consists of the following:
+	'add' operation ('add_ln31_3', dilithium2/fips202.c:31) [19]  (1.81 ns)
+	'getelementptr' operation ('x_addr_4', dilithium2/fips202.c:31) [21]  (0 ns)
+	'load' operation ('x_load_4', dilithium2/fips202.c:31) on array 'x' [22]  (2.77 ns)
+
+ <State 4>: 4.58ns
+The critical path consists of the following:
+	'add' operation ('add_ln31_5', dilithium2/fips202.c:31) [27]  (1.81 ns)
+	'getelementptr' operation ('x_addr_6', dilithium2/fips202.c:31) [29]  (0 ns)
+	'load' operation ('x_load_6', dilithium2/fips202.c:31) on array 'x' [30]  (2.77 ns)
+
+ <State 5>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('x_load_6', dilithium2/fips202.c:31) on array 'x' [30]  (2.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

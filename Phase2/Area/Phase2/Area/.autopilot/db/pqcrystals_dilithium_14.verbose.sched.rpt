@@ -1,0 +1,637 @@
+
+
+================================================================
+== Vivado HLS Report for 'pqcrystals_dilithium_14'
+================================================================
+* Date:           Wed Apr 12 23:58:49 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Phase2
+* Solution:       Area
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 6.812 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1         |       25|       25|         1|          -|          -|    25|    no    |
+        |- Loop 2         |       20|       20|         5|          -|          -|     4|    no    |
+        |- Loop 3         |       85|       85|         5|          -|          -|    17|    no    |
+        |- Loop 4         |       16|       16|         2|          -|          -|     8|    no    |
+        |- Loop 5         |      256|      256|         1|          -|          -|   256|    no    |
+        |- Loop 6         |        ?|        ?|         ?|          -|          -|    39|    no    |
+        | + Loop 6.1      |        ?|        ?|  3 ~ 140 |          -|          -|     ?|    no    |
+        |  ++ Loop 6.1.1  |       85|       85|         5|          -|          -|    17|    no    |
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 30
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 2 3 
+3 --> 4 8 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 3 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 16 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 11 
+16 --> 17 18 
+17 --> 16 
+18 --> 18 19 
+19 --> 20 
+20 --> 21 27 
+21 --> 22 
+22 --> 23 27 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 22 
+27 --> 28 
+28 --> 20 29 
+29 --> 30 
+30 --> 19 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%buf = alloca [136 x i8], align 16" [dilithium2/poly.c:514]   --->   Operation 31 'alloca' 'buf' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%state_s = alloca [25 x i64], align 8" [dilithium2/poly.c:515]   --->   Operation 32 'alloca' 'state_s' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_1 : Operation 33 [1/1] (1.35ns)   --->   "br label %1" [dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 33 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 2.77>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%i_0_i_i = phi i5 [ 0, %0 ], [ %i, %2 ]"   --->   Operation 34 'phi' 'i_0_i_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (1.21ns)   --->   "%icmp_ln362 = icmp eq i5 %i_0_i_i, -7" [dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 35 'icmp' 'icmp_ln362' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 25, i64 25, i64 25)"   --->   Operation 36 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (1.54ns)   --->   "%i = add i5 %i_0_i_i, 1" [dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 37 'add' 'i' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "br i1 %icmp_ln362, label %shake256_init.1.exit, label %2" [dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 38 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln363 = zext i5 %i_0_i_i to i64" [dilithium2/fips202.c:363->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 39 'zext' 'zext_ln363' <Predicate = (!icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%state_s_addr = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln363" [dilithium2/fips202.c:363->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 40 'getelementptr' 'state_s_addr' <Predicate = (!icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (2.77ns)   --->   "store i64 0, i64* %state_s_addr, align 8" [dilithium2/fips202.c:363->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 41 'store' <Predicate = (!icmp_ln362)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "br label %1" [dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517]   --->   Operation 42 'br' <Predicate = (!icmp_ln362)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (1.35ns)   --->   "br label %._crit_edge15.i.i" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 43 'br' <Predicate = (icmp_ln362)> <Delay = 1.35>
+
+State 3 <SV = 2> <Delay = 2.77>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%i_3_i_i = phi i3 [ %add_ln416, %3 ], [ 0, %shake256_init.1.exit ]" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 44 'phi' 'i_3_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%zext_ln416 = zext i3 %i_3_i_i to i64" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 45 'zext' 'zext_ln416' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%empty_91 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 46 'speclooptripcount' 'empty_91' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (1.00ns)   --->   "%icmp_ln416 = icmp eq i3 %i_3_i_i, -4" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 47 'icmp' 'icmp_ln416' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (1.34ns)   --->   "%add_ln416 = add i3 %i_3_i_i, 1" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 48 'add' 'add_ln416' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "br i1 %icmp_ln416, label %shake256_absorb.exit, label %3" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 49 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln417 = trunc i3 %i_3_i_i to i2" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 50 'trunc' 'trunc_ln417' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%shl_ln = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %trunc_ln417, i3 0)" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 51 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln417 = zext i5 %shl_ln to i64" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 52 'zext' 'zext_ln417' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%seed_addr = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln417" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 53 'getelementptr' 'seed_addr' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 54 [2/2] (2.77ns)   --->   "%seed_load = load i8* %seed_addr, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 54 'load' 'seed_load' <Predicate = (!icmp_ln416)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%or_ln31 = or i5 %shl_ln, 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 55 'or' 'or_ln31' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i5 %or_ln31 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 56 'zext' 'zext_ln31' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%seed_addr_1 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 57 'getelementptr' 'seed_addr_1' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 58 [2/2] (2.77ns)   --->   "%seed_load_1 = load i8* %seed_addr_1, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 58 'load' 'seed_load_1' <Predicate = (!icmp_ln416)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%state_s_addr_6 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln416" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 59 'getelementptr' 'state_s_addr_6' <Predicate = (!icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%state_s_addr_4 = getelementptr [25 x i64]* %state_s, i64 0, i64 4" [dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 60 'getelementptr' 'state_s_addr_4' <Predicate = (icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 61 [2/2] (2.77ns)   --->   "%state_s_load = load i64* %state_s_addr_4, align 8" [dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 61 'load' 'state_s_load' <Predicate = (icmp_ln416)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%state_s_addr_5 = getelementptr [25 x i64]* %state_s, i64 0, i64 16" [dilithium2/fips202.c:451->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 62 'getelementptr' 'state_s_addr_5' <Predicate = (icmp_ln416)> <Delay = 0.00>
+ST_3 : Operation 63 [2/2] (2.77ns)   --->   "%state_s_load_3 = load i64* %state_s_addr_5, align 8" [dilithium2/fips202.c:451->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 63 'load' 'state_s_load_3' <Predicate = (icmp_ln416)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 4 <SV = 3> <Delay = 2.77>
+ST_4 : Operation 64 [1/2] (2.77ns)   --->   "%seed_load = load i8* %seed_addr, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 64 'load' 'seed_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 65 [1/2] (2.77ns)   --->   "%seed_load_1 = load i8* %seed_addr_1, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 65 'load' 'seed_load_1' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%or_ln31_1 = or i5 %shl_ln, 2" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 66 'or' 'or_ln31_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%zext_ln31_13 = zext i5 %or_ln31_1 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 67 'zext' 'zext_ln31_13' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%seed_addr_2 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31_13" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 68 'getelementptr' 'seed_addr_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 69 [2/2] (2.77ns)   --->   "%seed_load_2 = load i8* %seed_addr_2, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 69 'load' 'seed_load_2' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%or_ln31_2 = or i5 %shl_ln, 3" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 70 'or' 'or_ln31_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%zext_ln31_14 = zext i5 %or_ln31_2 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 71 'zext' 'zext_ln31_14' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%seed_addr_3 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31_14" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 72 'getelementptr' 'seed_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [2/2] (2.77ns)   --->   "%seed_load_3 = load i8* %seed_addr_3, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 73 'load' 'seed_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 5 <SV = 4> <Delay = 2.77>
+ST_5 : Operation 74 [1/2] (2.77ns)   --->   "%seed_load_2 = load i8* %seed_addr_2, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 74 'load' 'seed_load_2' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_5 : Operation 75 [1/2] (2.77ns)   --->   "%seed_load_3 = load i8* %seed_addr_3, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 75 'load' 'seed_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%or_ln31_3 = or i5 %shl_ln, 4" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 76 'or' 'or_ln31_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln31_15 = zext i5 %or_ln31_3 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 77 'zext' 'zext_ln31_15' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%seed_addr_4 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31_15" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 78 'getelementptr' 'seed_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 79 [2/2] (2.77ns)   --->   "%seed_load_4 = load i8* %seed_addr_4, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 79 'load' 'seed_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%or_ln31_4 = or i5 %shl_ln, 5" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 80 'or' 'or_ln31_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%zext_ln31_16 = zext i5 %or_ln31_4 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 81 'zext' 'zext_ln31_16' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%seed_addr_5 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31_16" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 82 'getelementptr' 'seed_addr_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [2/2] (2.77ns)   --->   "%seed_load_5 = load i8* %seed_addr_5, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 83 'load' 'seed_load_5' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 6 <SV = 5> <Delay = 2.77>
+ST_6 : Operation 84 [1/2] (2.77ns)   --->   "%seed_load_4 = load i8* %seed_addr_4, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 84 'load' 'seed_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_6 : Operation 85 [1/2] (2.77ns)   --->   "%seed_load_5 = load i8* %seed_addr_5, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 85 'load' 'seed_load_5' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%or_ln31_5 = or i5 %shl_ln, 6" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 86 'or' 'or_ln31_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln31_17 = zext i5 %or_ln31_5 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 87 'zext' 'zext_ln31_17' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 88 [1/1] (0.00ns)   --->   "%seed_addr_6 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31_17" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 88 'getelementptr' 'seed_addr_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 89 [2/2] (2.77ns)   --->   "%seed_load_6 = load i8* %seed_addr_6, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 89 'load' 'seed_load_6' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_6 : Operation 90 [1/1] (0.00ns)   --->   "%or_ln31_6 = or i5 %shl_ln, 7" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 90 'or' 'or_ln31_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln31_18 = zext i5 %or_ln31_6 to i64" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 91 'zext' 'zext_ln31_18' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 92 [1/1] (0.00ns)   --->   "%seed_addr_7 = getelementptr [5720 x i8]* %seed, i64 0, i64 %zext_ln31_18" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 92 'getelementptr' 'seed_addr_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 93 [2/2] (2.77ns)   --->   "%seed_load_7 = load i8* %seed_addr_7, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 93 'load' 'seed_load_7' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_6 : Operation 94 [2/2] (2.77ns)   --->   "%state_s_load_4 = load i64* %state_s_addr_6, align 8" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 94 'load' 'state_s_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 7 <SV = 6> <Delay = 6.35>
+ST_7 : Operation 95 [1/2] (2.77ns)   --->   "%seed_load_6 = load i8* %seed_addr_6, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 95 'load' 'seed_load_6' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_7 : Operation 96 [1/2] (2.77ns)   --->   "%seed_load_7 = load i8* %seed_addr_7, align 1" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 96 'load' 'seed_load_7' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%r_7_i = call i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8(i8 %seed_load_7, i8 %seed_load_6, i8 %seed_load_5, i8 %seed_load_4, i8 %seed_load_3, i8 %seed_load_2, i8 %seed_load_1, i8 %seed_load)" [dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 97 'bitconcatenate' 'r_7_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 98 [1/2] (2.77ns)   --->   "%state_s_load_4 = load i64* %state_s_addr_6, align 8" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 98 'load' 'state_s_load_4' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_7 : Operation 99 [1/1] (0.80ns)   --->   "%xor_ln417 = xor i64 %state_s_load_4, %r_7_i" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 99 'xor' 'xor_ln417' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 100 [1/1] (2.77ns)   --->   "store i64 %xor_ln417, i64* %state_s_addr_6, align 8" [dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 100 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_7 : Operation 101 [1/1] (0.00ns)   --->   "br label %._crit_edge15.i.i" [dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518]   --->   Operation 101 'br' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 3> <Delay = 6.35>
+ST_8 : Operation 102 [1/2] (2.77ns)   --->   "%state_s_load = load i64* %state_s_addr_4, align 8" [dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 102 'load' 'state_s_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_8 : Operation 103 [1/1] (0.80ns)   --->   "%xor_ln450 = xor i64 %state_s_load, 31" [dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 103 'xor' 'xor_ln450' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 104 [1/1] (2.77ns)   --->   "store i64 %xor_ln450, i64* %state_s_addr_4, align 8" [dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 104 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_8 : Operation 105 [1/2] (2.77ns)   --->   "%state_s_load_3 = load i64* %state_s_addr_5, align 8" [dilithium2/fips202.c:451->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 105 'load' 'state_s_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_8 : Operation 106 [1/1] (0.80ns)   --->   "%xor_ln451 = xor i64 %state_s_load_3, -9223372036854775808" [dilithium2/fips202.c:451->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 106 'xor' 'xor_ln451' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 107 [1/1] (2.77ns)   --->   "store i64 %xor_ln451, i64* %state_s_addr_5, align 8" [dilithium2/fips202.c:451->dilithium2/fips202.c:675->dilithium2/poly.c:519]   --->   Operation 107 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 9 <SV = 4> <Delay = 1.35>
+ST_9 : Operation 108 [2/2] (1.35ns)   --->   "call fastcc void @KeccakF1600_StatePer.1([25 x i64]* %state_s)" [dilithium2/fips202.c:475->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 108 'call' <Predicate = true> <Delay = 1.35> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 5> <Delay = 1.35>
+ST_10 : Operation 109 [1/2] (0.00ns)   --->   "call fastcc void @KeccakF1600_StatePer.1([25 x i64]* %state_s)" [dilithium2/fips202.c:475->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 109 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 110 [1/1] (1.35ns)   --->   "br label %4" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 110 'br' <Predicate = true> <Delay = 1.35>
+
+State 11 <SV = 6> <Delay = 2.77>
+ST_11 : Operation 111 [1/1] (0.00ns)   --->   "%i_0_i_i12_0 = phi i5 [ 0, %shake256_absorb.exit ], [ %add_ln476, %5 ]" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 111 'phi' 'i_0_i_i12_0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 112 [1/1] (1.21ns)   --->   "%icmp_ln476 = icmp eq i5 %i_0_i_i12_0, -15" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 112 'icmp' 'icmp_ln476' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 113 [1/1] (0.00ns)   --->   "%empty_92 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 17, i64 17, i64 17)"   --->   Operation 113 'speclooptripcount' 'empty_92' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 114 [1/1] (1.54ns)   --->   "%add_ln476 = add i5 %i_0_i_i12_0, 1" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 114 'add' 'add_ln476' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 115 [1/1] (0.00ns)   --->   "br i1 %icmp_ln476, label %shake256_squeezeblocks.exit15.preheader, label %5" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 115 'br' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln477_1 = zext i5 %i_0_i_i12_0 to i64" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 116 'zext' 'zext_ln477_1' <Predicate = (!icmp_ln476)> <Delay = 0.00>
+ST_11 : Operation 117 [1/1] (0.00ns)   --->   "%state_s_addr_7 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln477_1" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 117 'getelementptr' 'state_s_addr_7' <Predicate = (!icmp_ln476)> <Delay = 0.00>
+ST_11 : Operation 118 [2/2] (2.77ns)   --->   "%state_s_load_5 = load i64* %state_s_addr_7, align 8" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 118 'load' 'state_s_load_5' <Predicate = (!icmp_ln476)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_11 : Operation 119 [1/1] (1.35ns)   --->   "br label %shake256_squeezeblocks.exit15" [dilithium2/poly.c:523]   --->   Operation 119 'br' <Predicate = (icmp_ln476)> <Delay = 1.35>
+
+State 12 <SV = 7> <Delay = 5.54>
+ST_12 : Operation 120 [1/1] (0.00ns)   --->   "%shl_ln5 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %i_0_i_i12_0, i3 0)" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 120 'bitconcatenate' 'shl_ln5' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 121 [1/1] (0.00ns)   --->   "%zext_ln477 = zext i8 %shl_ln5 to i64" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 121 'zext' 'zext_ln477' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 122 [1/2] (2.77ns)   --->   "%state_s_load_5 = load i64* %state_s_addr_7, align 8" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 122 'load' 'state_s_load_5' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 123 [1/1] (0.00ns)   --->   "%trunc_ln48 = trunc i64 %state_s_load_5 to i8" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 123 'trunc' 'trunc_ln48' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 124 [1/1] (0.00ns)   --->   "%buf_addr = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln477" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 124 'getelementptr' 'buf_addr' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 125 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48, i8* %buf_addr, align 8" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 125 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 126 [1/1] (0.00ns)   --->   "%trunc_ln48_s = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 8, i32 15)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 126 'partselect' 'trunc_ln48_s' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 127 [1/1] (0.00ns)   --->   "%or_ln48 = or i8 %shl_ln5, 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 127 'or' 'or_ln48' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 128 [1/1] (0.00ns)   --->   "%zext_ln48 = zext i8 %or_ln48 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 128 'zext' 'zext_ln48' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 129 [1/1] (0.00ns)   --->   "%buf_addr_3 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 129 'getelementptr' 'buf_addr_3' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 130 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_s, i8* %buf_addr_3, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 130 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 131 [1/1] (0.00ns)   --->   "%trunc_ln48_1 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 16, i32 23)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 131 'partselect' 'trunc_ln48_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 132 [1/1] (0.00ns)   --->   "%trunc_ln48_2 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 24, i32 31)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 132 'partselect' 'trunc_ln48_2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 133 [1/1] (0.00ns)   --->   "%trunc_ln48_3 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 32, i32 39)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 133 'partselect' 'trunc_ln48_3' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 134 [1/1] (0.00ns)   --->   "%trunc_ln48_4 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 40, i32 47)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 134 'partselect' 'trunc_ln48_4' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln48_5 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 48, i32 55)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 135 'partselect' 'trunc_ln48_5' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 136 [1/1] (0.00ns)   --->   "%trunc_ln48_6 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_5, i32 56, i32 63)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 136 'partselect' 'trunc_ln48_6' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 8> <Delay = 2.77>
+ST_13 : Operation 137 [1/1] (0.00ns)   --->   "%or_ln48_1 = or i8 %shl_ln5, 2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 137 'or' 'or_ln48_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 138 [1/1] (0.00ns)   --->   "%zext_ln48_1 = zext i8 %or_ln48_1 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 138 'zext' 'zext_ln48_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 139 [1/1] (0.00ns)   --->   "%buf_addr_4 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 139 'getelementptr' 'buf_addr_4' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 140 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_1, i8* %buf_addr_4, align 2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 140 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 141 [1/1] (0.00ns)   --->   "%or_ln48_2 = or i8 %shl_ln5, 3" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 141 'or' 'or_ln48_2' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 142 [1/1] (0.00ns)   --->   "%zext_ln48_2 = zext i8 %or_ln48_2 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 142 'zext' 'zext_ln48_2' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 143 [1/1] (0.00ns)   --->   "%buf_addr_5 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 143 'getelementptr' 'buf_addr_5' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 144 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_2, i8* %buf_addr_5, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 144 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 14 <SV = 9> <Delay = 2.77>
+ST_14 : Operation 145 [1/1] (0.00ns)   --->   "%or_ln48_3 = or i8 %shl_ln5, 4" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 145 'or' 'or_ln48_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 146 [1/1] (0.00ns)   --->   "%zext_ln48_3 = zext i8 %or_ln48_3 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 146 'zext' 'zext_ln48_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 147 [1/1] (0.00ns)   --->   "%buf_addr_6 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_3" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 147 'getelementptr' 'buf_addr_6' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 148 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_3, i8* %buf_addr_6, align 4" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 148 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_14 : Operation 149 [1/1] (0.00ns)   --->   "%or_ln48_4 = or i8 %shl_ln5, 5" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 149 'or' 'or_ln48_4' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 150 [1/1] (0.00ns)   --->   "%zext_ln48_4 = zext i8 %or_ln48_4 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 150 'zext' 'zext_ln48_4' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 151 [1/1] (0.00ns)   --->   "%buf_addr_7 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_4" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 151 'getelementptr' 'buf_addr_7' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 152 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_4, i8* %buf_addr_7, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 152 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 15 <SV = 10> <Delay = 2.77>
+ST_15 : Operation 153 [1/1] (0.00ns)   --->   "%or_ln48_5 = or i8 %shl_ln5, 6" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 153 'or' 'or_ln48_5' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 154 [1/1] (0.00ns)   --->   "%zext_ln48_5 = zext i8 %or_ln48_5 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 154 'zext' 'zext_ln48_5' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 155 [1/1] (0.00ns)   --->   "%buf_addr_8 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_5" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 155 'getelementptr' 'buf_addr_8' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 156 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_5, i8* %buf_addr_8, align 2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 156 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_15 : Operation 157 [1/1] (0.00ns)   --->   "%or_ln48_6 = or i8 %shl_ln5, 7" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 157 'or' 'or_ln48_6' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 158 [1/1] (0.00ns)   --->   "%zext_ln48_6 = zext i8 %or_ln48_6 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 158 'zext' 'zext_ln48_6' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 159 [1/1] (0.00ns)   --->   "%buf_addr_9 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_6" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 159 'getelementptr' 'buf_addr_9' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 160 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_6, i8* %buf_addr_9, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 160 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_15 : Operation 161 [1/1] (0.00ns)   --->   "br label %4" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520]   --->   Operation 161 'br' <Predicate = true> <Delay = 0.00>
+
+State 16 <SV = 7> <Delay = 2.77>
+ST_16 : Operation 162 [1/1] (0.00ns)   --->   "%i_0 = phi i4 [ %i_45, %6 ], [ 0, %shake256_squeezeblocks.exit15.preheader ]"   --->   Operation 162 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 163 [1/1] (0.00ns)   --->   "%signs_0 = phi i64 [ %signs, %6 ], [ 0, %shake256_squeezeblocks.exit15.preheader ]"   --->   Operation 163 'phi' 'signs_0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 164 [1/1] (1.21ns)   --->   "%icmp_ln523 = icmp eq i4 %i_0, -8" [dilithium2/poly.c:523]   --->   Operation 164 'icmp' 'icmp_ln523' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 165 [1/1] (0.00ns)   --->   "%empty_93 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 165 'speclooptripcount' 'empty_93' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 166 [1/1] (1.49ns)   --->   "%i_45 = add i4 %i_0, 1" [dilithium2/poly.c:523]   --->   Operation 166 'add' 'i_45' <Predicate = true> <Delay = 1.49> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 167 [1/1] (0.00ns)   --->   "br i1 %icmp_ln523, label %.preheader4.preheader, label %6" [dilithium2/poly.c:523]   --->   Operation 167 'br' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 168 [1/1] (0.00ns)   --->   "%zext_ln524 = zext i4 %i_0 to i64" [dilithium2/poly.c:524]   --->   Operation 168 'zext' 'zext_ln524' <Predicate = (!icmp_ln523)> <Delay = 0.00>
+ST_16 : Operation 169 [1/1] (0.00ns)   --->   "%buf_addr_10 = getelementptr inbounds [136 x i8]* %buf, i64 0, i64 %zext_ln524" [dilithium2/poly.c:524]   --->   Operation 169 'getelementptr' 'buf_addr_10' <Predicate = (!icmp_ln523)> <Delay = 0.00>
+ST_16 : Operation 170 [2/2] (2.77ns)   --->   "%buf_load = load i8* %buf_addr_10, align 1" [dilithium2/poly.c:524]   --->   Operation 170 'load' 'buf_load' <Predicate = (!icmp_ln523)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_16 : Operation 171 [1/1] (1.35ns)   --->   "br label %.preheader4" [dilithium2/poly.c:527]   --->   Operation 171 'br' <Predicate = (icmp_ln523)> <Delay = 1.35>
+
+State 17 <SV = 8> <Delay = 5.19>
+ST_17 : Operation 172 [1/2] (2.77ns)   --->   "%buf_load = load i8* %buf_addr_10, align 1" [dilithium2/poly.c:524]   --->   Operation 172 'load' 'buf_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_17 : Operation 173 [1/1] (0.00ns) (grouped into LUT with out node signs)   --->   "%zext_ln524_1 = zext i8 %buf_load to i64" [dilithium2/poly.c:524]   --->   Operation 173 'zext' 'zext_ln524_1' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 174 [1/1] (0.00ns) (grouped into LUT with out node signs)   --->   "%trunc_ln524 = trunc i4 %i_0 to i3" [dilithium2/poly.c:524]   --->   Operation 174 'trunc' 'trunc_ln524' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 175 [1/1] (0.00ns) (grouped into LUT with out node signs)   --->   "%shl_ln6 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln524, i3 0)" [dilithium2/poly.c:524]   --->   Operation 175 'bitconcatenate' 'shl_ln6' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 176 [1/1] (0.00ns) (grouped into LUT with out node signs)   --->   "%zext_ln524_2 = zext i6 %shl_ln6 to i64" [dilithium2/poly.c:524]   --->   Operation 176 'zext' 'zext_ln524_2' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 177 [1/1] (0.00ns) (grouped into LUT with out node signs)   --->   "%shl_ln524 = shl i64 %zext_ln524_1, %zext_ln524_2" [dilithium2/poly.c:524]   --->   Operation 177 'shl' 'shl_ln524' <Predicate = true> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 178 [1/1] (2.42ns) (out node of the LUT)   --->   "%signs = or i64 %shl_ln524, %signs_0" [dilithium2/poly.c:524]   --->   Operation 178 'or' 'signs' <Predicate = true> <Delay = 2.42> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 179 [1/1] (0.00ns)   --->   "br label %shake256_squeezeblocks.exit15" [dilithium2/poly.c:523]   --->   Operation 179 'br' <Predicate = true> <Delay = 0.00>
+
+State 18 <SV = 8> <Delay = 2.77>
+ST_18 : Operation 180 [1/1] (0.00ns)   --->   "%i_1 = phi i9 [ %i_46, %7 ], [ 0, %.preheader4.preheader ]"   --->   Operation 180 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 181 [1/1] (1.34ns)   --->   "%icmp_ln527 = icmp eq i9 %i_1, -256" [dilithium2/poly.c:527]   --->   Operation 181 'icmp' 'icmp_ln527' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 182 [1/1] (0.00ns)   --->   "%empty_94 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 182 'speclooptripcount' 'empty_94' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 183 [1/1] (1.73ns)   --->   "%i_46 = add i9 %i_1, 1" [dilithium2/poly.c:527]   --->   Operation 183 'add' 'i_46' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 184 [1/1] (0.00ns)   --->   "br i1 %icmp_ln527, label %.preheader3.preheader, label %7" [dilithium2/poly.c:527]   --->   Operation 184 'br' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 185 [1/1] (0.00ns)   --->   "%zext_ln528 = zext i9 %i_1 to i64" [dilithium2/poly.c:528]   --->   Operation 185 'zext' 'zext_ln528' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_18 : Operation 186 [1/1] (0.00ns)   --->   "%c_coeffs_addr = getelementptr [256 x i32]* %c_coeffs, i64 0, i64 %zext_ln528" [dilithium2/poly.c:528]   --->   Operation 186 'getelementptr' 'c_coeffs_addr' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_18 : Operation 187 [1/1] (2.77ns)   --->   "store i32 0, i32* %c_coeffs_addr, align 4" [dilithium2/poly.c:528]   --->   Operation 187 'store' <Predicate = (!icmp_ln527)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_18 : Operation 188 [1/1] (0.00ns)   --->   "br label %.preheader4" [dilithium2/poly.c:527]   --->   Operation 188 'br' <Predicate = (!icmp_ln527)> <Delay = 0.00>
+ST_18 : Operation 189 [1/1] (1.35ns)   --->   "br label %.preheader3" [dilithium2/poly.c:529]   --->   Operation 189 'br' <Predicate = (icmp_ln527)> <Delay = 1.35>
+
+State 19 <SV = 9> <Delay = 1.35>
+ST_19 : Operation 190 [1/1] (0.00ns)   --->   "%i_2 = phi i9 [ %i_47, %11 ], [ 217, %.preheader3.preheader ]"   --->   Operation 190 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 191 [1/1] (0.00ns)   --->   "%pos_0 = phi i32 [ %pos, %11 ], [ 8, %.preheader3.preheader ]"   --->   Operation 191 'phi' 'pos_0' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 192 [1/1] (0.00ns)   --->   "%signs_1 = phi i64 [ %signs_3, %11 ], [ %signs_0, %.preheader3.preheader ]"   --->   Operation 192 'phi' 'signs_1' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 193 [1/1] (1.34ns)   --->   "%icmp_ln529 = icmp eq i9 %i_2, -256" [dilithium2/poly.c:529]   --->   Operation 193 'icmp' 'icmp_ln529' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 194 [1/1] (0.00ns)   --->   "%empty_95 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 39, i64 39, i64 39)"   --->   Operation 194 'speclooptripcount' 'empty_95' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 195 [1/1] (0.00ns)   --->   "br i1 %icmp_ln529, label %12, label %.preheader.preheader" [dilithium2/poly.c:529]   --->   Operation 195 'br' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 196 [1/1] (1.35ns)   --->   "br label %.preheader" [dilithium2/poly.c:531]   --->   Operation 196 'br' <Predicate = (!icmp_ln529)> <Delay = 1.35>
+ST_19 : Operation 197 [1/1] (0.00ns)   --->   "ret void" [dilithium2/poly.c:543]   --->   Operation 197 'ret' <Predicate = (icmp_ln529)> <Delay = 0.00>
+
+State 20 <SV = 10> <Delay = 3.46>
+ST_20 : Operation 198 [1/1] (0.00ns)   --->   "%pos_1 = phi i32 [ %pos, %.preheader._crit_edge ], [ %pos_0, %.preheader.preheader ]"   --->   Operation 198 'phi' 'pos_1' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 199 [1/1] (2.11ns)   --->   "%icmp_ln531 = icmp ugt i32 %pos_1, 135" [dilithium2/poly.c:531]   --->   Operation 199 'icmp' 'icmp_ln531' <Predicate = true> <Delay = 2.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 200 [1/1] (1.35ns)   --->   "br i1 %icmp_ln531, label %8, label %.preheader._crit_edge" [dilithium2/poly.c:531]   --->   Operation 200 'br' <Predicate = true> <Delay = 1.35>
+ST_20 : Operation 201 [2/2] (1.35ns)   --->   "call fastcc void @KeccakF1600_StatePer.1([25 x i64]* %state_s)" [dilithium2/fips202.c:475->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 201 'call' <Predicate = (icmp_ln531)> <Delay = 1.35> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 11> <Delay = 1.35>
+ST_21 : Operation 202 [1/2] (0.00ns)   --->   "call fastcc void @KeccakF1600_StatePer.1([25 x i64]* %state_s)" [dilithium2/fips202.c:475->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 202 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 203 [1/1] (1.35ns)   --->   "br label %9" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 203 'br' <Predicate = true> <Delay = 1.35>
+
+State 22 <SV = 12> <Delay = 2.77>
+ST_22 : Operation 204 [1/1] (0.00ns)   --->   "%i_0_i_i8_0 = phi i5 [ 0, %8 ], [ %add_ln476_1, %10 ]" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 204 'phi' 'i_0_i_i8_0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 205 [1/1] (1.21ns)   --->   "%icmp_ln476_1 = icmp eq i5 %i_0_i_i8_0, -15" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 205 'icmp' 'icmp_ln476_1' <Predicate = true> <Delay = 1.21> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 206 [1/1] (0.00ns)   --->   "%empty_96 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 17, i64 17, i64 17)"   --->   Operation 206 'speclooptripcount' 'empty_96' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 207 [1/1] (1.54ns)   --->   "%add_ln476_1 = add i5 %i_0_i_i8_0, 1" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 207 'add' 'add_ln476_1' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 208 [1/1] (0.00ns)   --->   "br i1 %icmp_ln476_1, label %.preheader._crit_edge.loopexit, label %10" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 208 'br' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 209 [1/1] (0.00ns)   --->   "%zext_ln477_3 = zext i5 %i_0_i_i8_0 to i64" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 209 'zext' 'zext_ln477_3' <Predicate = (!icmp_ln476_1)> <Delay = 0.00>
+ST_22 : Operation 210 [1/1] (0.00ns)   --->   "%state_s_addr_8 = getelementptr [25 x i64]* %state_s, i64 0, i64 %zext_ln477_3" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 210 'getelementptr' 'state_s_addr_8' <Predicate = (!icmp_ln476_1)> <Delay = 0.00>
+ST_22 : Operation 211 [2/2] (2.77ns)   --->   "%state_s_load_6 = load i64* %state_s_addr_8, align 8" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 211 'load' 'state_s_load_6' <Predicate = (!icmp_ln476_1)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_22 : Operation 212 [1/1] (1.35ns)   --->   "br label %.preheader._crit_edge"   --->   Operation 212 'br' <Predicate = (icmp_ln476_1)> <Delay = 1.35>
+
+State 23 <SV = 13> <Delay = 5.54>
+ST_23 : Operation 213 [1/1] (0.00ns)   --->   "%shl_ln477_2 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %i_0_i_i8_0, i3 0)" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 213 'bitconcatenate' 'shl_ln477_2' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 214 [1/1] (0.00ns)   --->   "%zext_ln477_2 = zext i8 %shl_ln477_2 to i64" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 214 'zext' 'zext_ln477_2' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 215 [1/2] (2.77ns)   --->   "%state_s_load_6 = load i64* %state_s_addr_8, align 8" [dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 215 'load' 'state_s_load_6' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_23 : Operation 216 [1/1] (0.00ns)   --->   "%trunc_ln48_7 = trunc i64 %state_s_load_6 to i8" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 216 'trunc' 'trunc_ln48_7' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 217 [1/1] (0.00ns)   --->   "%buf_addr_11 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln477_2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 217 'getelementptr' 'buf_addr_11' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 218 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_7, i8* %buf_addr_11, align 8" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 218 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_23 : Operation 219 [1/1] (0.00ns)   --->   "%trunc_ln48_8 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 8, i32 15)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 219 'partselect' 'trunc_ln48_8' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 220 [1/1] (0.00ns)   --->   "%or_ln48_7 = or i8 %shl_ln477_2, 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 220 'or' 'or_ln48_7' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 221 [1/1] (0.00ns)   --->   "%zext_ln48_7 = zext i8 %or_ln48_7 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 221 'zext' 'zext_ln48_7' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 222 [1/1] (0.00ns)   --->   "%buf_addr_12 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_7" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 222 'getelementptr' 'buf_addr_12' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 223 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_8, i8* %buf_addr_12, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 223 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_23 : Operation 224 [1/1] (0.00ns)   --->   "%trunc_ln48_9 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 16, i32 23)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 224 'partselect' 'trunc_ln48_9' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 225 [1/1] (0.00ns)   --->   "%trunc_ln48_10 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 24, i32 31)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 225 'partselect' 'trunc_ln48_10' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 226 [1/1] (0.00ns)   --->   "%trunc_ln48_11 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 32, i32 39)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 226 'partselect' 'trunc_ln48_11' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 227 [1/1] (0.00ns)   --->   "%trunc_ln48_12 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 40, i32 47)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 227 'partselect' 'trunc_ln48_12' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 228 [1/1] (0.00ns)   --->   "%trunc_ln48_13 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 48, i32 55)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 228 'partselect' 'trunc_ln48_13' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 229 [1/1] (0.00ns)   --->   "%trunc_ln48_14 = call i8 @_ssdm_op_PartSelect.i8.i64.i32.i32(i64 %state_s_load_6, i32 56, i32 63)" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 229 'partselect' 'trunc_ln48_14' <Predicate = true> <Delay = 0.00>
+
+State 24 <SV = 14> <Delay = 2.77>
+ST_24 : Operation 230 [1/1] (0.00ns)   --->   "%or_ln48_8 = or i8 %shl_ln477_2, 2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 230 'or' 'or_ln48_8' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 231 [1/1] (0.00ns)   --->   "%zext_ln48_8 = zext i8 %or_ln48_8 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 231 'zext' 'zext_ln48_8' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 232 [1/1] (0.00ns)   --->   "%buf_addr_13 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_8" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 232 'getelementptr' 'buf_addr_13' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 233 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_9, i8* %buf_addr_13, align 2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 233 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_24 : Operation 234 [1/1] (0.00ns)   --->   "%or_ln48_9 = or i8 %shl_ln477_2, 3" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 234 'or' 'or_ln48_9' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 235 [1/1] (0.00ns)   --->   "%zext_ln48_9 = zext i8 %or_ln48_9 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 235 'zext' 'zext_ln48_9' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 236 [1/1] (0.00ns)   --->   "%buf_addr_14 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_9" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 236 'getelementptr' 'buf_addr_14' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 237 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_10, i8* %buf_addr_14, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 237 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 25 <SV = 15> <Delay = 2.77>
+ST_25 : Operation 238 [1/1] (0.00ns)   --->   "%or_ln48_10 = or i8 %shl_ln477_2, 4" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 238 'or' 'or_ln48_10' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 239 [1/1] (0.00ns)   --->   "%zext_ln48_10 = zext i8 %or_ln48_10 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 239 'zext' 'zext_ln48_10' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 240 [1/1] (0.00ns)   --->   "%buf_addr_15 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_10" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 240 'getelementptr' 'buf_addr_15' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 241 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_11, i8* %buf_addr_15, align 4" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 241 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_25 : Operation 242 [1/1] (0.00ns)   --->   "%or_ln48_11 = or i8 %shl_ln477_2, 5" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 242 'or' 'or_ln48_11' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 243 [1/1] (0.00ns)   --->   "%zext_ln48_11 = zext i8 %or_ln48_11 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 243 'zext' 'zext_ln48_11' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 244 [1/1] (0.00ns)   --->   "%buf_addr_16 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_11" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 244 'getelementptr' 'buf_addr_16' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 245 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_12, i8* %buf_addr_16, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 245 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 26 <SV = 16> <Delay = 2.77>
+ST_26 : Operation 246 [1/1] (0.00ns)   --->   "%or_ln48_12 = or i8 %shl_ln477_2, 6" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 246 'or' 'or_ln48_12' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 247 [1/1] (0.00ns)   --->   "%zext_ln48_12 = zext i8 %or_ln48_12 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 247 'zext' 'zext_ln48_12' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 248 [1/1] (0.00ns)   --->   "%buf_addr_17 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_12" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 248 'getelementptr' 'buf_addr_17' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 249 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_13, i8* %buf_addr_17, align 2" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 249 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_26 : Operation 250 [1/1] (0.00ns)   --->   "%or_ln48_13 = or i8 %shl_ln477_2, 7" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 250 'or' 'or_ln48_13' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 251 [1/1] (0.00ns)   --->   "%zext_ln48_13 = zext i8 %or_ln48_13 to i64" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 251 'zext' 'zext_ln48_13' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 252 [1/1] (0.00ns)   --->   "%buf_addr_18 = getelementptr [136 x i8]* %buf, i64 0, i64 %zext_ln48_13" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 252 'getelementptr' 'buf_addr_18' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 253 [1/1] (2.77ns)   --->   "store i8 %trunc_ln48_14, i8* %buf_addr_18, align 1" [dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 253 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_26 : Operation 254 [1/1] (0.00ns)   --->   "br label %9" [dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532]   --->   Operation 254 'br' <Predicate = true> <Delay = 0.00>
+
+State 27 <SV = 13> <Delay = 2.77>
+ST_27 : Operation 255 [1/1] (0.00ns)   --->   "%pos_2 = phi i32 [ %pos_1, %.preheader ], [ 0, %.preheader._crit_edge.loopexit ]" [dilithium2/poly.c:536]   --->   Operation 255 'phi' 'pos_2' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 256 [1/1] (2.18ns)   --->   "%pos = add i32 %pos_2, 1" [dilithium2/poly.c:536]   --->   Operation 256 'add' 'pos' <Predicate = true> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 257 [1/1] (0.00ns)   --->   "%zext_ln536 = zext i32 %pos_2 to i64" [dilithium2/poly.c:536]   --->   Operation 257 'zext' 'zext_ln536' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 258 [1/1] (0.00ns)   --->   "%buf_addr_19 = getelementptr inbounds [136 x i8]* %buf, i64 0, i64 %zext_ln536" [dilithium2/poly.c:536]   --->   Operation 258 'getelementptr' 'buf_addr_19' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 259 [2/2] (2.77ns)   --->   "%buf_load_3 = load i8* %buf_addr_19, align 1" [dilithium2/poly.c:536]   --->   Operation 259 'load' 'buf_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 28 <SV = 14> <Delay = 5.54>
+ST_28 : Operation 260 [1/2] (2.77ns)   --->   "%buf_load_3 = load i8* %buf_addr_19, align 1" [dilithium2/poly.c:536]   --->   Operation 260 'load' 'buf_load_3' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_28 : Operation 261 [1/1] (0.00ns)   --->   "%zext_ln536_1 = zext i8 %buf_load_3 to i9" [dilithium2/poly.c:536]   --->   Operation 261 'zext' 'zext_ln536_1' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 262 [1/1] (1.34ns)   --->   "%icmp_ln537 = icmp ugt i9 %zext_ln536_1, %i_2" [dilithium2/poly.c:537]   --->   Operation 262 'icmp' 'icmp_ln537' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 263 [1/1] (0.00ns)   --->   "br i1 %icmp_ln537, label %.preheader, label %11" [dilithium2/poly.c:537]   --->   Operation 263 'br' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 264 [1/1] (0.00ns)   --->   "%zext_ln539 = zext i8 %buf_load_3 to i64" [dilithium2/poly.c:539]   --->   Operation 264 'zext' 'zext_ln539' <Predicate = (!icmp_ln537)> <Delay = 0.00>
+ST_28 : Operation 265 [1/1] (0.00ns)   --->   "%c_coeffs_addr_1 = getelementptr [256 x i32]* %c_coeffs, i64 0, i64 %zext_ln539" [dilithium2/poly.c:539]   --->   Operation 265 'getelementptr' 'c_coeffs_addr_1' <Predicate = (!icmp_ln537)> <Delay = 0.00>
+ST_28 : Operation 266 [2/2] (2.77ns)   --->   "%c_coeffs_load = load i32* %c_coeffs_addr_1, align 4" [dilithium2/poly.c:539]   --->   Operation 266 'load' 'c_coeffs_load' <Predicate = (!icmp_ln537)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_28 : Operation 267 [1/1] (0.00ns)   --->   "%trunc_ln540 = trunc i64 %signs_1 to i1" [dilithium2/poly.c:540]   --->   Operation 267 'trunc' 'trunc_ln540' <Predicate = (!icmp_ln537)> <Delay = 0.00>
+ST_28 : Operation 268 [1/1] (0.00ns)   --->   "%signs_2 = call i63 @_ssdm_op_PartSelect.i63.i64.i32.i32(i64 %signs_1, i32 1, i32 63)" [dilithium2/poly.c:541]   --->   Operation 268 'partselect' 'signs_2' <Predicate = (!icmp_ln537)> <Delay = 0.00>
+ST_28 : Operation 269 [1/1] (0.00ns)   --->   "%signs_3 = zext i63 %signs_2 to i64" [dilithium2/poly.c:541]   --->   Operation 269 'zext' 'signs_3' <Predicate = (!icmp_ln537)> <Delay = 0.00>
+
+State 29 <SV = 15> <Delay = 5.54>
+ST_29 : Operation 270 [1/2] (2.77ns)   --->   "%c_coeffs_load = load i32* %c_coeffs_addr_1, align 4" [dilithium2/poly.c:539]   --->   Operation 270 'load' 'c_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_29 : Operation 271 [1/1] (0.00ns)   --->   "%zext_ln539_1 = zext i9 %i_2 to i64" [dilithium2/poly.c:539]   --->   Operation 271 'zext' 'zext_ln539_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 272 [1/1] (0.00ns)   --->   "%c_coeffs_addr_2 = getelementptr [256 x i32]* %c_coeffs, i64 0, i64 %zext_ln539_1" [dilithium2/poly.c:539]   --->   Operation 272 'getelementptr' 'c_coeffs_addr_2' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 273 [1/1] (2.77ns)   --->   "store i32 %c_coeffs_load, i32* %c_coeffs_addr_2, align 4" [dilithium2/poly.c:539]   --->   Operation 273 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_29 : Operation 274 [1/1] (1.73ns)   --->   "%i_47 = add i9 1, %i_2" [dilithium2/poly.c:529]   --->   Operation 274 'add' 'i_47' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 16> <Delay = 3.97>
+ST_30 : Operation 275 [1/1] (0.00ns)   --->   "%shl_ln7 = call i2 @_ssdm_op_BitConcatenate.i2.i1.i1(i1 %trunc_ln540, i1 false)" [dilithium2/poly.c:540]   --->   Operation 275 'bitconcatenate' 'shl_ln7' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 276 [1/1] (1.20ns)   --->   "%sub_ln540 = sub i2 1, %shl_ln7" [dilithium2/poly.c:540]   --->   Operation 276 'sub' 'sub_ln540' <Predicate = true> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 277 [1/1] (0.00ns)   --->   "%sext_ln540 = sext i2 %sub_ln540 to i32" [dilithium2/poly.c:540]   --->   Operation 277 'sext' 'sext_ln540' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 278 [1/1] (2.77ns)   --->   "store i32 %sext_ln540, i32* %c_coeffs_addr_1, align 4" [dilithium2/poly.c:540]   --->   Operation 278 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_30 : Operation 279 [1/1] (0.00ns)   --->   "br label %.preheader3" [dilithium2/poly.c:529]   --->   Operation 279 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517) [9]  (1.35 ns)
+
+ <State 2>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dilithium2/fips202.c:362->dilithium2/fips202.c:648->dilithium2/poly.c:517) [9]  (0 ns)
+	'getelementptr' operation ('state_s_addr', dilithium2/fips202.c:363->dilithium2/fips202.c:648->dilithium2/poly.c:517) [16]  (0 ns)
+	'store' operation ('store_ln363', dilithium2/fips202.c:363->dilithium2/fips202.c:648->dilithium2/poly.c:517) of constant 0 on array 'state.s', dilithium2/poly.c:515 [17]  (2.77 ns)
+
+ <State 3>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i_3_i_i', dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518) with incoming values : ('add_ln416', dilithium2/fips202.c:416->dilithium2/fips202.c:663->dilithium2/poly.c:518) [22]  (0 ns)
+	'getelementptr' operation ('seed_addr', dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) [32]  (0 ns)
+	'load' operation ('seed_load', dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) on array 'seed' [33]  (2.77 ns)
+
+ <State 4>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('seed_load', dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) on array 'seed' [33]  (2.77 ns)
+
+ <State 5>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('seed_load_2', dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) on array 'seed' [41]  (2.77 ns)
+
+ <State 6>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('seed_load_4', dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) on array 'seed' [49]  (2.77 ns)
+
+ <State 7>: 6.35ns
+The critical path consists of the following:
+	'load' operation ('seed_load_6', dilithium2/fips202.c:31->dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) on array 'seed' [57]  (2.77 ns)
+	'xor' operation ('xor_ln417', dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) [65]  (0.808 ns)
+	'store' operation ('store_ln417', dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518) of variable 'xor_ln417', dilithium2/fips202.c:417->dilithium2/fips202.c:663->dilithium2/poly.c:518 on array 'state.s', dilithium2/poly.c:515 [66]  (2.77 ns)
+
+ <State 8>: 6.35ns
+The critical path consists of the following:
+	'load' operation ('state_s_load', dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519) on array 'state.s', dilithium2/poly.c:515 [70]  (2.77 ns)
+	'xor' operation ('xor_ln450', dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519) [71]  (0.808 ns)
+	'store' operation ('store_ln450', dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519) of variable 'xor_ln450', dilithium2/fips202.c:450->dilithium2/fips202.c:675->dilithium2/poly.c:519 on array 'state.s', dilithium2/poly.c:515 [72]  (2.77 ns)
+
+ <State 9>: 1.35ns
+The critical path consists of the following:
+	'call' operation ('call_ln475', dilithium2/fips202.c:475->dilithium2/fips202.c:694->dilithium2/poly.c:520) to 'KeccakF1600_StatePer.1' [77]  (1.35 ns)
+
+ <State 10>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i_0_i_i12_0', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520) with incoming values : ('add_ln476', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520) [80]  (1.35 ns)
+
+ <State 11>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i_0_i_i12_0', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520) with incoming values : ('add_ln476', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:520) [80]  (0 ns)
+	'getelementptr' operation ('state_s_addr_7', dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [89]  (0 ns)
+	'load' operation ('u', dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) on array 'state.s', dilithium2/poly.c:515 [90]  (2.77 ns)
+
+ <State 12>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('u', dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) on array 'state.s', dilithium2/poly.c:515 [90]  (2.77 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) of variable 'trunc_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520 on array 'buf', dilithium2/poly.c:514 [93]  (2.77 ns)
+
+ <State 13>: 2.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln48_1', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [100]  (0 ns)
+	'getelementptr' operation ('buf_addr_4', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [102]  (0 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) of variable 'trunc_ln48_1', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520 on array 'buf', dilithium2/poly.c:514 [103]  (2.77 ns)
+
+ <State 14>: 2.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln48_3', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [110]  (0 ns)
+	'getelementptr' operation ('buf_addr_6', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [112]  (0 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) of variable 'trunc_ln48_3', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520 on array 'buf', dilithium2/poly.c:514 [113]  (2.77 ns)
+
+ <State 15>: 2.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln48_5', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [120]  (0 ns)
+	'getelementptr' operation ('buf_addr_8', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) [122]  (0 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520) of variable 'trunc_ln48_5', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:520 on array 'buf', dilithium2/poly.c:514 [123]  (2.77 ns)
+
+ <State 16>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dilithium2/poly.c:523) [133]  (0 ns)
+	'getelementptr' operation ('buf_addr_10', dilithium2/poly.c:524) [141]  (0 ns)
+	'load' operation ('buf_load', dilithium2/poly.c:524) on array 'buf', dilithium2/poly.c:514 [142]  (2.77 ns)
+
+ <State 17>: 5.19ns
+The critical path consists of the following:
+	'load' operation ('buf_load', dilithium2/poly.c:524) on array 'buf', dilithium2/poly.c:514 [142]  (2.77 ns)
+	'shl' operation ('shl_ln524', dilithium2/poly.c:524) [147]  (0 ns)
+	'or' operation ('signs', dilithium2/poly.c:524) [148]  (2.42 ns)
+
+ <State 18>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dilithium2/poly.c:527) [153]  (0 ns)
+	'getelementptr' operation ('c_coeffs_addr', dilithium2/poly.c:528) [160]  (0 ns)
+	'store' operation ('store_ln528', dilithium2/poly.c:528) of constant 0 on array 'c_coeffs' [161]  (2.77 ns)
+
+ <State 19>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('pos') with incoming values : ('pos', dilithium2/poly.c:536) [175]  (1.35 ns)
+
+ <State 20>: 3.46ns
+The critical path consists of the following:
+	'phi' operation ('pos') with incoming values : ('pos', dilithium2/poly.c:536) [175]  (0 ns)
+	'icmp' operation ('icmp_ln531', dilithium2/poly.c:531) [176]  (2.11 ns)
+	multiplexor before 'phi' operation ('pos_2', dilithium2/poly.c:536) with incoming values : ('pos', dilithium2/poly.c:536) [235]  (1.35 ns)
+
+ <State 21>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i_0_i_i8_0', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532) with incoming values : ('add_ln476_1', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532) [182]  (1.35 ns)
+
+ <State 22>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('i_0_i_i8_0', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532) with incoming values : ('add_ln476_1', dilithium2/fips202.c:476->dilithium2/fips202.c:694->dilithium2/poly.c:532) [182]  (0 ns)
+	'getelementptr' operation ('state_s_addr_8', dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [191]  (0 ns)
+	'load' operation ('u', dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) on array 'state.s', dilithium2/poly.c:515 [192]  (2.77 ns)
+
+ <State 23>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('u', dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) on array 'state.s', dilithium2/poly.c:515 [192]  (2.77 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) of variable 'trunc_ln48_7', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532 on array 'buf', dilithium2/poly.c:514 [195]  (2.77 ns)
+
+ <State 24>: 2.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln48_8', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [202]  (0 ns)
+	'getelementptr' operation ('buf_addr_13', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [204]  (0 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) of variable 'trunc_ln48_9', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532 on array 'buf', dilithium2/poly.c:514 [205]  (2.77 ns)
+
+ <State 25>: 2.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln48_10', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [212]  (0 ns)
+	'getelementptr' operation ('buf_addr_15', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [214]  (0 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) of variable 'trunc_ln48_11', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532 on array 'buf', dilithium2/poly.c:514 [215]  (2.77 ns)
+
+ <State 26>: 2.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln48_12', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [222]  (0 ns)
+	'getelementptr' operation ('buf_addr_17', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) [224]  (0 ns)
+	'store' operation ('store_ln48', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532) of variable 'trunc_ln48_13', dilithium2/fips202.c:48->dilithium2/fips202.c:477->dilithium2/fips202.c:694->dilithium2/poly.c:532 on array 'buf', dilithium2/poly.c:514 [225]  (2.77 ns)
+
+ <State 27>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('pos_2', dilithium2/poly.c:536) with incoming values : ('pos', dilithium2/poly.c:536) [235]  (0 ns)
+	'getelementptr' operation ('buf_addr_19', dilithium2/poly.c:536) [238]  (0 ns)
+	'load' operation ('buf_load_3', dilithium2/poly.c:536) on array 'buf', dilithium2/poly.c:514 [239]  (2.77 ns)
+
+ <State 28>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('buf_load_3', dilithium2/poly.c:536) on array 'buf', dilithium2/poly.c:514 [239]  (2.77 ns)
+	'getelementptr' operation ('c_coeffs_addr_1', dilithium2/poly.c:539) [245]  (0 ns)
+	'load' operation ('c_coeffs_load', dilithium2/poly.c:539) on array 'c_coeffs' [246]  (2.77 ns)
+
+ <State 29>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('c_coeffs_load', dilithium2/poly.c:539) on array 'c_coeffs' [246]  (2.77 ns)
+	'store' operation ('store_ln539', dilithium2/poly.c:539) of variable 'c_coeffs_load', dilithium2/poly.c:539 on array 'c_coeffs' [249]  (2.77 ns)
+
+ <State 30>: 3.97ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln540', dilithium2/poly.c:540) [252]  (1.2 ns)
+	'store' operation ('store_ln540', dilithium2/poly.c:540) of variable 'sext_ln540', dilithium2/poly.c:540 on array 'c_coeffs' [254]  (2.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

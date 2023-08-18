@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vitis HLS Report for 'pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1'
+================================================================
+* Date:           Fri Mar 10 17:36:31 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  50.00 ns|  8.741 ns|    13.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1027|     1027|  51.350 us|  51.350 us|  1027|  1027|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_392_1_VITIS_LOOP_248_1  |     1025|     1025|         2|          1|          1|  1024|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     233|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      90|    -|
+|Register         |        -|    -|      59|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      59|     323|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln248_fu_226_p2       |         +|   0|  0|  16|           9|           1|
+    |add_ln249_fu_214_p2       |         +|   0|  0|  17|          10|          10|
+    |add_ln392_1_fu_158_p2     |         +|   0|  0|  18|          11|           1|
+    |add_ln392_fu_170_p2       |         +|   0|  0|  11|           3|           1|
+    |s_3_fu_257_p2             |         +|   0|  0|  18|          11|          11|
+    |s_5_fu_335_p2             |         +|   0|  0|  16|           9|           9|
+    |and_ln69_fu_302_p2        |       and|   0|  0|   2|           1|           1|
+    |icmp_ln248_fu_176_p2      |      icmp|   0|  0|  11|           9|          10|
+    |icmp_ln392_fu_152_p2      |      icmp|   0|  0|  12|          11|          12|
+    |icmp_ln69_1_fu_284_p2     |      icmp|   0|  0|  18|          32|          23|
+    |icmp_ln69_2_fu_290_p2     |      icmp|   0|  0|  18|          32|          23|
+    |icmp_ln69_3_fu_296_p2     |      icmp|   0|  0|  18|          32|           1|
+    |icmp_ln69_fu_278_p2       |      icmp|   0|  0|  18|          32|          17|
+    |or_ln69_1_fu_314_p2       |        or|   0|  0|   2|           1|           1|
+    |or_ln69_fu_308_p2         |        or|   0|  0|   2|           1|           1|
+    |select_ln392_1_fu_264_p3  |    select|   0|  0|   9|           1|           1|
+    |select_ln392_2_fu_190_p3  |    select|   0|  0|   3|           1|           3|
+    |select_ln392_3_fu_271_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln392_fu_182_p3    |    select|   0|  0|   9|           1|           1|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    |xor_ln69_fu_320_p2        |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 233|         210|         142|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |                   Name                  | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                              |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter1_reg         |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_10_load               |   9|          2|    3|          6|
+    |ap_sig_allocacmp_i_load                  |   9|          2|    9|         18|
+    |ap_sig_allocacmp_indvar_flatten146_load  |   9|          2|   11|         22|
+    |i_10_fu_70                               |   9|          2|    3|          6|
+    |i_fu_62                                  |   9|          2|    9|         18|
+    |indvar_flatten146_fu_74                  |   9|          2|   11|         22|
+    |s_1_fu_58                                |   9|          2|    9|         18|
+    |s_fu_66                                  |   9|          2|   11|         22|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |Total                                    |  90|         20|   68|        136|
+    +-----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |i_10_fu_70                        |   3|   0|    3|          0|
+    |i_fu_62                           |   9|   0|    9|          0|
+    |icmp_ln248_reg_390                |   1|   0|    1|          0|
+    |icmp_ln392_reg_386                |   1|   0|    1|          0|
+    |indvar_flatten146_fu_74           |  11|   0|   11|          0|
+    |s_1_fu_58                         |   9|   0|    9|          0|
+    |s_fu_66                           |  11|   0|   11|          0|
+    |zext_ln249_3_reg_396              |  10|   0|   64|         54|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  59|   0|  113|         54|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |                                   Source Object                                  |    C Type    |
++------------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1|  return value|
+|w1_vec_coeffs_address0  |  out|   10|   ap_memory|                                                                     w1_vec_coeffs|         array|
+|w1_vec_coeffs_ce0       |  out|    1|   ap_memory|                                                                     w1_vec_coeffs|         array|
+|w1_vec_coeffs_q0        |   in|   32|   ap_memory|                                                                     w1_vec_coeffs|         array|
+|w0_vec_coeffs_address0  |  out|   10|   ap_memory|                                                                     w0_vec_coeffs|         array|
+|w0_vec_coeffs_ce0       |  out|    1|   ap_memory|                                                                     w0_vec_coeffs|         array|
+|w0_vec_coeffs_q0        |   in|   32|   ap_memory|                                                                     w0_vec_coeffs|         array|
+|h_vec_coeffs_address0   |  out|   10|   ap_memory|                                                                      h_vec_coeffs|         array|
+|h_vec_coeffs_ce0        |  out|    1|   ap_memory|                                                                      h_vec_coeffs|         array|
+|h_vec_coeffs_we0        |  out|    1|   ap_memory|                                                                      h_vec_coeffs|         array|
+|h_vec_coeffs_d0         |  out|   32|   ap_memory|                                                                      h_vec_coeffs|         array|
+|s_4_out                 |  out|   11|      ap_vld|                                                                           s_4_out|       pointer|
+|s_4_out_ap_vld          |  out|    1|      ap_vld|                                                                           s_4_out|       pointer|
++------------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+

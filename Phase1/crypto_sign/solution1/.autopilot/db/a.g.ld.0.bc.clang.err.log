@@ -1,0 +1,118 @@
+warning: dilithium2/fips202.c:750:3: Duplicating function 'shake256_squeeze' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.
+warning: dilithium2/fips202.c:749:3: Duplicating function 'shake256_finalize' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.
+warning: dilithium2/fips202.c:748:3: Duplicating function 'shake256_absorb' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.
+warning: dilithium2/fips202.c:747:3: Duplicating function 'shake256_init' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.
+warning: dilithium2/fips202.c:573:3: Duplicating function 'keccak_init.15' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.
+warning: dilithium2/fips202.c:648:3: Duplicating function 'keccak_init.15' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.
+remark: dilithium2/fips202.c:647:0: Inlining function 'keccak_init.15.237' into 'shake256_init'
+remark: dilithium2/fips202.c:385:0: Inlining function 'load64' into 'keccak_absorb'
+remark: dilithium2/fips202.c:674:0: Inlining function 'keccak_finalize' into 'shake256_finalize'
+remark: dilithium2/fips202.c:503:0: Inlining function 'store64' into 'keccak_squeeze'
+remark: dilithium2/fips202.c:647:0: Inlining function 'keccak_init.15' into 'shake256_init.236'
+remark: dilithium2/fips202.c:674:0: Inlining function 'keccak_finalize' into 'shake256_finalize.234'
+remark: dilithium2/fips202.c:744:0: Inlining function 'shake256_init.236' into 'shake256'
+remark: dilithium2/fips202.c:744:0: Inlining function 'shake256_absorb.235' into 'shake256'
+remark: dilithium2/fips202.c:744:0: Inlining function 'shake256_finalize.234' into 'shake256'
+remark: dilithium2/fips202.c:744:0: Inlining function 'shake256_squeeze.233' into 'shake256'
+remark: dilithium2/fips202.c:572:0: Inlining function 'keccak_init.15.237' into 'shake128_init'
+remark: dilithium2/fips202.c:599:0: Inlining function 'keccak_finalize' into 'shake128_finalize'
+remark: dilithium2/symmetric-shake.c:9:0: Inlining function 'shake128_init' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init'
+remark: dilithium2/symmetric-shake.c:9:0: Inlining function 'shake128_absorb' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init'
+remark: dilithium2/symmetric-shake.c:9:0: Inlining function 'shake128_finalize' into 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init'
+remark: dilithium2/fips202.c:471:0: Inlining function 'store64' into 'keccak_squeezeblocks'
+remark: dilithium2/fips202.c:618:0: Inlining function 'keccak_squeezeblocks' into 'shake128_squeezeblocks'
+remark: dilithium2/poly.c:366:0: Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake128_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform'
+remark: dilithium2/poly.c:366:0: Inlining function 'shake128_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform'
+remark: dilithium2/poly.c:366:0: Inlining function 'rej_uniform' into 'pqcrystals_dilithium2_ref_poly_uniform'
+remark: dilithium2/ntt.c:49:0: Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_ntt'
+remark: dilithium2/poly.c:140:0: Inlining function 'pqcrystals_dilithium2_ref_ntt' into 'pqcrystals_dilithium2_ref_poly_ntt.52'
+remark: dilithium2/polyvec.c:97:0: Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.52' into 'pqcrystals_dilithium2_ref_polyvecl_ntt'
+remark: dilithium2/polyvec.c:279:0: Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.52' into 'pqcrystals_dilithium2_ref_polyveck_ntt'
+remark: dilithium2/symmetric-shake.c:23:0: Inlining function 'shake256_init' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init'
+remark: dilithium2/symmetric-shake.c:23:0: Inlining function 'shake256_absorb' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init'
+remark: dilithium2/symmetric-shake.c:23:0: Inlining function 'shake256_finalize' into 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init'
+remark: dilithium2/fips202.c:693:0: Inlining function 'keccak_squeezeblocks' into 'shake256_squeezeblocks'
+remark: dilithium2/poly.c:492:0: Inlining function 'pqcrystals_dilithium2_ref_dilithium_shake256_stream_init' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1'
+remark: dilithium2/poly.c:492:0: Inlining function 'shake256_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1'
+remark: dilithium2/poly.c:492:0: Inlining function 'pqcrystals_dilithium2_ref_polyz_unpack' into 'pqcrystals_dilithium2_ref_poly_uniform_gamma1'
+remark: dilithium2/poly.c:176:0: Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36'
+remark: dilithium2/polyvec.c:132:0: Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery'
+remark: dilithium2/polyvec.c:132:0: Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery'
+remark: dilithium2/polyvec.c:25:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_acc_montgomery' into 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery'
+remark: dilithium2/poly.c:28:0: Inlining function 'pqcrystals_dilithium2_ref_reduce32' into 'pqcrystals_dilithium2_ref_poly_reduce.85'
+remark: dilithium2/polyvec.c:184:0: Inlining function 'pqcrystals_dilithium2_ref_poly_reduce.85' into 'pqcrystals_dilithium2_ref_polyveck_reduce'
+remark: dilithium2/ntt.c:77:0: Inlining function 'pqcrystals_dilithium2_ref_montgomery_reduce' into 'pqcrystals_dilithium2_ref_invntt_tomont'
+remark: dilithium2/poly.c:157:0: Inlining function 'pqcrystals_dilithium2_ref_invntt_tomont' into 'pqcrystals_dilithium2_ref_poly_invntt_tomont.76'
+remark: dilithium2/polyvec.c:295:0: Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont.76' into 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont'
+remark: dilithium2/poly.c:46:0: Inlining function 'pqcrystals_dilithium2_ref_caddq' into 'pqcrystals_dilithium2_ref_poly_caddq.120'
+remark: dilithium2/polyvec.c:199:0: Inlining function 'pqcrystals_dilithium2_ref_poly_caddq.120' into 'pqcrystals_dilithium2_ref_polyveck_caddq'
+remark: dilithium2/poly.c:221:0: Inlining function 'pqcrystals_dilithium2_ref_decompose' into 'pqcrystals_dilithium2_ref_poly_decompose'
+remark: dilithium2/polyvec.c:368:0: Inlining function 'pqcrystals_dilithium2_ref_poly_decompose' into 'pqcrystals_dilithium2_ref_polyveck_decompose'
+remark: dilithium2/polyvec.c:415:0: Inlining function 'pqcrystals_dilithium2_ref_polyw1_pack' into 'pqcrystals_dilithium2_ref_polyveck_pack_w1'
+remark: dilithium2/poly.c:511:0: Inlining function 'shake256_init' into 'pqcrystals_dilithium2_ref_poly_challenge'
+remark: dilithium2/poly.c:511:0: Inlining function 'shake256_absorb' into 'pqcrystals_dilithium2_ref_poly_challenge'
+remark: dilithium2/poly.c:511:0: Inlining function 'shake256_finalize' into 'pqcrystals_dilithium2_ref_poly_challenge'
+remark: dilithium2/poly.c:511:0: Inlining function 'shake256_squeezeblocks' into 'pqcrystals_dilithium2_ref_poly_challenge'
+remark: dilithium2/polyvec.c:111:0: Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36' into 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery'
+remark: dilithium2/polyvec.c:104:0: Inlining function 'pqcrystals_dilithium2_ref_poly_invntt_tomont.76' into 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont'
+remark: dilithium2/polyvec.c:82:0: Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyvecl_add'
+remark: dilithium2/polyvec.c:50:0: Inlining function 'pqcrystals_dilithium2_ref_poly_reduce.85' into 'pqcrystals_dilithium2_ref_polyvecl_reduce'
+remark: dilithium2/polyvec.c:155:0: Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm.91' into 'pqcrystals_dilithium2_ref_polyvecl_chknorm'
+remark: dilithium2/polyvec.c:302:0: Inlining function 'pqcrystals_dilithium2_ref_poly_pointwise_montgomery.36' into 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery'
+remark: dilithium2/polyvec.c:249:0: Inlining function 'pqcrystals_dilithium2_ref_poly_sub' into 'pqcrystals_dilithium2_ref_polyveck_sub'
+remark: dilithium2/polyvec.c:322:0: Inlining function 'pqcrystals_dilithium2_ref_poly_chknorm.91' into 'pqcrystals_dilithium2_ref_polyveck_chknorm'
+remark: dilithium2/polyvec.c:231:0: Inlining function 'pqcrystals_dilithium2_ref_poly_add' into 'pqcrystals_dilithium2_ref_polyveck_add'
+remark: dilithium2/poly.c:244:0: Inlining function 'pqcrystals_dilithium2_ref_make_hint' into 'pqcrystals_dilithium2_ref_poly_make_hint'
+remark: dilithium2/polyvec.c:389:0: Inlining function 'pqcrystals_dilithium2_ref_poly_make_hint' into 'pqcrystals_dilithium2_ref_polyveck_make_hint'
+remark: dilithium2/packing.c:160:0: Inlining function 'pqcrystals_dilithium2_ref_polyz_pack' into 'pqcrystals_dilithium2_ref_pack_sig'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_upack_sk' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'shake256_init' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'shake256_absorb' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'shake256_finalize' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'shake256_squeeze' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'shake256' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_expand' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_ntt' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_ntt' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_uniform_gamma1' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvec_matrix_pointwise_montgomery' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_reduce' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_caddq' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_decompose' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_pack_w1' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_poly_ntt.52' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_invntt_tomont' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_add' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_reduce' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyvecl_chknorm' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_pointwise_poly_montgomery' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_sub' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_chknorm' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_add' into 'pqcrystals_dilithium2_ref_signature'
+remark: dilithium2/sign.c:85:0: Inlining function 'pqcrystals_dilithium2_ref_polyveck_make_hint' into 'pqcrystals_dilithium2_ref_signature'
+warning: dilithium2/fips202.c:31:20: The program may have out of bound array access
+warning: dilithium2/fips202.c:31:20: The program may have out of bound array access
+warning: dilithium2/fips202.c:31:20: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access
+remark: dilithium2/fips202.c:391:23: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_391_1 dilithium2/fips202.c:391:23 keccak_absorb 
+remark: dilithium2/fips202.c:408:21: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_408_3 dilithium2/fips202.c:408:21 keccak_absorb 
+remark: dilithium2/poly.c:337:21: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_337_1 dilithium2/poly.c:337:21 pqcrystals_dilithium2_ref_poly_uniform 
+remark: dilithium2/poly.c:337:21: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_337_1 dilithium2/poly.c:337:21 pqcrystals_dilithium2_ref_poly_uniform 
+remark: dilithium2/poly.c:377:21: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_377_1 dilithium2/poly.c:377:21 pqcrystals_dilithium2_ref_poly_uniform 
+remark: dilithium2/ntt.c:55:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_55_2 dilithium2/ntt.c:55:22 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/ntt.c:55:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_55_2 dilithium2/ntt.c:55:22 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/ntt.c:55:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_55_2 dilithium2/ntt.c:55:22 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/ntt.c:55:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_55_2 dilithium2/ntt.c:55:22 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/ntt.c:55:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_55_2 dilithium2/ntt.c:55:22 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/ntt.c:84:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_84_2 dilithium2/ntt.c:84:22 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/sign.c:119:3: Could not analyze the loop bounds _XLX_SEP_ anonymous dilithium2/sign.c:119:3 pqcrystals_dilithium2_ref_signature 
+remark: dilithium2/poly.c:530:23: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_530_4 dilithium2/poly.c:530:23 pqcrystals_dilithium2_ref_poly_challenge 
+remark: dilithium2/ntt.c:84:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_84_2 dilithium2/ntt.c:84:22 pqcrystals_dilithium2_ref_polyveck_invntt_tomont 
+warning: dilithium2/fips202.c:48:10: The program may have out of bound array access

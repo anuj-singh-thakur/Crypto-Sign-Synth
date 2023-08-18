@@ -1,0 +1,103 @@
+---
+MainSourceFile:  /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_160_1:  '
+    FileOffset:      160
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          27163
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_160_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_2:  '
+    FileOffset:      169
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          27383
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_358_1:  '
+    FileOffset:      358
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          30589
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_358_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_378_1:  '
+    FileOffset:      378
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          33744
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_378_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_380_2:  '
+    FileOffset:      380
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          33776
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_380_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_508_1:  '
+    FileOffset:      508
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          36106
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_508_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_556_1:  '
+    FileOffset:      556
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          36671
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_556_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_566_1:  '
+    FileOffset:      566
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          36851
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_566_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_582_1:  '
+    FileOffset:      582
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          37145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_582_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_606_1:  '
+    FileOffset:      606
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          37505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_606_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_615_2:  '
+    FileOffset:      615
+    FilePath:        /home/shikha/Final_Assignment/dilithium2/aes.c
+    Replacements:    
+      - FilePath:        /home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes.pp.0.c
+        Offset:          37667
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_615_2: '
+...

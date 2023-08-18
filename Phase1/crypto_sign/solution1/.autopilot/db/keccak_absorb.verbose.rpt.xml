@@ -1,0 +1,254 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'keccak_absorb'" level="0">
+<item name = "Date">Fri Mar 10 17:36:19 2023
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">crypto_sign</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">50.00 ns, 8.136 ns, 13.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253">keccak_absorb_Pipeline_VITIS_LOOP_391_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262">keccak_absorb_Pipeline_VITIS_LOOP_30_1, 10, 10, 0.500 us, 0.500 us, 10, 10, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268">keccak_absorb_Pipeline_VITIS_LOOP_400_2, 2, 2, 0.100 us, 0.100 us, 2, 2, no</column>
+<column name="grp_KeccakF1600_StatePermute_fu_277">KeccakF1600_StatePermute, 50, 50, 2.500 us, 2.500 us, 50, 50, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285">keccak_absorb_Pipeline_VITIS_LOOP_409_4, 19, 23, 0.950 us, 1.150 us, 19, 23, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294">keccak_absorb_Pipeline_VITIS_LOOP_416_5, 2, 22, 0.100 us, 1.100 us, 2, 22, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304">keccak_absorb_Pipeline_VITIS_LOOP_423_6, 10, 10, 0.500 us, 0.500 us, 10, 10, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309">keccak_absorb_Pipeline_VITIS_LOOP_425_7, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318">keccak_absorb_Pipeline_VITIS_LOOP_30_125, 10, 10, 0.500 us, 0.500 us, 10, 10, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">8, 8, 1, -, -, 8, no</column>
+<column name="- VITIS_LOOP_408_3">?, ?, 73 ~ 77, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 575, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">2, -, 2283, 18467, -</column>
+<column name="Memory">0, -, 8, 1, 0</column>
+<column name="Multiplexer">-, -, -, 527, -</column>
+<column name="Register">-, -, 318, -, -</column>
+<specialColumn name="Available">730, 740, 269200, 134600, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 14, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_KeccakF1600_StatePermute_fu_277">KeccakF1600_StatePermute, 2, 0, 1633, 16902, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262">keccak_absorb_Pipeline_VITIS_LOOP_30_1, 0, 0, 75, 315, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318">keccak_absorb_Pipeline_VITIS_LOOP_30_125, 0, 0, 75, 315, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253">keccak_absorb_Pipeline_VITIS_LOOP_391_1, 0, 0, 163, 185, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268">keccak_absorb_Pipeline_VITIS_LOOP_400_2, 0, 0, 138, 235, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285">keccak_absorb_Pipeline_VITIS_LOOP_409_4, 0, 0, 13, 124, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294">keccak_absorb_Pipeline_VITIS_LOOP_416_5, 0, 0, 146, 248, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304">keccak_absorb_Pipeline_VITIS_LOOP_423_6, 0, 0, 6, 49, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309">keccak_absorb_Pipeline_VITIS_LOOP_425_7, 0, 0, 34, 94, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="t_U">keccak_absorb_1_t_RAM_AUTO_1R1W, 0, 8, 1, 0, 8, 8, 1, 64</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln382_3_fu_698_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln382_fu_453_p2">+, 0, 0, 14, 6, 6</column>
+<column name="add_ln384_fu_495_p2">+, 0, 0, 10, 2, 2</column>
+<column name="add_ln386_fu_458_p2">+, 0, 0, 13, 5, 5</column>
+<column name="add_ln411_fu_630_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln428_fu_736_p2">+, 0, 0, 15, 8, 8</column>
+<column name="empty_118_fu_380_p2">+, 0, 0, 13, 4, 1</column>
+<column name="sub_ln384_fu_692_p2">-, 0, 0, 16, 9, 9</column>
+<column name="sub_ln391_fu_399_p2">-, 0, 0, 13, 5, 4</column>
+<column name="sub_ln396_fu_468_p2">-, 0, 0, 14, 6, 6</column>
+<column name="sub_ln399_fu_529_p2">-, 0, 0, 15, 8, 8</column>
+<column name="sub_ln403_fu_573_p2">-, 0, 0, 11, 3, 3</column>
+<column name="sub_ln408_fu_635_p2">-, 0, 0, 71, 64, 64</column>
+<column name="ap_block_state10_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op96_call_state10">and, 0, 0, 2, 1, 1</column>
+<column name="empty_120_fu_415_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="exitcond10014_fu_374_p2">icmp, 0, 0, 9, 4, 5</column>
+<column name="icmp_ln389_fu_391_p2">icmp, 0, 0, 8, 3, 1</column>
+<column name="icmp_ln399_2_fu_542_p2">icmp, 0, 0, 11, 8, 8</column>
+<column name="icmp_ln399_fu_523_p2">icmp, 0, 0, 10, 6, 1</column>
+<column name="icmp_ln408_fu_625_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln422_fu_703_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="grp_fu_329_p3">select, 0, 0, 8, 1, 8</column>
+<column name="grp_fu_337_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln31_1_fu_566_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln31_fu_559_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln391_fu_421_p3">select, 0, 0, 3, 1, 3</column>
+<column name="grp_fu_324_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln391_3_cast_fu_489_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln391_3_fu_437_p2">xor, 0, 0, 3, 3, 2</column>
+<column name="xor_ln391_fu_409_p2">xor, 0, 0, 3, 3, 2</column>
+<column name="xor_ln396_fu_504_p2">xor, 0, 0, 64, 64, 64</column>
+<column name="xor_ln406_fu_578_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln427_fu_729_p2">xor, 0, 0, 64, 64, 64</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">107, 22, 1, 22</column>
+<column name="ap_phi_mux_mlen_assign_7_phi_fu_196_p4">9, 2, 2, 4</column>
+<column name="ap_phi_mux_mlen_assign_9_phi_fu_236_p6">9, 2, 3, 6</column>
+<column name="ap_phi_mux_phi_ln31_phi_fu_174_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_phi_ln382_phi_fu_247_p4">9, 2, 8, 16</column>
+<column name="ap_phi_mux_phi_ln384_1_phi_fu_185_p4">9, 2, 6, 12</column>
+<column name="ap_phi_mux_phi_ln384_2_phi_fu_221_p6">9, 2, 6, 12</column>
+<column name="ap_return">9, 2, 8, 16</column>
+<column name="empty_fu_88">9, 2, 4, 8</column>
+<column name="idx104_fu_104">9, 2, 64, 128</column>
+<column name="mlen_assign_10_fu_108">9, 2, 64, 128</column>
+<column name="mlen_assign_7_reg_192">9, 2, 2, 4</column>
+<column name="mlen_assign_9_reg_233">9, 2, 3, 6</column>
+<column name="phi_ln31_reg_170">9, 2, 1, 2</column>
+<column name="phi_ln382_reg_244">9, 2, 8, 16</column>
+<column name="phi_ln384_1_reg_182">9, 2, 6, 12</column>
+<column name="phi_ln384_2_reg_217">9, 2, 6, 12</column>
+<column name="phi_ln384_reg_203">9, 2, 1, 2</column>
+<column name="s_address0">37, 9, 5, 45</column>
+<column name="s_address1">21, 5, 5, 25</column>
+<column name="s_ce0">25, 6, 1, 6</column>
+<column name="s_ce1">21, 5, 1, 5</column>
+<column name="s_d0">29, 7, 64, 448</column>
+<column name="s_we0">25, 6, 1, 6</column>
+<column name="s_we1">9, 2, 1, 2</column>
+<column name="t_address0">29, 7, 3, 21</column>
+<column name="t_ce0">29, 7, 1, 7</column>
+<column name="t_d0">21, 5, 8, 40</column>
+<column name="t_we0">21, 5, 1, 5</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln382_3_reg_930">8, 0, 8, 0</column>
+<column name="add_ln382_reg_825">6, 0, 6, 0</column>
+<column name="ap_CS_fsm">21, 0, 21, 0</column>
+<column name="ap_return_preg">8, 0, 8, 0</column>
+<column name="conv28_reg_894">8, 0, 64, 56</column>
+<column name="empty_fu_88">4, 0, 4, 0</column>
+<column name="grp_KeccakF1600_StatePermute_fu_277_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_reg_793">3, 0, 3, 0</column>
+<column name="icmp_ln389_reg_804">1, 0, 1, 0</column>
+<column name="icmp_ln399_2_reg_856">1, 0, 1, 0</column>
+<column name="icmp_ln399_reg_842">1, 0, 1, 0</column>
+<column name="icmp_ln422_reg_937">1, 0, 1, 0</column>
+<column name="idx104_fu_104">64, 0, 64, 0</column>
+<column name="mlen_assign_10_fu_108">64, 0, 64, 0</column>
+<column name="mlen_assign_7_reg_192">2, 0, 2, 0</column>
+<column name="mlen_assign_9_reg_233">3, 0, 3, 0</column>
+<column name="phi_ln31_reg_170">1, 0, 1, 0</column>
+<column name="phi_ln382_reg_244">8, 0, 8, 0</column>
+<column name="phi_ln384_1_reg_182">6, 0, 6, 0</column>
+<column name="phi_ln384_2_reg_217">6, 0, 6, 0</column>
+<column name="phi_ln384_reg_203">1, 0, 1, 0</column>
+<column name="reg_345">8, 0, 8, 0</column>
+<column name="reg_351">8, 0, 8, 0</column>
+<column name="s_addr_2_reg_946">5, 0, 5, 0</column>
+<column name="s_addr_reg_830">3, 0, 5, 2</column>
+<column name="select_ln31_1_reg_870">8, 0, 8, 0</column>
+<column name="select_ln31_reg_865">8, 0, 8, 0</column>
+<column name="sub_ln384_reg_924">9, 0, 9, 0</column>
+<column name="tmp_s_reg_919">5, 0, 5, 0</column>
+<column name="trunc_ln19_reg_901">5, 0, 5, 0</column>
+<column name="trunc_ln391_2_reg_813">1, 0, 1, 0</column>
+<column name="trunc_ln391_reg_808">2, 0, 2, 0</column>
+<column name="trunc_ln399_1_reg_851">3, 0, 3, 0</column>
+<column name="trunc_ln399_reg_846">1, 0, 1, 0</column>
+<column name="trunc_ln418_2_reg_909">3, 0, 3, 0</column>
+<column name="trunc_ln428_reg_941">8, 0, 8, 0</column>
+<column name="trunc_ln_reg_860">3, 0, 3, 0</column>
+<column name="xor_ln31_reg_914">1, 0, 1, 0</column>
+<column name="xor_ln391_3_reg_818">3, 0, 3, 0</column>
+<column name="zext_ln384_3_reg_889">6, 0, 8, 2</column>
+<column name="zext_ln384_reg_835">2, 0, 3, 1</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="ap_return">out, 8, ap_ctrl_hs, keccak_absorb, return value</column>
+<column name="s_address0">out, 5, ap_memory, s, array</column>
+<column name="s_ce0">out, 1, ap_memory, s, array</column>
+<column name="s_we0">out, 1, ap_memory, s, array</column>
+<column name="s_d0">out, 64, ap_memory, s, array</column>
+<column name="s_q0">in, 64, ap_memory, s, array</column>
+<column name="s_address1">out, 5, ap_memory, s, array</column>
+<column name="s_ce1">out, 1, ap_memory, s, array</column>
+<column name="s_we1">out, 1, ap_memory, s, array</column>
+<column name="s_d1">out, 64, ap_memory, s, array</column>
+<column name="s_q1">in, 64, ap_memory, s, array</column>
+<column name="r">in, 8, ap_none, r, scalar</column>
+<column name="pos_r">in, 6, ap_none, pos_r, scalar</column>
+<column name="m_0_read">in, 8, ap_none, m_0_read, scalar</column>
+<column name="m_1_read">in, 8, ap_none, m_1_read, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'pqcrystals_dilithium2_ref_polyveck_invntt_tomont_Pipeline_VITIS_LOOP_86_3'
+================================================================
+* Date:           Fri Mar 10 17:22:18 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  50.00 ns|  31.144 ns|    13.50 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_86_3  |        ?|        ?|         4|          4|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 4, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.86>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%j = alloca i32 1"   --->   Operation 7 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln86_read = read i23 @_ssdm_op_Read.ap_auto.i23, i23 %sext_ln86"   --->   Operation 8 'read' 'sext_ln86_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln78_2_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %zext_ln78_2"   --->   Operation 9 'read' 'zext_ln78_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln87_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %zext_ln87"   --->   Operation 10 'read' 'zext_ln87_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln86_2_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %zext_ln86_2"   --->   Operation 11 'read' 'zext_ln86_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln86_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %zext_ln86"   --->   Operation 12 'read' 'zext_ln86_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%sext_ln86_cast = sext i23 %sext_ln86_read"   --->   Operation 13 'sext' 'sext_ln86_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln78_2_cast = zext i8 %zext_ln78_2_read"   --->   Operation 14 'zext' 'zext_ln78_2_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln86_2_cast = zext i9 %zext_ln86_2_read"   --->   Operation 15 'zext' 'zext_ln86_2_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln86_cast = zext i8 %zext_ln86_read"   --->   Operation 16 'zext' 'zext_ln86_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.32ns)   --->   "%store_ln0 = store i11 %zext_ln86_cast, i11 %j"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 1.32>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i.i"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%j_15 = load i11 %j" [dilithium2/ntt.c:87]   --->   Operation 19 'load' 'j_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 20 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (1.52ns)   --->   "%icmp_ln86 = icmp_eq  i11 %j_15, i11 %zext_ln86_2_cast" [dilithium2/ntt.c:86]   --->   Operation 21 'icmp' 'icmp_ln86' <Predicate = true> <Delay = 1.52> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.52> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln86 = br i1 %icmp_ln86, void %for.inc.i.i.split, void %for.inc29.i.i.loopexit.exitStub" [dilithium2/ntt.c:86]   --->   Operation 22 'br' 'br_ln86' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln87 = trunc i11 %j_15" [dilithium2/ntt.c:87]   --->   Operation 23 'trunc' 'trunc_ln87' <Predicate = (!icmp_ln86)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.74ns)   --->   "%add_ln87 = add i10 %zext_ln87_read, i10 %trunc_ln87" [dilithium2/ntt.c:87]   --->   Operation 24 'add' 'add_ln87' <Predicate = (!icmp_ln86)> <Delay = 1.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln87_2 = zext i10 %add_ln87" [dilithium2/ntt.c:87]   --->   Operation 25 'zext' 'zext_ln87_2' <Predicate = (!icmp_ln86)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%v_addr = getelementptr i32 %v, i64 0, i64 %zext_ln87_2" [dilithium2/ntt.c:87]   --->   Operation 26 'getelementptr' 'v_addr' <Predicate = (!icmp_ln86)> <Delay = 0.00>
+ST_1 : Operation 27 [2/2] (2.77ns)   --->   "%t = load i10 %v_addr" [dilithium2/ntt.c:87]   --->   Operation 27 'load' 't' <Predicate = (!icmp_ln86)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln88 = add i10 %zext_ln87_read, i10 %zext_ln78_2_cast" [dilithium2/ntt.c:88]   --->   Operation 28 'add' 'add_ln88' <Predicate = (!icmp_ln86)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 29 [1/1] (3.09ns) (root node of TernaryAdder)   --->   "%add_ln88_6 = add i10 %add_ln88, i10 %trunc_ln87" [dilithium2/ntt.c:88]   --->   Operation 29 'add' 'add_ln88_6' <Predicate = (!icmp_ln86)> <Delay = 3.09> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln88 = zext i10 %add_ln88_6" [dilithium2/ntt.c:88]   --->   Operation 30 'zext' 'zext_ln88' <Predicate = (!icmp_ln86)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%v_addr_1 = getelementptr i32 %v, i64 0, i64 %zext_ln88" [dilithium2/ntt.c:88]   --->   Operation 31 'getelementptr' 'v_addr_1' <Predicate = (!icmp_ln86)> <Delay = 0.00>
+ST_1 : Operation 32 [2/2] (2.77ns)   --->   "%v_load = load i10 %v_addr_1" [dilithium2/ntt.c:88]   --->   Operation 32 'load' 'v_load' <Predicate = (!icmp_ln86)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 33 [1/1] (1.76ns)   --->   "%add_ln86 = add i11 %j_15, i11 1" [dilithium2/ntt.c:86]   --->   Operation 33 'add' 'add_ln86' <Predicate = (!icmp_ln86)> <Delay = 1.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (1.32ns)   --->   "%store_ln86 = store i11 %add_ln86, i11 %j" [dilithium2/ntt.c:86]   --->   Operation 34 'store' 'store_ln86' <Predicate = (!icmp_ln86)> <Delay = 1.32>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 56 'ret' 'ret_ln0' <Predicate = (icmp_ln86)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.72>
+ST_2 : Operation 35 [1/2] (2.77ns)   --->   "%t = load i10 %v_addr" [dilithium2/ntt.c:87]   --->   Operation 35 'load' 't' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 36 [1/2] (2.77ns)   --->   "%v_load = load i10 %v_addr_1" [dilithium2/ntt.c:88]   --->   Operation 36 'load' 'v_load' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 37 [1/1] (2.18ns)   --->   "%add_ln88_5 = add i32 %v_load, i32 %t" [dilithium2/ntt.c:88]   --->   Operation 37 'add' 'add_ln88_5' <Predicate = true> <Delay = 2.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (2.77ns)   --->   "%store_ln88 = store i32 %add_ln88_5, i10 %v_addr" [dilithium2/ntt.c:88]   --->   Operation 38 'store' 'store_ln88' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 3 <SV = 2> <Delay = 2.77>
+ST_3 : Operation 39 [2/2] (2.77ns)   --->   "%v_load_1 = load i10 %v_addr_1" [dilithium2/ntt.c:89]   --->   Operation 39 'load' 'v_load_1' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 4 <SV = 3> <Delay = 31.1>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln78 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [dilithium2/ntt.c:78]   --->   Operation 40 'specloopname' 'specloopname_ln78' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/2] (2.77ns)   --->   "%v_load_1 = load i10 %v_addr_1" [dilithium2/ntt.c:89]   --->   Operation 41 'load' 'v_load_1' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 42 [1/1] (2.18ns)   --->   "%sub_ln89 = sub i32 %t, i32 %v_load_1" [dilithium2/ntt.c:89]   --->   Operation 42 'sub' 'sub_ln89' <Predicate = true> <Delay = 2.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln90 = sext i32 %sub_ln89" [dilithium2/ntt.c:90]   --->   Operation 43 'sext' 'sext_ln90' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (6.88ns)   --->   "%mul_ln90 = mul i54 %sext_ln90, i54 %sext_ln86_cast" [dilithium2/ntt.c:90]   --->   Operation 44 'mul' 'mul_ln90' <Predicate = true> <Delay = 6.88> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%sext_ln15 = sext i54 %mul_ln90" [dilithium2/reduce.c:15]   --->   Operation 45 'sext' 'sext_ln15' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln18 = trunc i54 %mul_ln90" [dilithium2/reduce.c:18]   --->   Operation 46 'trunc' 'trunc_ln18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (6.88ns)   --->   "%t_21 = mul i32 %trunc_ln18, i32 58728449" [dilithium2/reduce.c:18]   --->   Operation 47 'mul' 't_21' <Predicate = true> <Delay = 6.88> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%sext_ln19 = sext i32 %t_21" [dilithium2/reduce.c:19]   --->   Operation 48 'sext' 'sext_ln19' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (6.88ns)   --->   "%mul_ln19 = mul i55 %sext_ln19, i55 36028797010583551" [dilithium2/reduce.c:19]   --->   Operation 49 'mul' 'mul_ln19' <Predicate = true> <Delay = 6.88> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%sext_ln19_16 = sext i55 %mul_ln19" [dilithium2/reduce.c:19]   --->   Operation 50 'sext' 'sext_ln19_16' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (2.77ns)   --->   "%add_ln19 = add i56 %sext_ln19_16, i56 %sext_ln15" [dilithium2/reduce.c:19]   --->   Operation 51 'add' 'add_ln19' <Predicate = true> <Delay = 2.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%t_22 = partselect i24 @_ssdm_op_PartSelect.i24.i56.i32.i32, i56 %add_ln19, i32 32, i32 55" [dilithium2/reduce.c:19]   --->   Operation 52 'partselect' 't_22' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%sext_ln19_17 = sext i24 %t_22" [dilithium2/reduce.c:19]   --->   Operation 53 'sext' 'sext_ln19_17' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (2.77ns)   --->   "%store_ln90 = store i32 %sext_ln19_17, i10 %v_addr_1" [dilithium2/ntt.c:90]   --->   Operation 54 'store' 'store_ln90' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln86 = br void %for.inc.i.i" [dilithium2/ntt.c:86]   --->   Operation 55 'br' 'br_ln86' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 50ns, clock uncertainty: 13.5ns.
+
+ <State 1>: 5.87ns
+The critical path consists of the following:
+	'alloca' operation ('j') [7]  (0 ns)
+	'load' operation ('j', dilithium2/ntt.c:87) on local variable 'j' [20]  (0 ns)
+	'add' operation ('add_ln88_6', dilithium2/ntt.c:88) [32]  (3.1 ns)
+	'getelementptr' operation ('v_addr_1', dilithium2/ntt.c:88) [34]  (0 ns)
+	'load' operation ('v_load', dilithium2/ntt.c:88) on array 'v' [35]  (2.77 ns)
+
+ <State 2>: 7.72ns
+The critical path consists of the following:
+	'load' operation ('t', dilithium2/ntt.c:87) on array 'v' [30]  (2.77 ns)
+	'add' operation ('add_ln88_5', dilithium2/ntt.c:88) [36]  (2.18 ns)
+	'store' operation ('store_ln88', dilithium2/ntt.c:88) of variable 'add_ln88_5', dilithium2/ntt.c:88 on array 'v' [37]  (2.77 ns)
+
+ <State 3>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('v_load_1', dilithium2/ntt.c:89) on array 'v' [38]  (2.77 ns)
+
+ <State 4>: 31.1ns
+The critical path consists of the following:
+	'load' operation ('v_load_1', dilithium2/ntt.c:89) on array 'v' [38]  (2.77 ns)
+	'sub' operation ('sub_ln89', dilithium2/ntt.c:89) [39]  (2.18 ns)
+	'mul' operation ('a', dilithium2/ntt.c:90) [41]  (6.88 ns)
+	'mul' operation ('t', dilithium2/reduce.c:18) [44]  (6.88 ns)
+	'mul' operation ('mul_ln19', dilithium2/reduce.c:19) [46]  (6.88 ns)
+	'add' operation ('add_ln19', dilithium2/reduce.c:19) [48]  (2.78 ns)
+	'store' operation ('store_ln90', dilithium2/ntt.c:90) of variable 'sext_ln19_17', dilithium2/reduce.c:19 on array 'v' [51]  (2.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,170 @@
+
+
+================================================================
+== Vitis HLS Report for 'pqcrystals_dilithium2_ref'
+================================================================
+* Date:           Fri Mar 10 17:23:47 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  50.00 ns|  31.144 ns|    13.50 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                               |                                                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                            Instance                           |                        Module                       |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1_fu_59  |pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_pqcrystals_dilithium2_ref_signature_1_fu_71                |pqcrystals_dilithium2_ref_signature_1                |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +---------------------------------------------------------------+-----------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     110|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |       70|  107|   31770|  273318|    0|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      91|    -|
+|Register         |        -|    -|      31|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |       70|  107|   31801|  273519|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        9|   14|      11|     203|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------------+-----------------------------------------------------+---------+-----+-------+--------+-----+
+    |                            Instance                           |                        Module                       | BRAM_18K| DSP |   FF  |   LUT  | URAM|
+    +---------------------------------------------------------------+-----------------------------------------------------+---------+-----+-------+--------+-----+
+    |grp_pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1_fu_59  |pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1  |        0|    0|     81|     177|    0|
+    |grp_pqcrystals_dilithium2_ref_signature_1_fu_71                |pqcrystals_dilithium2_ref_signature_1                |       70|  107|  31689|  273141|    0|
+    +---------------------------------------------------------------+-----------------------------------------------------+---------+-----+-------+--------+-----+
+    |Total                                                          |                                                     |       70|  107|  31770|  273318|    0|
+    +---------------------------------------------------------------+-----------------------------------------------------+---------+-----+-------+--------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------+----------+----+---+----+------------+------------+
+    | Variable Name | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------+----------+----+---+----+------------+------------+
+    |smlen          |         +|   0|  0|  71|          64|          12|
+    |sub2_fu_99_p2  |         +|   0|  0|  20|          13|          12|
+    |sub_fu_92_p2   |         +|   0|  0|  19|          12|           2|
+    +---------------+----------+----+---+----+------------+------------+
+    |Total          |          |   0|  0| 110|          89|          26|
+    +---------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_NS_fsm    |  21|          5|    1|          5|
+    |sm_address0  |  13|          3|   13|         39|
+    |sm_ce0       |  13|          3|    1|          3|
+    |sm_ce1       |   9|          2|    1|          2|
+    |sm_d0        |  13|          3|    8|         24|
+    |sm_we0       |  13|          3|    1|          3|
+    |sm_we1       |   9|          2|    1|          2|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |  91|         21|   26|         78|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                    Name                                    | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                   |   4|   0|    4|          0|
+    |grp_pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1_fu_59_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pqcrystals_dilithium2_ref_signature_1_fu_71_ap_start_reg                |   1|   0|    1|          0|
+    |sub2_reg_124                                                                |  13|   0|   13|          0|
+    |sub_reg_119                                                                 |  12|   0|   12|          0|
+    +----------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                       |  31|   0|   31|          0|
+    +----------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+---------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++--------------+-----+-----+------------+---------------------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|ap_return     |  out|   32|  ap_ctrl_hs|  pqcrystals_dilithium2_ref|  return value|
+|sm_address0   |  out|   13|   ap_memory|                         sm|         array|
+|sm_ce0        |  out|    1|   ap_memory|                         sm|         array|
+|sm_we0        |  out|    1|   ap_memory|                         sm|         array|
+|sm_d0         |  out|    8|   ap_memory|                         sm|         array|
+|sm_q0         |   in|    8|   ap_memory|                         sm|         array|
+|sm_address1   |  out|   13|   ap_memory|                         sm|         array|
+|sm_ce1        |  out|    1|   ap_memory|                         sm|         array|
+|sm_we1        |  out|    1|   ap_memory|                         sm|         array|
+|sm_d1         |  out|    8|   ap_memory|                         sm|         array|
+|sm_q1         |   in|    8|   ap_memory|                         sm|         array|
+|smlen         |  out|   64|      ap_vld|                      smlen|       pointer|
+|smlen_ap_vld  |  out|    1|      ap_vld|                      smlen|       pointer|
+|m_address0    |  out|   12|   ap_memory|                          m|         array|
+|m_ce0         |  out|    1|   ap_memory|                          m|         array|
+|m_q0          |   in|    8|   ap_memory|                          m|         array|
+|mlen          |   in|   64|     ap_none|                       mlen|        scalar|
+|sk_address0   |  out|   12|   ap_memory|                         sk|         array|
+|sk_ce0        |  out|    1|   ap_memory|                         sk|         array|
+|sk_q0         |   in|    8|   ap_memory|                         sk|         array|
+|sk_address1   |  out|   12|   ap_memory|                         sk|         array|
+|sk_ce1        |  out|    1|   ap_memory|                         sk|         array|
+|sk_q1         |   in|    8|   ap_memory|                         sk|         array|
++--------------+-----+-----+------------+---------------------------+--------------+
+

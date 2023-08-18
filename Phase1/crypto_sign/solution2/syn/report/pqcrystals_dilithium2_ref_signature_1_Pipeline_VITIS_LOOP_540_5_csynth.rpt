@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vitis HLS Report for 'pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_540_5'
+================================================================
+* Date:           Fri Mar 10 17:23:19 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  50.00 ns|  5.544 ns|    13.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       26|       26|  1.300 us|  1.300 us|   26|   26|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_540_5  |       24|       24|         5|          4|          1|     6|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     183|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|     159|    -|
+|Register         |        -|    -|      65|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      65|     342|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln540_fu_182_p2   |         +|   0|  0|  11|           3|           1|
+    |add_ln541_fu_214_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln542_fu_246_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln543_fu_326_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln544_fu_346_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln545_fu_366_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln546_fu_386_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln547_fu_406_p2   |         +|   0|  0|  15|           8|           7|
+    |add_ln548_fu_426_p2   |         +|   0|  0|  15|           8|           7|
+    |icmp_ln540_fu_176_p2  |      icmp|   0|  0|   8|           3|           3|
+    |or_ln542_fu_236_p2    |        or|   0|  0|   6|           6|           1|
+    |or_ln543_fu_317_p2    |        or|   0|  0|   6|           6|           2|
+    |or_ln544_fu_337_p2    |        or|   0|  0|   6|           6|           2|
+    |or_ln545_fu_357_p2    |        or|   0|  0|   6|           6|           3|
+    |or_ln546_fu_377_p2    |        or|   0|  0|   6|           6|           3|
+    |or_ln547_fu_397_p2    |        or|   0|  0|   6|           6|           3|
+    |or_ln548_fu_417_p2    |        or|   0|  0|   6|           6|           3|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0| 183|         113|          79|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  21|          5|    1|          5|
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_4         |   9|          2|    3|          6|
+    |i_fu_78                      |   9|          2|    3|          6|
+    |seedbuf_address0             |  21|          5|    8|         40|
+    |seedbuf_address1             |  21|          5|    8|         40|
+    |seedbuf_d0                   |  21|          5|    8|         40|
+    |seedbuf_d1                   |  21|          5|    8|         40|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 159|         37|   43|        185|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+---+----+-----+-----------+
+    |             Name            | FF| LUT| Bits| Const Bits|
+    +-----------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                    |  4|   0|    4|          0|
+    |ap_done_reg                  |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |  1|   0|    1|          0|
+    |i_4_reg_444                  |  3|   0|    3|          0|
+    |i_fu_78                      |  3|   0|    3|          0|
+    |icmp_ln540_reg_449           |  1|   0|    1|          0|
+    |shl_ln3_reg_458              |  3|   0|    6|          3|
+    |trunc_ln2_reg_468            |  8|   0|    8|          0|
+    |trunc_ln3_reg_473            |  8|   0|    8|          0|
+    |trunc_ln4_reg_478            |  8|   0|    8|          0|
+    |trunc_ln5_reg_483            |  8|   0|    8|          0|
+    |trunc_ln6_reg_488            |  8|   0|    8|          0|
+    |trunc_ln7_reg_493            |  8|   0|    8|          0|
+    +-----------------------------+---+----+-----+-----------+
+    |Total                        | 65|   0|   68|          3|
+    +-----------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |                          Source Object                          |    C Type    |
++------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_540_5|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_540_5|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_540_5|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_540_5|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_540_5|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_signature.1_Pipeline_VITIS_LOOP_540_5|  return value|
+|state_s_address0  |  out|    5|   ap_memory|                                                          state_s|         array|
+|state_s_ce0       |  out|    1|   ap_memory|                                                          state_s|         array|
+|state_s_q0        |   in|   64|   ap_memory|                                                          state_s|         array|
+|seedbuf_address0  |  out|    8|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_ce0       |  out|    1|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_we0       |  out|    1|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_d0        |  out|    8|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_address1  |  out|    8|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_ce1       |  out|    1|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_we1       |  out|    1|   ap_memory|                                                          seedbuf|         array|
+|seedbuf_d1        |  out|    8|   ap_memory|                                                          seedbuf|         array|
++------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+

@@ -1,0 +1,175 @@
+
+
+================================================================
+== Vivado HLS Report for 'pqcrystals_dilithium2_ref'
+================================================================
+* Date:           Thu Apr 13 22:43:50 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Phase2
+* Solution:       Latency
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 9.122 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip   |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  |   Count   | Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |- pqcrystals_dilithium2_ref_label10  |       66|     6600|         2|          -|          -| 33 ~ 3300 |    no    |
+        +-------------------------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 4 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.80>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([5720 x i8]* %sm) nounwind, !map !335"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %smlen) nounwind, !map !341"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([3300 x i8]* %m) nounwind, !map !345"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64 %mlen) nounwind, !map !351"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2544 x i8]* %sk) nounwind, !map !357"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !363"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([26 x i8]* @pqcrystals_dilithium_1) nounwind"   --->   Operation 11 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%mlen_read = call i64 @_ssdm_op_Read.ap_auto.i64(i64 %mlen) nounwind" [dilithium2/sign.c:204]   --->   Operation 12 'read' 'mlen_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%trunc_ln213 = trunc i64 %mlen_read to i13" [dilithium2/sign.c:213]   --->   Operation 13 'trunc' 'trunc_ln213' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.79ns)   --->   "%add_ln213 = add i13 -1, %trunc_ln213" [dilithium2/sign.c:213]   --->   Operation 14 'add' 'add_ln213' <Predicate = true> <Delay = 1.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln213_1 = trunc i64 %mlen_read to i14" [dilithium2/sign.c:213]   --->   Operation 15 'trunc' 'trunc_ln213_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.80ns)   --->   "%add_ln213_1 = add i14 2419, %trunc_ln213_1" [dilithium2/sign.c:213]   --->   Operation 16 'add' 'add_ln213_1' <Predicate = true> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (1.35ns)   --->   "br label %1" [dilithium2/sign.c:212]   --->   Operation 17 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 4.56>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%i_0 = phi i64 [ 0, %0 ], [ %i, %pqcrystals_dilithium2_ref_label10 ]"   --->   Operation 18 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln212 = trunc i64 %i_0 to i14" [dilithium2/sign.c:212]   --->   Operation 19 'trunc' 'trunc_ln212' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%trunc_ln212_1 = trunc i64 %i_0 to i13" [dilithium2/sign.c:212]   --->   Operation 20 'trunc' 'trunc_ln212_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (2.34ns)   --->   "%icmp_ln212 = icmp eq i64 %i_0, %mlen_read" [dilithium2/sign.c:212]   --->   Operation 21 'icmp' 'icmp_ln212' <Predicate = true> <Delay = 2.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (2.99ns)   --->   "%i = add i64 1, %i_0" [dilithium2/sign.c:212]   --->   Operation 22 'add' 'i' <Predicate = true> <Delay = 2.99> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %icmp_ln212, label %2, label %pqcrystals_dilithium2_ref_label10" [dilithium2/sign.c:212]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (1.79ns)   --->   "%sub_ln213 = sub i13 %add_ln213, %trunc_ln212_1" [dilithium2/sign.c:213]   --->   Operation 24 'sub' 'sub_ln213' <Predicate = (!icmp_ln212)> <Delay = 1.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln213 = zext i13 %sub_ln213 to i64" [dilithium2/sign.c:213]   --->   Operation 25 'zext' 'zext_ln213' <Predicate = (!icmp_ln212)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%m_addr = getelementptr [3300 x i8]* %m, i64 0, i64 %zext_ln213" [dilithium2/sign.c:213]   --->   Operation 26 'getelementptr' 'm_addr' <Predicate = (!icmp_ln212)> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (2.77ns)   --->   "%m_load = load i8* %m_addr, align 1" [dilithium2/sign.c:213]   --->   Operation 27 'load' 'm_load' <Predicate = (!icmp_ln212)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_2 : Operation 28 [1/1] (1.80ns)   --->   "%sub_ln213_1 = sub i14 %add_ln213_1, %trunc_ln212" [dilithium2/sign.c:213]   --->   Operation 28 'sub' 'sub_ln213_1' <Predicate = (!icmp_ln212)> <Delay = 1.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [2/2] (0.00ns)   --->   "call fastcc void @pqcrystals_dilithium.1.1([5720 x i8]* %sm, i64 %mlen_read, [2544 x i8]* %sk) nounwind" [dilithium2/sign.c:214]   --->   Operation 29 'call' <Predicate = (icmp_ln212)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 30 [1/1] (2.99ns)   --->   "%add_ln215 = add i64 %mlen_read, 2420" [dilithium2/sign.c:215]   --->   Operation 30 'add' 'add_ln215' <Predicate = (icmp_ln212)> <Delay = 2.99> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i64P(i64* %smlen, i64 %add_ln215) nounwind" [dilithium2/sign.c:215]   --->   Operation 31 'write' <Predicate = (icmp_ln212)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.54>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([34 x i8]* @p_str74) nounwind" [dilithium2/sign.c:213]   --->   Operation 32 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([34 x i8]* @p_str74) nounwind" [dilithium2/sign.c:213]   --->   Operation 33 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 33, i32 3300, i32 1666, [1 x i8]* @p_str175) nounwind" [dilithium2/sign.c:213]   --->   Operation 34 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/2] (2.77ns)   --->   "%m_load = load i8* %m_addr, align 1" [dilithium2/sign.c:213]   --->   Operation 35 'load' 'm_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln213_1 = zext i14 %sub_ln213_1 to i64" [dilithium2/sign.c:213]   --->   Operation 36 'zext' 'zext_ln213_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%sm_addr = getelementptr [5720 x i8]* %sm, i64 0, i64 %zext_ln213_1" [dilithium2/sign.c:213]   --->   Operation 37 'getelementptr' 'sm_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (2.77ns)   --->   "store i8 %m_load, i8* %sm_addr, align 1" [dilithium2/sign.c:213]   --->   Operation 38 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 5720> <RAM>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([34 x i8]* @p_str74, i32 %tmp) nounwind" [dilithium2/sign.c:213]   --->   Operation 39 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "br label %1" [dilithium2/sign.c:212]   --->   Operation 40 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 41 [1/2] (0.00ns)   --->   "call fastcc void @pqcrystals_dilithium.1.1([5720 x i8]* %sm, i64 %mlen_read, [2544 x i8]* %sk) nounwind" [dilithium2/sign.c:214]   --->   Operation 41 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "ret i32 0" [dilithium2/sign.c:216]   --->   Operation 42 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.81ns
+The critical path consists of the following:
+	wire read on port 'mlen' (dilithium2/sign.c:204) [17]  (0 ns)
+	'add' operation ('add_ln213_1', dilithium2/sign.c:213) [21]  (1.81 ns)
+
+ <State 2>: 4.57ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dilithium2/sign.c:212) [24]  (0 ns)
+	'sub' operation ('sub_ln213', dilithium2/sign.c:213) [34]  (1.79 ns)
+	'getelementptr' operation ('m_addr', dilithium2/sign.c:213) [36]  (0 ns)
+	'load' operation ('m_load', dilithium2/sign.c:213) on array 'm' [37]  (2.77 ns)
+
+ <State 3>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('m_load', dilithium2/sign.c:213) on array 'm' [37]  (2.77 ns)
+	'store' operation ('store_ln213', dilithium2/sign.c:213) of variable 'm_load', dilithium2/sign.c:213 on array 'sm' [41]  (2.77 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

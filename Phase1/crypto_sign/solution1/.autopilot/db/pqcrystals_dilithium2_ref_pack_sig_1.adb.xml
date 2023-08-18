@@ -1,0 +1,271 @@
+<stg><name>pqcrystals_dilithium2_ref_pack_sig.1</name>
+
+
+<trans_list>
+
+<trans id="15" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="16" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="17" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="18" from="4" to="5">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="19" from="5" to="6">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="7" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8">
+<![CDATA[
+entry:1 %call_ln0 = call void @pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_167_2_VITIS_LOOP_804_1, i32 %z, i8 %sm
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="8" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8">
+<![CDATA[
+entry:1 %call_ln0 = call void @pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_167_2_VITIS_LOOP_804_1, i32 %z, i8 %sm
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="9" st_id="3" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="0">
+<![CDATA[
+entry:2 %call_ln0 = call void @pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_172_3, i8 %sm
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="10" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="0">
+<![CDATA[
+entry:2 %call_ln0 = call void @pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_172_3, i8 %sm
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="11" st_id="5" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:3 %call_ln0 = call void @pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_176_4_VITIS_LOOP_177_5, i32 %h, i8 %sm
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="6" st_id="6">
+
+<operation id="12" st_id="6" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %sm, void @empty_11, i32 0, i32 0, void @empty_40, i32 4294967295, i32 0, void @empty_40, void @empty_40, void @empty_40, i32 0, i32 0, i32 0, i32 0, void @empty_40, void @empty_40, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="13" st_id="6" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:3 %call_ln0 = call void @pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_176_4_VITIS_LOOP_177_5, i32 %h, i8 %sm
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="14" st_id="6" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0">
+<![CDATA[
+entry:4 %ret_ln183 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln183"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="20" name="sm" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="sm"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="21" name="z" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="z"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="22" name="h" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="h"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="24" from="pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_167_2_VITIS_LOOP_804_1" to="call_ln0" fromId="23" toId="7">
+</dataflow>
+<dataflow id="25" from="z" to="call_ln0" fromId="21" toId="7">
+</dataflow>
+<dataflow id="26" from="sm" to="call_ln0" fromId="20" toId="7">
+</dataflow>
+<dataflow id="27" from="pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_167_2_VITIS_LOOP_804_1" to="call_ln0" fromId="23" toId="8">
+</dataflow>
+<dataflow id="28" from="z" to="call_ln0" fromId="21" toId="8">
+</dataflow>
+<dataflow id="29" from="sm" to="call_ln0" fromId="20" toId="8">
+</dataflow>
+<dataflow id="31" from="pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_172_3" to="call_ln0" fromId="30" toId="9">
+</dataflow>
+<dataflow id="32" from="sm" to="call_ln0" fromId="20" toId="9">
+</dataflow>
+<dataflow id="33" from="pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_172_3" to="call_ln0" fromId="30" toId="10">
+</dataflow>
+<dataflow id="34" from="sm" to="call_ln0" fromId="20" toId="10">
+</dataflow>
+<dataflow id="36" from="pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_176_4_VITIS_LOOP_177_5" to="call_ln0" fromId="35" toId="11">
+</dataflow>
+<dataflow id="37" from="h" to="call_ln0" fromId="22" toId="11">
+</dataflow>
+<dataflow id="38" from="sm" to="call_ln0" fromId="20" toId="11">
+</dataflow>
+<dataflow id="40" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="39" toId="12">
+</dataflow>
+<dataflow id="41" from="sm" to="specinterface_ln0" fromId="20" toId="12">
+</dataflow>
+<dataflow id="43" from="empty_11" to="specinterface_ln0" fromId="42" toId="12">
+</dataflow>
+<dataflow id="45" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="46" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="48" from="empty_40" to="specinterface_ln0" fromId="47" toId="12">
+</dataflow>
+<dataflow id="50" from="StgValue_49" to="specinterface_ln0" fromId="49" toId="12">
+</dataflow>
+<dataflow id="51" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="52" from="empty_40" to="specinterface_ln0" fromId="47" toId="12">
+</dataflow>
+<dataflow id="53" from="empty_40" to="specinterface_ln0" fromId="47" toId="12">
+</dataflow>
+<dataflow id="54" from="empty_40" to="specinterface_ln0" fromId="47" toId="12">
+</dataflow>
+<dataflow id="55" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="56" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="57" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="58" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="59" from="empty_40" to="specinterface_ln0" fromId="47" toId="12">
+</dataflow>
+<dataflow id="60" from="empty_40" to="specinterface_ln0" fromId="47" toId="12">
+</dataflow>
+<dataflow id="61" from="StgValue_49" to="specinterface_ln0" fromId="49" toId="12">
+</dataflow>
+<dataflow id="62" from="StgValue_44" to="specinterface_ln0" fromId="44" toId="12">
+</dataflow>
+<dataflow id="63" from="pqcrystals_dilithium2_ref_pack_sig.1_Pipeline_VITIS_LOOP_176_4_VITIS_LOOP_177_5" to="call_ln0" fromId="35" toId="13">
+</dataflow>
+<dataflow id="64" from="h" to="call_ln0" fromId="22" toId="13">
+</dataflow>
+<dataflow id="65" from="sm" to="call_ln0" fromId="20" toId="13">
+</dataflow>
+</dataflows>
+
+
+</stg>

@@ -1,0 +1,4 @@
+dilithium2/rng.c:202:22: warning: unused parameter 'security_strength' [-Wunused-parameter]
+                 int security_strength)
+                     ^
+1 warning generated.

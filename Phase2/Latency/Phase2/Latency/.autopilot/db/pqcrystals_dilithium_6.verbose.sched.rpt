@@ -1,0 +1,135 @@
+
+
+================================================================
+== Vivado HLS Report for 'pqcrystals_dilithium_6'
+================================================================
+* Date:           Thu Apr 13 22:42:41 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Phase2
+* Solution:       Latency
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.724 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+----------+-----------+-----------+------+----------+---------+
+    |  Latency (cycles)  |   Latency (absolute)  |     Interval    | Pipeline|
+    |   min   |    max   |    min    |    max    |  min |    max   |   Type  |
+    +---------+----------+-----------+-----------+------+----------+---------+
+    |     1125|  16802917| 11.250 us | 0.168 sec |  1125|  16802917|   none  |
+    +---------+----------+-----------+-----------+------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+----------+---------------+-----------+-----------+------+----------+
+        |          |  Latency (cycles)  |   Iteration   |  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |    max   |    Latency    |  achieved |   target  | Count| Pipelined|
+        +----------+---------+----------+---------------+-----------+-----------+------+----------+
+        |- Loop 1  |     1124|  16802916| 281 ~ 4200729 |          -|          -|     4|    no    |
+        +----------+---------+----------+---------------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 4 [1/1] (1.35ns)   --->   "br label %1" [dilithium2/polyvec.c:298]   --->   Operation 4 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 1.34>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%i_0 = phi i3 [ 0, %0 ], [ %i, %2 ]"   --->   Operation 5 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (1.00ns)   --->   "%icmp_ln298 = icmp eq i3 %i_0, -4" [dilithium2/polyvec.c:298]   --->   Operation 6 'icmp' 'icmp_ln298' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 7 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (1.34ns)   --->   "%i = add i3 %i_0, 1" [dilithium2/polyvec.c:298]   --->   Operation 8 'add' 'i' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "br i1 %icmp_ln298, label %3, label %2" [dilithium2/polyvec.c:298]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [2/2] (0.00ns)   --->   "call fastcc void @pqcrystals_dilithium.21([1024 x i32]* %v_vec_coeffs, i3 %i_0)" [dilithium2/poly.c:160->dilithium2/polyvec.c:299]   --->   Operation 10 'call' <Predicate = (!icmp_ln298)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "ret void" [dilithium2/polyvec.c:300]   --->   Operation 11 'ret' <Predicate = (icmp_ln298)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @pqcrystals_dilithium.21([1024 x i32]* %v_vec_coeffs, i3 %i_0)" [dilithium2/poly.c:160->dilithium2/polyvec.c:299]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "br label %1" [dilithium2/polyvec.c:298]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', dilithium2/polyvec.c:298) [6]  (1.35 ns)
+
+ <State 2>: 1.35ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', dilithium2/polyvec.c:298) [6]  (0 ns)
+	'add' operation ('i', dilithium2/polyvec.c:298) [9]  (1.35 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

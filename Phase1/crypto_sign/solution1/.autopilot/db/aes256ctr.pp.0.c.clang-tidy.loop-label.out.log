@@ -1,0 +1,120 @@
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:705:2: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+ while (num-- > 0) {
+ ^~~~~
+ VITIS_LOOP_39_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:705:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:728:2: warning: Added loop label VITIS_LOOP_62_1:   [xilinx-label-all-loops]
+ while (num-- > 0) {
+ ^~~~~
+ VITIS_LOOP_62_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:728:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:903:2: warning: Added loop label VITIS_LOOP_257_1:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[0]); b = (q[1]); (q[0]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[1]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ ^~
+ VITIS_LOOP_257_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:903:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:904:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[2]); b = (q[3]); (q[2]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[3]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ ^~
+ VITIS_LOOP_258_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:904:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:905:2: warning: Added loop label VITIS_LOOP_259_3:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[4]); b = (q[5]); (q[4]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[5]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ ^~
+ VITIS_LOOP_259_3: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:905:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:906:2: warning: Added loop label VITIS_LOOP_260_4:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[6]); b = (q[7]); (q[6]) = (a & (uint64_t)0x5555555555555555) | ((b & (uint64_t)0x5555555555555555) << (1)); (q[7]) = ((a & (uint64_t)0xAAAAAAAAAAAAAAAA) >> (1)) | (b & (uint64_t)0xAAAAAAAAAAAAAAAA); } while (0);
+ ^~
+ VITIS_LOOP_260_4: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:906:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:908:2: warning: Added loop label VITIS_LOOP_262_5:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[0]); b = (q[2]); (q[0]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[2]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ ^~
+ VITIS_LOOP_262_5: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:908:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:909:2: warning: Added loop label VITIS_LOOP_263_6:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[1]); b = (q[3]); (q[1]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[3]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ ^~
+ VITIS_LOOP_263_6: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:909:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:910:2: warning: Added loop label VITIS_LOOP_264_7:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[4]); b = (q[6]); (q[4]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[6]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ ^~
+ VITIS_LOOP_264_7: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:910:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:911:2: warning: Added loop label VITIS_LOOP_265_8:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[5]); b = (q[7]); (q[5]) = (a & (uint64_t)0x3333333333333333) | ((b & (uint64_t)0x3333333333333333) << (2)); (q[7]) = ((a & (uint64_t)0xCCCCCCCCCCCCCCCC) >> (2)) | (b & (uint64_t)0xCCCCCCCCCCCCCCCC); } while (0);
+ ^~
+ VITIS_LOOP_265_8: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:911:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:913:2: warning: Added loop label VITIS_LOOP_267_9:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[0]); b = (q[4]); (q[0]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[4]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ ^~
+ VITIS_LOOP_267_9: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:913:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:914:2: warning: Added loop label VITIS_LOOP_268_10:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[1]); b = (q[5]); (q[1]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[5]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ ^~
+ VITIS_LOOP_268_10: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:914:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:915:2: warning: Added loop label VITIS_LOOP_269_11:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[2]); b = (q[6]); (q[2]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[6]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ ^~
+ VITIS_LOOP_269_11: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:915:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:916:2: warning: Added loop label VITIS_LOOP_270_12:   [xilinx-label-all-loops]
+ do { uint64_t a, b; a = (q[3]); b = (q[7]); (q[3]) = (a & (uint64_t)0x0F0F0F0F0F0F0F0F) | ((b & (uint64_t)0x0F0F0F0F0F0F0F0F) << (4)); (q[7]) = ((a & (uint64_t)0xF0F0F0F0F0F0F0F0) >> (4)) | (b & (uint64_t)0xF0F0F0F0F0F0F0F0); } while (0);
+ ^~
+ VITIS_LOOP_270_12: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:916:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:997:2: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+ for (i = nk, j = 0, k = 0; i < nkf; i ++) {
+ ^~~
+ VITIS_LOOP_351_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:997:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1012:2: warning: Added loop label VITIS_LOOP_366_2:   [xilinx-label-all-loops]
+ for (i = 0, j = 0; i < nkf; i += 4, j += 2) {
+ ^~~
+ VITIS_LOOP_366_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1012:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1041:2: warning: Added loop label VITIS_LOOP_395_1:   [xilinx-label-all-loops]
+ for (u = 0, v = 0; u < n; u ++, v += 4) {
+ ^~~
+ VITIS_LOOP_395_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1041:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1075:2: warning: Added loop label VITIS_LOOP_429_1:   [xilinx-label-all-loops]
+ for (i = 0; i < 8; i ++) {
+ ^~~
+ VITIS_LOOP_429_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1075:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1139:3: warning: Added loop label VITIS_LOOP_493_1:   [xilinx-label-all-loops]
+  for (i = 0; i < 4; i++) {
+  ^~~
+  VITIS_LOOP_493_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1139:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1145:3: warning: Added loop label VITIS_LOOP_499_2:   [xilinx-label-all-loops]
+  for (i = 1; i < 14; i++) {
+  ^~~
+  VITIS_LOOP_499_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1145:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1156:3: warning: Added loop label VITIS_LOOP_510_3:   [xilinx-label-all-loops]
+  for (i = 0; i < 4; i ++) {
+  ^~~
+  VITIS_LOOP_510_3: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1156:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1190:2: warning: Added loop label VITIS_LOOP_544_1:   [xilinx-label-all-loops]
+ while (len > 64) {
+ ^~~~~
+ VITIS_LOOP_544_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1190:2: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1198:3: warning: Added loop label VITIS_LOOP_552_2:   [xilinx-label-all-loops]
+  for(i=0;i<len;i++)
+  ^~~
+  VITIS_LOOP_552_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1198:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1227:3: warning: Added loop label VITIS_LOOP_581_1:   [xilinx-label-all-loops]
+  while (nblocks > 0) {
+  ^~~~~
+  VITIS_LOOP_581_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution1/.autopilot/db/aes256ctr.pp.0.c:1227:3: note: FIX-IT applied suggested code changes

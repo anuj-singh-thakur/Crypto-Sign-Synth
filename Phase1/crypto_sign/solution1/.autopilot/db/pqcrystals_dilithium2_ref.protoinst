@@ -1,0 +1,1179 @@
+{
+	"version": "1.0",
+	"modules": {
+		"pqcrystals_dilithium2_ref": {
+			"proto_instances": {
+				"/AESL_inst_pqcrystals_dilithium2_ref_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1_fu_59/grp_pqcrystals_dilithium2_ref_Pipeline_VITIS_LOOP_205_1_fu_59_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_KeccakF1600_StatePermute_1_fu_17267/grp_KeccakF1600_StatePermute_1_fu_17267_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_KeccakF1600_StatePermute_fu_17248/grp_KeccakF1600_StatePermute_fu_17248_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_19_fu_17208/grp_keccak_absorb_19_fu_17208_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_KeccakF1600_StatePermute_fu_291/grp_KeccakF1600_StatePermute_fu_291_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_124_fu_335/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_124_fu_335_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_1_fu_272/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_1_fu_272_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_391_1_fu_262/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_391_1_fu_262_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_400_2_fu_278/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_400_2_fu_278_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_409_4_fu_299/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_409_4_fu_299_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_416_5_fu_309/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_416_5_fu_309_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_423_6_fu_320/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_423_6_fu_320_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_425_7_fu_325/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_425_7_fu_325_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_absorb_1_fu_17224/grp_keccak_absorb_1_fu_17224_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_squeeze_1_fu_17405/grp_KeccakF1600_StatePermute_fu_172/grp_KeccakF1600_StatePermute_fu_172_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_keccak_squeeze_1_fu_17405/grp_keccak_squeeze_1_fu_17405_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_pack_sig_1_fu_17532/grp_pqcrystals_dilithium2_ref_pack_sig_1_Pipeline_VITIS_LOOP_167_2_VITIS_LOOP_804_1_fu_22/grp_pqcrystals_dilithium2_ref_pack_sig_1_Pipeline_VITIS_LOOP_167_2_VITIS_LOOP_804_1_fu_22_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_pack_sig_1_fu_17532/grp_pqcrystals_dilithium2_ref_pack_sig_1_Pipeline_VITIS_LOOP_172_3_fu_30/grp_pqcrystals_dilithium2_ref_pack_sig_1_Pipeline_VITIS_LOOP_172_3_fu_30_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_pack_sig_1_fu_17532/grp_pqcrystals_dilithium2_ref_pack_sig_1_Pipeline_VITIS_LOOP_176_4_VITIS_LOOP_177_5_fu_36/grp_pqcrystals_dilithium2_ref_pack_sig_1_Pipeline_VITIS_LOOP_176_4_VITIS_LOOP_177_5_fu_36_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_pack_sig_1_fu_17532/grp_pqcrystals_dilithium2_ref_pack_sig_1_fu_17532_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_KeccakF1600_StatePermute_fu_224/grp_KeccakF1600_StatePermute_fu_224_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_KeccakF1600_StatePermute_fu_291/grp_KeccakF1600_StatePermute_fu_291_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_124_fu_335/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_124_fu_335_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_1_fu_272/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_30_1_fu_272_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_391_1_fu_262/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_391_1_fu_262_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_400_2_fu_278/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_400_2_fu_278_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_409_4_fu_299/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_409_4_fu_299_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_416_5_fu_309/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_416_5_fu_309_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_423_6_fu_320/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_423_6_fu_320_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_425_7_fu_325/grp_keccak_absorb_1_Pipeline_VITIS_LOOP_425_7_fu_325_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_keccak_absorb_1_fu_203/grp_keccak_absorb_1_fu_203_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223_fu_243/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223_fu_243_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2_fu_231/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2_fu_231_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1_fu_237/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1_fu_237_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2_fu_218/grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2_fu_218_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414/grp_pqcrystals_dilithium2_ref_poly_challenge_1_fu_17414_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_KeccakF1600_StatePermute_fu_210/grp_KeccakF1600_StatePermute_fu_210_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_KeccakF1600_StatePermute_fu_277/grp_KeccakF1600_StatePermute_fu_277_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253/grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268/grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285/grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294/grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304/grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309/grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_keccak_absorb_fu_197/grp_keccak_absorb_fu_197_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_122_fu_247/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_122_fu_247_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_1_fu_217/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_337_1_fu_217_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_379_2_fu_233/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_379_2_fu_233_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_416_5_fu_190/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_416_5_fu_190_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_221_fu_240/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_221_fu_240_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_2_fu_226/grp_pqcrystals_dilithium2_ref_poly_uniform_Pipeline_VITIS_LOOP_476_2_fu_226_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280/grp_pqcrystals_dilithium2_ref_poly_uniform_fu_17280_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_KeccakF1600_StatePermute_fu_162/grp_KeccakF1600_StatePermute_fu_162_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_KeccakF1600_StatePermute_fu_277/grp_KeccakF1600_StatePermute_fu_277_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_125_fu_318_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262/grp_keccak_absorb_Pipeline_VITIS_LOOP_30_1_fu_262_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253/grp_keccak_absorb_Pipeline_VITIS_LOOP_391_1_fu_253_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268/grp_keccak_absorb_Pipeline_VITIS_LOOP_400_2_fu_268_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285/grp_keccak_absorb_Pipeline_VITIS_LOOP_409_4_fu_285_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294/grp_keccak_absorb_Pipeline_VITIS_LOOP_416_5_fu_294_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304/grp_keccak_absorb_Pipeline_VITIS_LOOP_423_6_fu_304_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309/grp_keccak_absorb_Pipeline_VITIS_LOOP_425_7_fu_309_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_keccak_absorb_fu_149/grp_keccak_absorb_fu_149_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_Pipeline_VITIS_LOOP_416_5_fu_142/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_Pipeline_VITIS_LOOP_416_5_fu_142_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_Pipeline_VITIS_LOOP_476_2_fu_177/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_Pipeline_VITIS_LOOP_476_2_fu_177_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_Pipeline_VITIS_LOOP_854_1_fu_169/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_Pipeline_VITIS_LOOP_854_1_fu_169_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324/grp_pqcrystals_dilithium2_ref_poly_uniform_gamma1_fu_17324_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_fu_17380/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_Pipeline_VITIS_LOOP_86_3_fu_138/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_Pipeline_VITIS_LOOP_86_3_fu_138_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_fu_17380/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_Pipeline_VITIS_LOOP_95_4_fu_131/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_Pipeline_VITIS_LOOP_95_4_fu_131_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_fu_17380/grp_pqcrystals_dilithium2_ref_polyveck_invntt_tomont_fu_17380_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_114_1_VITIS_LOOP_180_1_fu_17423/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_114_1_VITIS_LOOP_180_1_fu_17423_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_122_1_fu_17167/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_122_1_fu_17167_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_126_2_fu_17187/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_126_2_fu_17187_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_130_3_fu_17194/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_130_3_fu_17194_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_134_4_fu_17201/grp_pqcrystals_dilithium2_ref_polyeta_unpack_1_fu_50/grp_pqcrystals_dilithium2_ref_polyeta_unpack_1_fu_50_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_134_4_fu_17201/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_134_4_fu_17201_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_138_5_fu_17217/grp_pqcrystals_dilithium2_ref_polyeta_unpack_1_fu_50/grp_pqcrystals_dilithium2_ref_polyeta_unpack_1_fu_50_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_138_5_fu_17217/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_138_5_fu_17217_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_142_6_fu_17241/grp_pqcrystals_dilithium2_ref_polyt0_unpack_1_fu_50/grp_pqcrystals_dilithium2_ref_polyt0_unpack_1_fu_50_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_142_6_fu_17241/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_142_6_fu_17241_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_158_1_VITIS_LOOP_298_1_fu_17468/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_158_1_VITIS_LOOP_298_1_fu_17468_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_180_113_fu_17364/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_180_113_fu_17364_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_180_1_fu_17345/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_180_1_fu_17345_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_187_1_VITIS_LOOP_32_11_1_fu_17486/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_187_1_VITIS_LOOP_32_11_1_fu_17486_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_187_1_VITIS_LOOP_32_11_fu_17503/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_187_1_VITIS_LOOP_32_11_fu_17503_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_187_1_VITIS_LOOP_32_1_fu_17354/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_187_1_VITIS_LOOP_32_1_fu_17354_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_202_1_VITIS_LOOP_50_12_fu_17519/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_202_1_VITIS_LOOP_50_12_fu_17519_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_202_1_VITIS_LOOP_50_1_fu_17387/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_202_1_VITIS_LOOP_50_1_fu_17387_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_234_1_VITIS_LOOP_87_1_fu_17513/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_234_1_VITIS_LOOP_87_1_fu_17513_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_252_1_VITIS_LOOP_108_1_fu_17480/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_252_1_VITIS_LOOP_108_1_fu_17480_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_305_1_VITIS_LOOP_180_1_1_1_fu_17473/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_305_1_VITIS_LOOP_180_1_1_1_fu_17473_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_305_1_VITIS_LOOP_180_1_1_fu_17496/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_305_1_VITIS_LOOP_180_1_1_fu_17496_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_298_1_1_1_fu_17491/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_298_1_1_1_fu_17491_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_298_1_1_fu_17508/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_325_1_VITIS_LOOP_298_1_1_fu_17508_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_362_114_fu_17359/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_362_114_fu_17359_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_362_18_fu_17181/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_362_18_fu_17181_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_362_1_fu_17175/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_362_1_fu_17175_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_371_1_VITIS_LOOP_225_1_fu_17392/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_371_1_VITIS_LOOP_225_1_fu_17392_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1_fu_17524/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_392_1_VITIS_LOOP_248_1_fu_17524_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_416_5_fu_17261/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_416_5_fu_17261_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_418_1_VITIS_LOOP_915_1_fu_17398/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_418_1_VITIS_LOOP_915_1_fu_17398_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_53_1_VITIS_LOOP_32_1_fu_17463/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_53_1_VITIS_LOOP_32_1_fu_17463_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_540_59_fu_17274/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_540_59_fu_17274_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_540_5_fu_17255/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_540_5_fu_17255_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_310_fu_17302/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_310_fu_17302_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_311_fu_17313/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_311_fu_17313_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_312_fu_17334/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_312_fu_17334_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_315_fu_17430/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_315_fu_17430_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_3_fu_17291/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_57_3_fu_17291_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_85_1_VITIS_LOOP_87_1_fu_17441/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_85_1_VITIS_LOOP_87_1_fu_17441_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_86_3_fu_17453/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_86_3_fu_17453_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_87_1_fu_17373/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_87_1_fu_17373_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_95_4_fu_17447/grp_pqcrystals_dilithium2_ref_signature_1_Pipeline_VITIS_LOOP_95_4_fu_17447_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_pqcrystals_dilithium2_ref_signature_1_fu_71/grp_pqcrystals_dilithium2_ref_signature_1_fu_71_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

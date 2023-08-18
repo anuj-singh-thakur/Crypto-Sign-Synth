@@ -1,0 +1,558 @@
+
+
+================================================================
+== Vivado HLS Report for 'pqcrystals_dilithium_20'
+================================================================
+* Date:           Thu Apr 13 22:45:02 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Phase2
+* Solution:       Latency
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 6.880 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        2|        2| 20.000 ns | 20.000 ns |    1|    1| function |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      6|       0|     105|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       9|    -|
+|Register         |        -|      -|     296|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      6|     296|     114|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      730|    740|  269200|  134600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|   ~0  |   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------+----------+-------+---+----+------------+------------+
+    |   Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------+----------+-------+---+----+------------+------------+
+    |mul_ln19_fu_37_p2  |     *    |      2|  0|  21|          24|          32|
+    |t_fu_24_p2         |     *    |      4|  0|  21|          26|          32|
+    |add_ln19_fu_46_p2  |     +    |      0|  0|  63|          56|          56|
+    +-------------------+----------+-------+---+----+------------+------------+
+    |Total              |          |      6|  0| 105|         106|         120|
+    +-------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_return  |   9|          2|   32|         64|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |   9|          2|   32|         64|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------+----+----+-----+-----------+
+    |               Name              | FF | LUT| Bits| Const Bits|
+    +---------------------------------+----+----+-----+-----------+
+    |a_int_reg                        |  64|   0|   64|          0|
+    |ap_ce_reg                        |   1|   0|    1|          0|
+    |ap_return_int_reg                |  32|   0|   32|          0|
+    |mul_ln19_reg_75                  |  55|   0|   55|          0|
+    |t_reg_65                         |  32|   0|   32|          0|
+    |trunc_ln19_reg_70                |  56|   0|   56|          0|
+    |trunc_ln19_reg_70_pp0_iter1_reg  |  56|   0|   56|          0|
+    +---------------------------------+----+----+-----+-----------+
+    |Total                            | 296|   0|  296|          0|
+    +---------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+-------------------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-----------+-----+-----+------------+-------------------------+--------------+
+|ap_clk     |  in |    1| ap_ctrl_hs | pqcrystals_dilithium.20 | return value |
+|ap_rst     |  in |    1| ap_ctrl_hs | pqcrystals_dilithium.20 | return value |
+|ap_return  | out |   32| ap_ctrl_hs | pqcrystals_dilithium.20 | return value |
+|ap_ce      |  in |    1| ap_ctrl_hs | pqcrystals_dilithium.20 | return value |
+|a          |  in |   64|   ap_none  |            a            |    scalar    |
++-----------+-----+-----+------------+-------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 1
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 1
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.88>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%a_read = call i64 @_ssdm_op_Read.ap_auto.i64(i64 %a) nounwind" [dilithium2/reduce.c:15]   --->   Operation 4 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%trunc_ln18 = trunc i64 %a_read to i32" [dilithium2/reduce.c:18]   --->   Operation 5 'trunc' 'trunc_ln18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (6.88ns)   --->   "%t = mul nsw i32 58728449, %trunc_ln18" [dilithium2/reduce.c:18]   --->   Operation 6 'mul' 't' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln19 = trunc i64 %a_read to i56" [dilithium2/reduce.c:19]   --->   Operation 7 'trunc' 'trunc_ln19' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 6.88>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln19 = sext i32 %t to i55" [dilithium2/reduce.c:19]   --->   Operation 8 'sext' 'sext_ln19' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (6.88ns)   --->   "%mul_ln19 = mul i55 -8380417, %sext_ln19" [dilithium2/reduce.c:19]   --->   Operation 9 'mul' 'mul_ln19' <Predicate = true> <Delay = 6.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 6.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.80>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln19_8 = sext i55 %mul_ln19 to i56" [dilithium2/reduce.c:19]   --->   Operation 10 'sext' 'sext_ln19_8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (2.80ns)   --->   "%add_ln19 = add i56 %sext_ln19_8, %trunc_ln19" [dilithium2/reduce.c:19]   --->   Operation 11 'add' 'add_ln19' <Predicate = true> <Delay = 2.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = call i24 @_ssdm_op_PartSelect.i24.i56.i32.i32(i56 %add_ln19, i32 32, i32 55)" [dilithium2/reduce.c:19]   --->   Operation 12 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%t_9 = sext i24 %tmp to i32" [dilithium2/reduce.c:19]   --->   Operation 13 'sext' 't_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "ret i32 %t_9" [dilithium2/reduce.c:20]   --->   Operation 14 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 1
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ a]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+a_read      (read      ) [ 0000]
+trunc_ln18  (trunc     ) [ 0000]
+t           (mul       ) [ 0110]
+trunc_ln19  (trunc     ) [ 0111]
+sext_ln19   (sext      ) [ 0000]
+mul_ln19    (mul       ) [ 0101]
+sext_ln19_8 (sext      ) [ 0000]
+add_ln19    (add       ) [ 0000]
+tmp         (partselect) [ 0000]
+t_9         (sext      ) [ 0000]
+ret_ln20    (ret       ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="a">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="a"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i64"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i24.i56.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1004" name="a_read_read_fu_14">
+<pin_list>
+<pin id="15" dir="0" index="0" bw="64" slack="0"/>
+<pin id="16" dir="0" index="1" bw="64" slack="0"/>
+<pin id="17" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="a_read/1 "/>
+</bind>
+</comp>
+
+<comp id="20" class="1004" name="trunc_ln18_fu_20">
+<pin_list>
+<pin id="21" dir="0" index="0" bw="64" slack="0"/>
+<pin id="22" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln18/1 "/>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="t_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="27" slack="0"/>
+<pin id="26" dir="0" index="1" bw="32" slack="0"/>
+<pin id="27" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="t/1 "/>
+</bind>
+</comp>
+
+<comp id="30" class="1004" name="trunc_ln19_fu_30">
+<pin_list>
+<pin id="31" dir="0" index="0" bw="64" slack="0"/>
+<pin id="32" dir="1" index="1" bw="56" slack="2"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln19/1 "/>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="sext_ln19_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="32" slack="1"/>
+<pin id="36" dir="1" index="1" bw="55" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln19/2 "/>
+</bind>
+</comp>
+
+<comp id="37" class="1004" name="mul_ln19_fu_37">
+<pin_list>
+<pin id="38" dir="0" index="0" bw="24" slack="0"/>
+<pin id="39" dir="0" index="1" bw="32" slack="0"/>
+<pin id="40" dir="1" index="2" bw="55" slack="1"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="mul_ln19/2 "/>
+</bind>
+</comp>
+
+<comp id="43" class="1004" name="sext_ln19_8_fu_43">
+<pin_list>
+<pin id="44" dir="0" index="0" bw="55" slack="1"/>
+<pin id="45" dir="1" index="1" bw="56" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln19_8/3 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="add_ln19_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="55" slack="0"/>
+<pin id="48" dir="0" index="1" bw="56" slack="2"/>
+<pin id="49" dir="1" index="2" bw="56" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln19/3 "/>
+</bind>
+</comp>
+
+<comp id="51" class="1004" name="tmp_fu_51">
+<pin_list>
+<pin id="52" dir="0" index="0" bw="24" slack="0"/>
+<pin id="53" dir="0" index="1" bw="56" slack="0"/>
+<pin id="54" dir="0" index="2" bw="7" slack="0"/>
+<pin id="55" dir="0" index="3" bw="7" slack="0"/>
+<pin id="56" dir="1" index="4" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opcode="partselect(1002) " fcode="partselect"/>
+<opset="tmp/3 "/>
+</bind>
+</comp>
+
+<comp id="61" class="1004" name="t_9_fu_61">
+<pin_list>
+<pin id="62" dir="0" index="0" bw="24" slack="0"/>
+<pin id="63" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="t_9/3 "/>
+</bind>
+</comp>
+
+<comp id="65" class="1005" name="t_reg_65">
+<pin_list>
+<pin id="66" dir="0" index="0" bw="32" slack="1"/>
+<pin id="67" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="t "/>
+</bind>
+</comp>
+
+<comp id="70" class="1005" name="trunc_ln19_reg_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="56" slack="2"/>
+<pin id="72" dir="1" index="1" bw="56" slack="2"/>
+</pin_list>
+<bind>
+<opset="trunc_ln19 "/>
+</bind>
+</comp>
+
+<comp id="75" class="1005" name="mul_ln19_reg_75">
+<pin_list>
+<pin id="76" dir="0" index="0" bw="55" slack="1"/>
+<pin id="77" dir="1" index="1" bw="55" slack="1"/>
+</pin_list>
+<bind>
+<opset="mul_ln19 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="18"><net_src comp="2" pin="0"/><net_sink comp="14" pin=0"/></net>
+
+<net id="19"><net_src comp="0" pin="0"/><net_sink comp="14" pin=1"/></net>
+
+<net id="23"><net_src comp="14" pin="2"/><net_sink comp="20" pin=0"/></net>
+
+<net id="28"><net_src comp="4" pin="0"/><net_sink comp="24" pin=0"/></net>
+
+<net id="29"><net_src comp="20" pin="1"/><net_sink comp="24" pin=1"/></net>
+
+<net id="33"><net_src comp="14" pin="2"/><net_sink comp="30" pin=0"/></net>
+
+<net id="41"><net_src comp="6" pin="0"/><net_sink comp="37" pin=0"/></net>
+
+<net id="42"><net_src comp="34" pin="1"/><net_sink comp="37" pin=1"/></net>
+
+<net id="50"><net_src comp="43" pin="1"/><net_sink comp="46" pin=0"/></net>
+
+<net id="57"><net_src comp="8" pin="0"/><net_sink comp="51" pin=0"/></net>
+
+<net id="58"><net_src comp="46" pin="2"/><net_sink comp="51" pin=1"/></net>
+
+<net id="59"><net_src comp="10" pin="0"/><net_sink comp="51" pin=2"/></net>
+
+<net id="60"><net_src comp="12" pin="0"/><net_sink comp="51" pin=3"/></net>
+
+<net id="64"><net_src comp="51" pin="4"/><net_sink comp="61" pin=0"/></net>
+
+<net id="68"><net_src comp="24" pin="2"/><net_sink comp="65" pin=0"/></net>
+
+<net id="69"><net_src comp="65" pin="1"/><net_sink comp="34" pin=0"/></net>
+
+<net id="73"><net_src comp="30" pin="1"/><net_sink comp="70" pin=0"/></net>
+
+<net id="74"><net_src comp="70" pin="1"/><net_sink comp="46" pin=1"/></net>
+
+<net id="78"><net_src comp="37" pin="2"/><net_sink comp="75" pin=0"/></net>
+
+<net id="79"><net_src comp="75" pin="1"/><net_sink comp="43" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: a | {}
+ - Input state : 
+	Port: pqcrystals_dilithium.20 : a | {1 }
+  - Chain level:
+	State 1
+		t : 1
+	State 2
+		mul_ln19 : 1
+	State 3
+		add_ln19 : 1
+		tmp : 2
+		t_9 : 3
+		ret_ln20 : 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------|---------|---------|---------|
+| Operation|  Functional Unit  |  DSP48E |    FF   |   LUT   |
+|----------|-------------------|---------|---------|---------|
+|    add   |   add_ln19_fu_46  |    0    |    0    |    63   |
+|----------|-------------------|---------|---------|---------|
+|    mul   |      t_fu_24      |    4    |    0    |    21   |
+|          |   mul_ln19_fu_37  |    2    |    0    |    21   |
+|----------|-------------------|---------|---------|---------|
+|   read   | a_read_read_fu_14 |    0    |    0    |    0    |
+|----------|-------------------|---------|---------|---------|
+|   trunc  |  trunc_ln18_fu_20 |    0    |    0    |    0    |
+|          |  trunc_ln19_fu_30 |    0    |    0    |    0    |
+|----------|-------------------|---------|---------|---------|
+|          |  sext_ln19_fu_34  |    0    |    0    |    0    |
+|   sext   | sext_ln19_8_fu_43 |    0    |    0    |    0    |
+|          |     t_9_fu_61     |    0    |    0    |    0    |
+|----------|-------------------|---------|---------|---------|
+|partselect|     tmp_fu_51     |    0    |    0    |    0    |
+|----------|-------------------|---------|---------|---------|
+|   Total  |                   |    6    |    0    |   105   |
+|----------|-------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------+--------+
+|                 |   FF   |
++-----------------+--------+
+| mul_ln19_reg_75 |   55   |
+|     t_reg_65    |   32   |
+|trunc_ln19_reg_70|   56   |
++-----------------+--------+
+|      Total      |   143  |
++-----------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           | DSP48E |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    6   |    0   |   105  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |   143  |    -   |
++-----------+--------+--------+--------+
+|   Total   |    6   |   143  |   105  |
++-----------+--------+--------+--------+

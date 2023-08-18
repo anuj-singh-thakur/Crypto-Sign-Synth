@@ -1,0 +1,150 @@
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:584:3: warning: Added loop label VITIS_LOOP_32_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_32_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:584:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:594:3: warning: Added loop label VITIS_LOOP_50_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_50_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:594:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:604:3: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_68_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:604:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:614:3: warning: Added loop label VITIS_LOOP_87_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_87_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:614:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:624:3: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_108_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:624:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:634:3: warning: Added loop label VITIS_LOOP_126_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_126_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:634:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:660:3: warning: Added loop label VITIS_LOOP_180_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_180_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:660:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:670:3: warning: Added loop label VITIS_LOOP_202_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_202_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:670:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:680:3: warning: Added loop label VITIS_LOOP_225_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_225_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:680:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:690:3: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i) {
+  ^~~
+  VITIS_LOOP_248_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:690:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:703:3: warning: Added loop label VITIS_LOOP_270_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_270_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:703:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:720:3: warning: Added loop label VITIS_LOOP_298_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i) {
+  ^~~
+  VITIS_LOOP_298_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:720:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:745:3: warning: Added loop label VITIS_LOOP_337_1:   [xilinx-label-all-loops]
+  while(ctr < len && pos + 3 <= buflen) {
+  ^~~~~
+  VITIS_LOOP_337_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:745:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:773:3: warning: Added loop label VITIS_LOOP_377_1:   [xilinx-label-all-loops]
+  while(ctr < 256) {
+  ^~~~~
+  VITIS_LOOP_377_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:773:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:775:5: warning: Added loop label VITIS_LOOP_379_2:   [xilinx-label-all-loops]
+    for(i = 0; i < off; ++i)
+    ^~~
+    VITIS_LOOP_379_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:775:5: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:794:3: warning: Added loop label VITIS_LOOP_412_1:   [xilinx-label-all-loops]
+  while(ctr < len && pos < buflen) {
+  ^~~~~
+  VITIS_LOOP_412_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:794:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:833:3: warning: Added loop label VITIS_LOOP_467_1:   [xilinx-label-all-loops]
+  while(ctr < 256) {
+  ^~~~~
+  VITIS_LOOP_467_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:833:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:863:3: warning: Added loop label VITIS_LOOP_523_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 8; ++i)
+  ^~~
+  VITIS_LOOP_523_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:863:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:867:3: warning: Added loop label VITIS_LOOP_527_2:   [xilinx-label-all-loops]
+  for(i = 0; i < 256; ++i)
+  ^~~
+  VITIS_LOOP_527_2: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:867:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:869:3: warning: Added loop label VITIS_LOOP_529_3:   [xilinx-label-all-loops]
+  for(i = 256 -39; i < 256; ++i) {
+  ^~~
+  VITIS_LOOP_529_3: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:869:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:870:5: warning: Added loop label VITIS_LOOP_530_4:   [xilinx-label-all-loops]
+    do {
+    ^~
+    VITIS_LOOP_530_4: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:870:5: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:891:3: warning: Added loop label VITIS_LOOP_560_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/8; ++i) {
+  ^~~
+  VITIS_LOOP_560_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:891:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:914:3: warning: Added loop label VITIS_LOOP_598_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/8; ++i) {
+  ^~~
+  VITIS_LOOP_598_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:914:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:941:3: warning: Added loop label VITIS_LOOP_643_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/4; ++i) {
+  ^~~
+  VITIS_LOOP_643_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:941:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:956:3: warning: Added loop label VITIS_LOOP_667_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/4; ++i) {
+  ^~~
+  VITIS_LOOP_667_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:956:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:971:3: warning: Added loop label VITIS_LOOP_691_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/8; ++i) {
+  ^~~
+  VITIS_LOOP_691_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:971:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1010:3: warning: Added loop label VITIS_LOOP_738_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/8; ++i) {
+  ^~~
+  VITIS_LOOP_738_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1010:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1066:3: warning: Added loop label VITIS_LOOP_804_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/4; ++i) {
+  ^~~
+  VITIS_LOOP_804_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1066:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1094:3: warning: Added loop label VITIS_LOOP_854_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/4; ++i) {
+  ^~~
+  VITIS_LOOP_854_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1094:3: note: FIX-IT applied suggested code changes
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1129:3: warning: Added loop label VITIS_LOOP_915_1:   [xilinx-label-all-loops]
+  for(i = 0; i < 256/4; ++i) {
+  ^~~
+  VITIS_LOOP_915_1: 
+/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/poly.pp.0.c:1129:3: note: FIX-IT applied suggested code changes

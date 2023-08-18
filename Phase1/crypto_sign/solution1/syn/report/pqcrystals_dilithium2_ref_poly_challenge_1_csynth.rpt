@@ -1,0 +1,224 @@
+
+
+================================================================
+== Vitis HLS Report for 'pqcrystals_dilithium2_ref_poly_challenge_1'
+================================================================
+* Date:           Fri Mar 10 17:36:27 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        crypto_sign
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  50.00 ns|  10.999 ns|    13.50 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                                                   |                                                                        |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                                      Instance                                     |                                 Module                                 |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_keccak_absorb_1_fu_203                                                         |keccak_absorb_1                                                         |        ?|        ?|          ?|          ?|    ?|    ?|       no|
+        |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2_fu_218    |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2    |      258|      258|  12.900 us|  12.900 us|  258|  258|       no|
+        |grp_KeccakF1600_StatePermute_fu_224                                                |KeccakF1600_StatePermute                                                |       50|       50|   2.500 us|   2.500 us|   50|   50|       no|
+        |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2_fu_231    |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2    |       70|       70|   3.500 us|   3.500 us|   70|   70|       no|
+        |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1_fu_237    |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1    |       10|       10|   0.500 us|   0.500 us|   10|   10|       no|
+        |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223_fu_243  |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223  |       70|       70|   3.500 us|   3.500 us|   70|   70|       no|
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_362_1   |       25|       25|         1|          -|          -|    25|        no|
+        |- VITIS_LOOP_529_3   |        ?|        ?|         ?|          -|          -|    39|        no|
+        | + VITIS_LOOP_530_4  |        ?|        ?|   4 ~ 126|          -|          -|     ?|        no|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     442|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        4|    -|    5241|   38760|    0|
+|Memory           |        5|    -|       0|       0|    0|
+|Multiplexer      |        -|    -|       -|     511|    -|
+|Register         |        -|    -|     238|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        9|    0|    5479|   39713|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        1|    0|       2|      29|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
+    |                                      Instance                                     |                                 Module                                 | BRAM_18K| DSP|  FF  |  LUT  | URAM|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
+    |grp_KeccakF1600_StatePermute_fu_224                                                |KeccakF1600_StatePermute                                                |        2|   0|  1633|  16902|    0|
+    |grp_keccak_absorb_1_fu_203                                                         |keccak_absorb_1                                                         |        2|   0|  3444|  21007|    0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2_fu_231    |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2    |        0|   0|    71|    239|    0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223_fu_243  |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223  |        0|   0|    71|    239|    0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1_fu_237    |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1    |        0|   0|    11|    319|    0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2_fu_218    |pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2    |        0|   0|    11|     54|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
+    |Total                                                                              |                                                                        |        4|   0|  5241|  38760|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory  |                            Module                            | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |buf_U      |pqcrystals_dilithium2_ref_poly_challenge_1_buf_RAM_AUTO_1R1W  |        1|  0|   0|    0|   136|    8|     1|         1088|
+    |state_s_U  |pqcrystals_dilithium2_ref_poly_uniform_state_s_RAM_AUTO_1R1W  |        4|  0|   0|    0|    25|   64|     1|         1600|
+    +-----------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total      |                                                              |        5|  0|   0|    0|   161|   72|     2|         2688|
+    +-----------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |add_ln362_fu_268_p2               |         +|   0|  0|   13|           5|           1|
+    |add_ln529_fu_385_p2               |         +|   0|  0|   16|           9|           1|
+    |pos_fu_365_p2                     |         +|   0|  0|   39|          32|           1|
+    |sub_ln540_fu_415_p2               |         -|   0|  0|   10|           1|           2|
+    |ap_block_state18_on_subcall_done  |       and|   0|  0|    2|           1|           1|
+    |icmp_ln362_fu_262_p2              |      icmp|   0|  0|    9|           5|           4|
+    |icmp_ln529_fu_344_p2              |      icmp|   0|  0|   11|           9|          10|
+    |icmp_ln531_fu_354_p2              |      icmp|   0|  0|   18|          32|           8|
+    |icmp_ln537_fu_375_p2              |      icmp|   0|  0|   11|           9|           9|
+    |ap_block_state3_on_subcall_done   |        or|   0|  0|    2|           1|           1|
+    |shl_ln450_fu_318_p2               |       shl|   0|  0|  182|           5|          64|
+    |xor_ln450_fu_324_p2               |       xor|   0|  0|   64|          64|          64|
+    |xor_ln451_fu_331_p2               |       xor|   0|  0|   65|          64|          65|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |Total                             |          |   0|  0|  442|         237|         231|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +------------------+-----+-----------+-----+-----------+
+    |       Name       | LUT | Input Size| Bits| Total Bits|
+    +------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm         |  113|         23|    1|         23|
+    |buf_address0      |   21|          5|    8|         40|
+    |buf_address1      |   13|          3|    8|         24|
+    |buf_ce0           |   21|          5|    1|          5|
+    |buf_ce1           |   13|          3|    1|          3|
+    |buf_d0            |   13|          3|    8|         24|
+    |buf_d1            |   13|          3|    8|         24|
+    |buf_we0           |   13|          3|    1|          3|
+    |buf_we1           |   13|          3|    1|          3|
+    |c_address0        |   21|          5|    8|         40|
+    |c_ce0             |   13|          3|    1|          3|
+    |c_d0              |   17|          4|   32|        128|
+    |c_we0             |   13|          3|    1|          3|
+    |i_47_fu_94        |    9|          2|    5|         10|
+    |i_48_fu_110       |    9|          2|    9|         18|
+    |pos_02_fu_114     |    9|          2|   32|         64|
+    |pos_1_reg_180     |    9|          2|   32|         64|
+    |pos_2_reg_190     |    9|          2|   32|         64|
+    |signs_fu_106      |    9|          2|   64|        128|
+    |state_s_address0  |   41|         10|    5|         50|
+    |state_s_address1  |   13|          3|    5|         15|
+    |state_s_ce0       |   25|          6|    1|          6|
+    |state_s_ce1       |   13|          3|    1|          3|
+    |state_s_d0        |   25|          6|   64|        384|
+    |state_s_d1        |   13|          3|   64|        192|
+    |state_s_we0       |   17|          4|    1|          4|
+    |state_s_we1       |   13|          3|    1|          3|
+    +------------------+-----+-----------+-----+-----------+
+    |Total             |  511|        116|  395|       1328|
+    +------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                              Name                                              | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                                       |  22|   0|   22|          0|
+    |c_addr_reg_527                                                                                  |   8|   0|    8|          0|
+    |grp_KeccakF1600_StatePermute_fu_224_ap_start_reg                                                |   1|   0|    1|          0|
+    |grp_keccak_absorb_1_fu_203_ap_start_reg                                                         |   1|   0|    1|          0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_223_fu_243_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_476_2_fu_231_ap_start_reg    |   1|   0|    1|          0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_523_1_fu_237_ap_start_reg    |   1|   0|    1|          0|
+    |grp_pqcrystals_dilithium2_ref_poly_challenge_1_Pipeline_VITIS_LOOP_527_2_fu_218_ap_start_reg    |   1|   0|    1|          0|
+    |i_47_fu_94                                                                                      |   5|   0|    5|          0|
+    |i_48_fu_110                                                                                     |   9|   0|    9|          0|
+    |i_reg_481                                                                                       |   5|   0|    5|          0|
+    |icmp_ln531_reg_510                                                                              |   1|   0|    1|          0|
+    |pos_02_fu_114                                                                                   |  32|   0|   32|          0|
+    |pos_1_reg_180                                                                                   |  32|   0|   32|          0|
+    |pos_2_reg_190                                                                                   |  32|   0|   32|          0|
+    |signs_fu_106                                                                                    |  64|   0|   64|          0|
+    |state_pos_reg_476                                                                               |   8|   0|    8|          0|
+    |state_s_addr_7_reg_486                                                                          |   5|   0|    5|          0|
+    |zext_ln529_reg_505                                                                              |   9|   0|   64|         55|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                           | 238|   0|  293|         55|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+--------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                Source Object               |    C Type    |
++-------------+-----+-----+------------+--------------------------------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_poly_challenge.1|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_poly_challenge.1|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_poly_challenge.1|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_poly_challenge.1|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_poly_challenge.1|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  pqcrystals_dilithium2_ref_poly_challenge.1|  return value|
+|c_address0   |  out|    8|   ap_memory|                                           c|         array|
+|c_ce0        |  out|    1|   ap_memory|                                           c|         array|
+|c_we0        |  out|    1|   ap_memory|                                           c|         array|
+|c_d0         |  out|   32|   ap_memory|                                           c|         array|
+|c_q0         |   in|   32|   ap_memory|                                           c|         array|
+|sm_address0  |  out|   13|   ap_memory|                                          sm|         array|
+|sm_ce0       |  out|    1|   ap_memory|                                          sm|         array|
+|sm_q0        |   in|    8|   ap_memory|                                          sm|         array|
+|sm_address1  |  out|   13|   ap_memory|                                          sm|         array|
+|sm_ce1       |  out|    1|   ap_memory|                                          sm|         array|
+|sm_q1        |   in|    8|   ap_memory|                                          sm|         array|
++-------------+-----+-----+------------+--------------------------------------------+--------------+
+

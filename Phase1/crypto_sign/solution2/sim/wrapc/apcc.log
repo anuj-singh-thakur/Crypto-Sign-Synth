@@ -1,0 +1,9 @@
+INFO: [HLS 200-10] Running '/home/shikha/Vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'shikha' on host 'shikha-HP-ProDesk-600-G6-Microtower-PC' (Linux_x86_64 version 5.15.0-25-generic) on Fri Mar 10 17:38:08 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/shikha/Final_Assignment/crypto_sign/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_shikha/731221678450088169353
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.4 seconds. Total CPU system time: 0.05 seconds. Total elapsed time: 1.37 seconds; peak allocated memory: 98.957 MB.

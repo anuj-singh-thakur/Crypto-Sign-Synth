@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/shikha/Final_Assignment/crypto_sign/solution2/.autopilot/db/rng.pp.0.c</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>dilithium2/rng.c</string>
+      <key>line</key>
+      <integer>202</integer>
+      <key>column</key>
+      <integer>22</integer>
+      <key>message</key>
+      <string>unused parameter &apos;security_strength&apos;</string>
+      <key>ID</key>
+      <integer>5292</integer>
+      <key>WarningOption</key>
+      <string>unused-parameter</string>
+    </dict>
+  </array>
+</dict>
